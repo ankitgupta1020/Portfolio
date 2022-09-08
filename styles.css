@@ -4,7 +4,7 @@
 :root {
     --primary-color: #ea580c;
     --Orange: #ffa500;
-    --off-white: #6B7280;
+    --off-white: #94a3b8;
 }
 
 
@@ -59,8 +59,7 @@ hr {
     margin: 1rem 1rem 1rem 0rem;
 }
 
-/** look into BEM naming convention for CSS */
-/** list **/
+
 
 .list-non-bullet {
     list-style: none;
@@ -96,7 +95,7 @@ hr {
 }
 
 .hero {
-    padding: 2rem;
+    padding: 6rem;
     padding-top: 5rem;
 }
 
@@ -110,7 +109,7 @@ hr {
 .hero .hero-heading {
     text-align: center;
     padding-top: 1rem;
-    color: var(--Orange);
+    /* color: var(--Orange); */
 }
 
 /** section **/
