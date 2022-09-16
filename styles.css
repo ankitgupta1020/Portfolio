@@ -4,7 +4,7 @@
 :root {
     --primary-color: #ea580c;
     --Orange: #ffa500;
-    --off-white: #94a3b8;
+    --off-white: #F3F4F6;
 }
 
 
@@ -15,6 +15,7 @@ body {
 hr {
     margin: 2rem 0rem;
 }
+
 /** spaces **/
 
 .margin-md {
@@ -38,7 +39,7 @@ hr {
     text-decoration: none;
     padding: 0.5rem 1rem;
     margin-top: 1rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
 
 .link-primary {
@@ -48,6 +49,11 @@ hr {
     display: block;
     max-width: 140px;
     margin: 1rem 1rem 1rem 0rem;
+}
+
+.link-primary:hover {
+    background-color: aqua;
+    border-radius: 0.7rem;
 }
 
 .link-secondary {
@@ -95,20 +101,23 @@ hr {
 }
 
 .hero {
-    padding: 6rem;
-    padding-top: 5rem;
+    padding: 12rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .hero .hero-img {
     text-align: center;
-    max-width: 350px;
+    max-width: 10px;
     display: block;
     margin: auto;
+    padding-top: 1rem;
 }
 
 .hero .hero-heading {
     text-align: center;
     padding-top: 1rem;
+    padding-bottom: 3rem;
     /* color: var(--Orange); */
 }
 
@@ -134,14 +143,39 @@ hr {
     color: white;
     border-top-right-radius: 1rem;
 }
+
+.footer:hover {
+    background-color: aqua;
+    border-radius: 0.7rem;
+}
+
 .footer .link {
     color: white;
 }
-.footer .link {
+
+/* .footer .link {
     font-weight: bolds;
     font-size: large;
-}
+} */
 
 .footer ul {
     padding-inline-start: 0px;
 }
+
+.fa {
+    padding: 1rem;
+    color: rgb(219, 208, 208);
+}
+
+/* .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-github{
+    background-color: white;
+    color: red;
+  } */
