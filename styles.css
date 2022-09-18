@@ -252,21 +252,6 @@ body {
         max-width: 300px;
         display: block;
       }
-    
-      .column {
-        
-        width: 90%;
-        padding: 0 20px;
-      }
-      .column-1 {
-        width: 90%;
-      
-      }
-      .card {
-        height: 45vh;
-      }
-    
-    
       .para-font {
         font-size: 0.7rem;
       }
