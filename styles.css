@@ -426,6 +426,7 @@ body {
     .nav-link {
       padding: 5px;
       font-size: 1em;
+     
     }
   }
   
@@ -660,12 +661,9 @@ body {
   font-size: 14px;
   }
   }
-  @media only screen and (max-width: 600px) {
-    .nav-item {
-    display: none;
-    }
+  
     }
   
   
   }
-}}
+}
