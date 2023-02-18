@@ -72,6 +72,7 @@ form {
     font-weight: bold;
     padding: 10px;
     transition: all 0.2s;
+    border-radius: 12px;
 }
 
 .nav-link:hover {
@@ -80,7 +81,7 @@ form {
 }
 
 .nav-link.active {
-    background-color: #007bff;
+    background-color: #ea580c;
     color: #fff;
 }
 
@@ -659,7 +660,11 @@ body {
   font-size: 14px;
   }
   }
-  
+  @media only screen and (max-width: 600px) {
+    .nav-item {
+    display: none;
+    }
+    }
   
   
   }
