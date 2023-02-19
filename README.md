@@ -14,7 +14,7 @@ License
 # Installation
 To run this website locally, you can follow these steps:
 
-Clone the repository: git clone https://github.com/yourusername/your-repo.git
+Clone the repository: git clone https://github.com/ankitgupta1020/Ankit-Gupta.git
 Navigate to the project directory: cd your-repo
 Open the index.html file in your browser
 
