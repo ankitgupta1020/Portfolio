@@ -28,7 +28,7 @@ To add your own projects, simply replace the placeholder images and text in the 
 To update the styling, you can edit the styles.css file. You can also add your own custom styles in a separate CSS file and link to it in the head of the HTML files.
 
 # Credits
-This website was created by [your name] using HTML and CSS. The images used in the projects section are placeholders and should be replaced with your own screenshots or photos.
+This website was created by Ankit Gupta using HTML and CSS. The images used in the projects section are placeholders and should be replaced with your own screenshots or photos.
 
 # License
 This project is licensed under the MIT License. Feel free to use and modify the code as you wish.
