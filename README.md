@@ -18,7 +18,7 @@ Clone the repository: git clone https://github.com/ankitgupta1020/Ankit-Gupta.gi
 Navigate to the project directory: cd your-repo
 Open the index.html file in your browser
 
-Alternatively, you can simply visit the live website at ankitgupta1181.netlify.app/.
+Alternatively, you can simply visit the live website at https://ankitgupta1181.netlify.app/.
 
 # Usage
 You are welcome to use this website as a template for your own portfolio. You can customize the content, layout, and styling to fit your needs.
