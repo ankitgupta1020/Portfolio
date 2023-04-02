@@ -320,12 +320,26 @@ body {
 .fa {
   color: #555;
   transition: all 0.3s ease;
+  text-decoration: none; /* new code to remove underline */
 }
 
 .fa:hover {
   color: #007bff;
 }
 
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+/* LinkedIn icon */
+.fa-linkedin:hover {
+  color: #0077b5;
+}
+
+/* GitHub icon */
+.fa-github:hover {
+  color: #211f1f;
+}
 
 /** section **/
 
