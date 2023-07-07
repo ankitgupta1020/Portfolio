@@ -198,3 +198,31 @@ h1 span {
 .skill-img {
   width: 5.5rem;
 }
+
+/***********************/
+/* ABOUT SECTION */
+/***********************/
+
+.about-section {
+  padding: 9.6rem 0;
+  display: grid;
+  grid-template-columns: 42fr 58fr;
+  gap: 4.8rem;
+}
+
+.more-info {
+  display: flex;
+  gap: 4.8rem;
+  text-align: center;
+  margin-top: 1.8rem;
+}
+
+.more-info h5 {
+  color: var(--clr-primary);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.more-info p {
+  text-transform: capitalize;
+}
