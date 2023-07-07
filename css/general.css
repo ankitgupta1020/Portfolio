@@ -1,0 +1,89 @@
+/***********************/
+/* CSS VARIABLE */
+/***********************/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --clr-primary: #558aff;
+  --clr-background: #e5ebf4;
+  --clr-text: #1e1e1e;
+  --clr-text-lighter: #1e1e1ed9;
+  --clr-white: #fff;
+  --clr-black: #000;
+}
+
+/***********************/
+/* CSS RESET */
+/***********************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--clr-background);
+  min-height: 100vh;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/***********************/
+/* HELPER CLASSES */
+/***********************/
+
+.container {
+  max-width: 112rem;
+  margin-inline: auto;
+}
+
+.fz-74 {
+  font-size: 7.4rem;
+}
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
