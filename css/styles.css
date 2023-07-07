@@ -169,3 +169,32 @@ h1 span {
     transform: translateY(1rem);
   }
 }
+
+/***********************/
+/* SKILLS SECTION */
+/***********************/
+
+.skills-section {
+  padding: 9.6rem 0;
+}
+
+.skills {
+  margin-top: 4.4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 10rem);
+  gap: 3.2rem;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: var(--clr-white);
+}
+
+.skill-img {
+  width: 5.5rem;
+}

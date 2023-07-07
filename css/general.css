@@ -36,6 +36,7 @@ html {
 
 body {
   background-color: var(--clr-background);
+  color: var(--clr-text);
   min-height: 100vh;
   font-size: 1.8rem;
   line-height: 1.5;
@@ -78,6 +79,20 @@ a {
 
 .fz-74 {
   font-size: 7.4rem;
+}
+
+.section-heading {
+  color: var(--clr-primary);
+  font-size: 4.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-subheading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: capitalize;
 }
 
 /* 
