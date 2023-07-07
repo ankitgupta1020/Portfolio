@@ -1,153 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Ankit Gupta</title>
-    <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="mode.js"></script>
-</head>
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/favicons/safari-pinned-tab.svg"
+      color="#558aff"
+    />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#558aff" />
+    <meta
+      name="msapplication-config"
+      content="assets/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#558aff" />
 
-<body>
-    <div class="dark-mode">
-        <!-- your HTML content -->
-    </div>
-    <!-- <div class="container-top">
-        <nav class="navigation container">
-            <div class="nav-brand">Ankit Gupta's porfolio</div>
-            <ul class="list-non-bullet nav-pills">
-                <li class="list-item-inline">
-                    <a class="link link-active" href="/">Home</a>
-                </li>
-                <li class="list-item-inline">
-                    <a class="link" href="/projects.html">project</a>
-                </li>
-                <li class="list-item-inline">
-                    <a class="link" href="/blogs.html">Blog</a>
-                </li>
-            </ul>
-    </div> -->
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- TITLE -->
+    <title>Ankit Gupta &vert; Backend Developer</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
     <header>
-        <nav class="navbar">
-            <div class="navbar-brand">Ankit Gupta's Portfolio</div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/blogs.html">Blogs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/docs/Resume-ANKIT-GUPTA.pdf" download>Resume</a>
-                </li>
-
-
-
-
-            </ul>
-        </nav>
-
-
+      <a href="#" class="logo">
+        <i class="fa-solid fa-terminal"></i>
+        <span>Ankit</span>
+      </a>
+      <nav>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#blogs">Blogs</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
     </header>
 
-    </nav>
-
-    <header class="hero">
-        <img class="hero-img" src="images/hero.png" />
-        <h1 class="hero-heading">Backend Developer <span class="heading-inverted">Ankit Gupta</span></h1>
-    </header>
-
-    <section class="section ow">
-        <div class="container container-center">
-            <h3 class="text">Technologies</h1>
-                <p class="wrapper">I'm familiar with <a class="space" target="_blank"
-                        href="https://www.w3schools.com/html/">HTML </a>, <a class="space" target="_blank"
-                        href="https://www.w3schools.com/css/default.asp">CSS </a>, <a class="space" target="_blank"
-                        href="https://www.w3schools.com/js/default.asp">Javascript </a>, <a class="space"
-                        target="_blank" href="https://www.w3schools.com/nodejs/">NodeJs </a>, <a class="space"
-                        target="_blank" href="https://reactjs.org/">React </a>, <a class="space" target="_blank"
-                        href="https://www.java.com/">Java </a>, <a class="space" target="_blank"
-                        href="https://spring.io/projects/spring-framework">Spring </a>, <a class="space" target="_blank"
-                        href="https://spring.io/projects/spring-boot">Spring Boot </a>, <a class="space" target="_blank"
-                        href="https://www.mysql.com/">MySQL </a>, <a class="space" target="_blank"
-                        href="https://restfulapi.net/">RESTful API </a></p>
-
-
-
+    <!-- HERO SECTION -->
+    <section class="container hero-section">
+      <div>
+        <h1>
+          Hi! I’m Ankit <br />
+          <span>Backen<span class="fz-74">D</span>eveloper</span>
+        </h1>
+        <div class="social-links">
+          <a
+            class="social-link"
+            title="Github"
+            href="https://github.com/ankitgupta1020"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            class="social-link"
+            title="LinkedIn"
+            href="https://www.linkedin.com/in/ankit-gupta-5bb433174/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </div>
+      </div>
+      <div class="hero-img-box">
+        <div class="hero-img-container">
+          <div class="hero-img-background"></div>
+          <picture>
+            <source srcset="assets/images/hero.webp" type="image/webp" />
+            <source srcset="assets/images/hero-min.png" type="image/png" />
+
+            <img
+              class="hero-img"
+              src="assets/images/hero-min.png"
+              alt="Ankit Gupta Image"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <a class="scroll-down-container" title="Scroll Down" href="#about">
+        <div class="scroll-down">
+          <svg
+            viewBox="0 0 52 89"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="mouse"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M47.6056 63.1025V25.8975C47.6056 14.0121 37.9325 4.37705 26 4.37705C14.0675 4.37705 4.39437 14.0121 4.39437 25.8975V63.1025C4.39437 74.9879 14.0675 84.623 26 84.623C37.9325 84.623 47.6056 74.9879 47.6056 63.1025ZM26 0C11.6406 0 0 11.5947 0 25.8975V63.1025C0 77.4053 11.6406 89 26 89C40.3594 89 52 77.4053 52 63.1025V25.8975C52 11.5947 40.3594 0 26 0Z"
+            ></path>
+            <path
+              d="M23 34.5526C23 32.5906 24.567 31 26.5 31C28.433 31 30 32.5906 30 34.5526V54.4474C30 56.4094 28.433 58 26.5 58C24.567 58 23 56.4094 23 54.4474V34.5526Z"
+            ></path>
+          </svg>
+        </div>
+      </a>
     </section>
-    <section class="section">
-        <div class="container container-center">
-            <h3 class="text">projects</h1>
-                <p>I take great pride in showcasing my work, and I would be delighted to provide you with the
-                    opportunity to explore my projects hosted online.</p>
-                <a class="link link-primary" href="/projects.html">See Projects </a>
+
+    <!-- SKILL -->
+    <section class="container skills-section">
+      <h2 class="section-heading">Skills</h2>
+      <h3 class="section-subheading">
+        Cutting-Edge Developer Skills - Technical Mastery 🚀
+      </h3>
+
+      <div class="skills">
+        <div class="skill">
+          <img class="skill-img" src="assets/images/html.png" alt="HTML" />
         </div>
+        <div class="skill">
+          <img class="skill-img" src="assets/images/css.png" alt="CSS" />
+        </div>
+        <div class="skill">
+          <img
+            class="skill-img"
+            src="assets/images/javascript.png"
+            alt="JavaScript"
+          />
+        </div>
+        <div class="skill">
+          <img class="skill-img" src="assets/images/nodejs.png" alt="NodeJS" />
+        </div>
+        <div class="skill">
+          <img class="skill-img" src="assets/images/react.png" alt="React" />
+        </div>
+        <div class="skill">
+          <img class="skill-img" src="assets/images/java.png" alt="Java" />
+        </div>
+        <div class="skill">
+          <img class="skill-img" src="assets/images/spring.png" alt="Spring" />
+        </div>
+        <div class="skill">
+          <img class="skill-img" src="assets/images/mysql.png" alt="MySQL" />
+        </div>
+      </div>
     </section>
-
-    <section class="section ow">
-        <div class="container container-center">
-            <h3 class="text">Blogs</h1>
-                <p>In addition, I am actively engaged in creating both technical and non-technical blogs, where I
-                    document my journey of continuous learning and growth.
-                </p>
-                <a class="link link-primary" href="/blogs.html">Explore My Blog </a>
-        </div>
-    </section>
-    <form id="contact-form">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-        </div>
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
-
-    <footer class="footer">
-
-
-
-
-        <div class="main">
-            <div class="footer-header">
-                Social media
-            </div>
-            <ul class="list-non-bullet">
-                <li class="list-item-inline">
-                    <a class="fa fa-github" style="font-size:2rem" href="https://github.com/ankitgupta1020"
-                        target="_blank">
-
-                    </a>
-                </li>
-                <li class="list-item-inline">
-                    <a class="fa fa-twitter" style="font-size:2rem" href="https://twitter.com/AnkitGu93350210"
-                        target="_blank">
-                    </a>
-                </li>
-                <li class="list-item-inline">
-                    <a class="fa fa-linkedin" style="font-size:2rem"
-                        href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank">
-                    </a>
-
-                </li>
-
-            </ul>
-        </div>
-    </footer>
-
-</body>
-
+  </body>
 </html>
