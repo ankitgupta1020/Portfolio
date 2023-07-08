@@ -82,19 +82,19 @@ h1 span {
   user-select: none;
 }
 
-.social-link:link,
-.social-link:visited {
+.hero-section .social-link:link,
+.hero-section .social-link:visited {
   font-size: 3.6rem;
   color: var(--clr-dark-gray);
   transition: color 0.3s;
 }
 
-.social-link:hover,
-.social-link:active {
+.hero-section .social-link:hover,
+.hero-section .social-link:active {
   color: var(--clr-primary);
 }
 
-.social-link:first-child {
+.hero-section .social-link:first-child {
   margin-right: 1.2rem;
 }
 
@@ -341,4 +341,43 @@ h1 span {
 
 .carousel-dots .dot.active {
   background-color: var(--clr-primary);
+}
+
+/***********************/
+/* FOOTER */
+/***********************/
+
+footer {
+  padding: 4.8rem 0;
+  background: var(--clr-black);
+}
+
+footer p {
+  text-align: center;
+  color: var(--clr-white);
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social-link:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+footer .social-link:link,
+footer .social-link:visited {
+  color: var(--clr-white);
+  font-size: 3.6rem;
+  transition: color 0.3s;
+}
+
+footer .social-link:hover,
+footer .social-link:active {
+  color: var(--clr-primary);
 }
