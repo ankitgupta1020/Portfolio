@@ -9,7 +9,8 @@
   --clr-background: #e5ebf4;
   --clr-text: #1e1e1e;
   --clr-text-lighter: #1e1e1ed9;
-  --clr-white: #fff;
+  --clr-dark-gray: #444;
+  --clr-white: #fafafa;
   --clr-black: #000;
   --clr-red: #ef4444;
 }
@@ -100,9 +101,7 @@ a {
 .section-text {
   font-size: 2.2rem;
   letter-spacing: 0.2px;
-  text-transform: capitalize;
-  margin-top: 1.2rem;
-  /* word-break: break-all; */
+  margin-top: 1.6rem;
 }
 
 /* 
