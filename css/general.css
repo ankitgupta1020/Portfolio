@@ -6,13 +6,14 @@
 
 :root {
   --clr-primary: #558aff;
+  --clr-primary-darker: #446ecc;
   --clr-background: #e5ebf4;
+  --clr-background-transparent: rgba(229, 235, 244, 0.95);
   --clr-text: #1e1e1e;
   --clr-text-lighter: #1e1e1ed9;
-  --clr-dark-gray: #444;
-  --clr-white: #fafafa;
-  --clr-black: #1d1717;
-  --clr-red: #ef4444;
+  --clr-white: #fff;
+  --clr-white-darker: #ddd;
+  --clr-black: #111;
 }
 
 /***********************/
@@ -34,6 +35,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {

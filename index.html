@@ -56,7 +56,7 @@
 
   <body>
     <!-- HEADER -->
-    <header>
+    <header class="header">
       <a href="#" class="logo">
         <i class="fa-solid fa-terminal"></i>
         <span>Ankit</span>
@@ -111,7 +111,7 @@
         </div>
       </div>
 
-      <a class="scroll-down-container" title="Scroll Down" href="#about">
+      <a class="scroll-down-container" title="Scroll Down" href="#skills">
         <div class="scroll-down">
           <svg
             viewBox="0 0 52 89"
@@ -133,7 +133,7 @@
     </section>
 
     <!-- SKILL SECTION-->
-    <section class="container skills-section">
+    <section class="container skills-section" id="skills">
       <h2 class="section-heading">Skills</h2>
       <h3 class="section-subheading">
         Cutting-Edge Developer Skills - Technical Mastery 🚀
@@ -209,7 +209,7 @@
 
       <div class="carousel-container">
         <div class="carousel-nav">
-          <button id="prevBtn" class="nav-btn mr-16" title="Previous">
+          <button id="prevBtn" class="nav-btn" title="Previous">
             <i class="fa-solid fa-circle-arrow-left"></i>
           </button>
           <button id="nextBtn" class="nav-btn" title="Next">
@@ -220,11 +220,17 @@
         <div class="carousel">
           <!-- PROJECT - 1 -->
           <div class="slide">
-            <img
+            <a
               class="project-img"
-              src="assets/images/project1.png"
-              alt="Shopic E-Commerce App Image"
-            />
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="assets/images/project1.png"
+                alt="Shopic E-Commerce App Image"
+              />
+            </a>
             <div class="project-description">
               <h4>Shopic E-Commerce App</h4>
               <p class="section-text">
@@ -364,10 +370,12 @@
       <div class="blog-container">
         <div class="big-blog">
           <a href="http://" target="_blank" rel="noopener noreferrer">
-            <img
-              src="assets/images/blog1.png"
-              alt="Master JavaScript Blog Image"
-            />
+            <div class="blog-img">
+              <img
+                src="assets/images/blog1.png"
+                alt="Master JavaScript Blog Image"
+              />
+            </div>
           </a>
           <div class="blog-description">
             <h4 class="blog-heading">4 Jan 2023</h4>
@@ -388,10 +396,12 @@
             rel="noopener noreferrer"
             class="blog"
           >
-            <img
-              src="assets/images/blog2.png"
-              alt="Master Cybersecurity Blog Image"
-            />
+            <div class="blog-img">
+              <img
+                src="assets/images/blog2.png"
+                alt="Master Cybersecurity Blog Image"
+              />
+            </div>
             <h4 class="blog-heading">13 May 2023</h4>
             <p class="blog-subheading">Master Cybersecurity</p>
           </a>
@@ -402,10 +412,12 @@
             rel="noopener noreferrer"
             class="blog"
           >
-            <img
-              src="assets/images/blog3.png"
-              alt="Master Web Development Blog Image"
-            />
+            <div class="blog-img">
+              <img
+                src="assets/images/blog3.png"
+                alt="Master Web Development Blog Image"
+              />
+            </div>
             <h4 class="blog-heading">21 Feb 2023</h4>
             <p class="blog-subheading">Master Web Development</p>
           </a>
@@ -416,13 +428,114 @@
             rel="noopener noreferrer"
             class="blog"
           >
-            <img
-              src="assets/images/blog4.png"
-              alt="Master Cybersecurity Blog Image"
-            />
+            <div class="blog-img">
+              <img
+                src="assets/images/blog4.png"
+                alt="Master Cybersecurity Blog Image"
+              />
+            </div>
             <h4 class="blog-heading">08 May 2022</h4>
             <p class="blog-subheading">Master Ethical Hacking</p>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION-->
+    <section class="container contact-section" id="contact">
+      <h2 class="section-heading">Contact</h2>
+      <h3 class="section-subheading">
+        Feel free to reach out to me anytime, don't hesitate! 👇
+      </h3>
+
+      <div class="contact-container">
+        <div class="contact-form-container">
+          <form
+            class="contact-form"
+            autocomplete="off"
+            action="https://formsubmit.co/ankitgupta1181@gmail.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://ankitgupta1181.netlify.app/thanks.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                minlength="3"
+                maxlength="30"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                rows="5"
+                minlength="3"
+                maxlength="1000"
+                id="message"
+                name="message"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="form-btn">Send</button>
+          </form>
+        </div>
+
+        <div class="contact-link-container">
+          <div class="contact-links">
+            <a
+              class="contact-link"
+              href="https://goo.gl/maps/iLbayBYNYZNVe71w5"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="icon"><i class="fa-solid fa-location-arrow"></i></div>
+              <div>
+                <h5>Location</h5>
+                <p>Gurgaon, India</p>
+              </div>
+            </a>
+            <a class="contact-link" href="tel:+916392456564">
+              <div class="icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <div>
+                <h5>Phone</h5>
+                <p>+91 6392456564</p>
+              </div>
+            </a>
+            <a class="contact-link" href="mailto:ankitgupta1181@gmail.com">
+              <div class="icon"><i class="fa-solid fa-at"></i></div>
+              <div>
+                <h5>Email</h5>
+                <p>ankitgupta1181@gmail.com</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
