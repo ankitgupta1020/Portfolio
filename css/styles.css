@@ -181,7 +181,7 @@ h1 span {
 .skills {
   margin-top: 4.4rem;
   display: grid;
-  grid-template-columns: repeat(4, 10rem);
+  grid-template-columns: repeat(4, 8.6rem);
   gap: 3.2rem;
 }
 
@@ -189,8 +189,7 @@ h1 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10rem;
-  height: 10rem;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   background-color: var(--clr-white);
   box-shadow: rgba(0, 0, 0, 0.18) 0rem 0.2rem 0.4rem;
@@ -198,6 +197,7 @@ h1 span {
 
 .skill-img {
   width: 5.5rem;
+  width: 50%;
 }
 
 /***********************/
@@ -279,7 +279,7 @@ h1 span {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 3.2rem;
+  gap: 3.2rem;
 }
 
 .project-img {
@@ -341,6 +341,64 @@ h1 span {
 
 .carousel-dots .dot.active {
   background-color: var(--clr-primary);
+}
+
+/***********************/
+/* BLOG SECTION */
+/***********************/
+
+.blog-section {
+  padding: 9.6rem 0;
+}
+
+.blog-container {
+  margin-top: 3rem;
+}
+
+.blog-container img {
+  border-radius: 10px;
+}
+
+.big-blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.blog-heading {
+  color: var(--clr-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.blog-subheading {
+  color: var(--clr-text);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+}
+
+.big-blog .blog-heading {
+  font-size: 3.2rem;
+}
+
+.big-blog .blog-subheading {
+  font-size: 3rem;
+}
+
+.small-blog .blog-heading {
+  font-size: 2.4rem;
+}
+
+.small-blog .blog-subheading {
+  font-size: 2.2rem;
+}
+
+.small-blog {
+  display: flex;
+  gap: 3.2rem;
 }
 
 /***********************/
