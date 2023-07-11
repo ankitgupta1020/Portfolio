@@ -16,6 +16,15 @@
   --clr-black: #111;
 }
 
+.dark-mode {
+  --clr-background: #1e1e1e;
+  --clr-background-transparent: rgba(30, 30, 30, 0.95);
+  --clr-text: #f5f5f5;
+  --clr-text-lighter: #f5f5f5d9;
+  --clr-white: #e5ebf4;
+  --clr-white-darker: #ced4dc;
+}
+
 /***********************/
 /* CSS RESET */
 /***********************/
