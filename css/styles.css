@@ -5,6 +5,7 @@
 .header {
   position: fixed;
   top: 0;
+  left: 0;
   height: 9.6rem;
   width: 100%;
   background-color: var(--clr-background-transparent);
@@ -13,6 +14,12 @@
   justify-content: space-between;
   padding: 0 6.4rem;
   z-index: 10;
+  transition: all 0.3s;
+}
+
+.scrolled-down {
+  height: 8rem;
+  box-shadow: rgba(33, 35, 38, 0.1) 0rem 1rem 1rem -1rem;
 }
 
 .logo {
