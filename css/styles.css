@@ -25,7 +25,7 @@
 .logo {
   display: flex;
   align-items: center;
-  color: var(--clr-primary);
+  color: var(--clr-primary) !important;
 }
 
 .logo .fa-terminal {
@@ -55,6 +55,10 @@ nav {
 
 .nav-link:hover,
 .nav-link:active {
+  color: var(--clr-primary);
+}
+
+nav .nav-link.active {
   color: var(--clr-primary);
 }
 

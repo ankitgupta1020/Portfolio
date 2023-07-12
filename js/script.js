@@ -1,5 +1,7 @@
 const themeSwitchBtn = document.getElementById("themeSwitch");
 const header = document.querySelector(".header");
+const navLink = document.querySelectorAll(".nav-link");
+const section = document.querySelectorAll(".section");
 const carousel = document.querySelector(".carousel");
 const slides = Array.from(carousel.children);
 const prevBtn = document.getElementById("prevBtn");
@@ -33,6 +35,19 @@ function scrolledDown(e) {
 
 // Add event listeners for scroll
 document.addEventListener("scroll", scrolledDown);
+
+// ------------------------------- //
+
+// Function to active navigation link on scroll
+function activeNavLink() {
+  let length = section.length;
+  while (--length && window.scrollY + 97 < section[length].offsetTop) {}
+  navLink.forEach((link) => link.classList.remove("active"));
+  navLink[length].classList.add("active");
+}
+
+// Add event listeners for scroll
+window.addEventListener("scroll", activeNavLink);
 
 // ------------------------------- //
 
