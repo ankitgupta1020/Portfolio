@@ -67,13 +67,22 @@
         <i class="fa-solid fa-terminal"></i>
         <span>Ankit</span>
       </a>
-      <div class="flex align-items-center gap-4">
-        <nav class="flex align-items-center gap-4">
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#blogs">Blogs</a>
-          <a class="nav-link" href="#contact">Contact</a>
-        </nav>
+
+      <!-- MOBILE NAV -->
+      <button
+        class="btn-mobile-nav align-items-center justify-content-center flex-direction-column"
+      >
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+      </button>
+
+      <nav class="nav flex align-items-center gap-4">
+        <a class="nav-link main-nav-link" href="#about">About</a>
+        <a class="nav-link main-nav-link" href="#projects">Projects</a>
+        <a class="nav-link main-nav-link" href="#blogs">Blogs</a>
+        <a class="nav-link main-nav-link" href="#contact">Contact</a>
+
         <!-- THEME TOGGLE BUTTON -->
         <button class="switch" id="themeSwitch">
           <span class="sun">
@@ -96,16 +105,7 @@
           </span>
           <span class="slider"></span>
         </button>
-
-        <!-- MOBILE NAV -->
-        <button
-          class="btn-mobile-nav align-items-center justify-content-center flex-direction-column"
-        >
-          <div class="bars" id="bar1"></div>
-          <div class="bars" id="bar2"></div>
-          <div class="bars" id="bar3"></div>
-        </button>
-      </div>
+      </nav>
     </header>
 
     <!-- HERO SECTION -->
@@ -184,7 +184,7 @@
         Cutting-Edge Developer Skills - Technical Mastery 🚀
       </h3>
 
-      <div class="skills grid gap-3">
+      <div class="skills gap-3">
         <div class="skill center">
           <img class="skill-img" src="assets/images/html.png" alt="HTML" />
         </div>
@@ -430,7 +430,7 @@
           </div>
         </div>
 
-        <div class="small-blog flex gap-3">
+        <div class="small-blog gap-3">
           <a
             href="http://"
             target="_blank"

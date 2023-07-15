@@ -8,7 +8,7 @@
   left: 0;
   height: 9.6rem;
   width: 100%;
-  background-color: var(--clr-background-transparent);
+  background-color: var(--clr-background);
   padding: 0 4.8rem;
   z-index: 10;
   -webkit-transition: all 0.3s;
@@ -16,8 +16,9 @@
 }
 
 .scrolled-down {
-  height: 8rem;
+  background-color: var(--clr-background-transparent);
   box-shadow: rgba(33, 35, 38, 0.1) 0rem 1rem 1rem -1rem;
+  height: 8rem;
 }
 
 .logo {
@@ -48,7 +49,7 @@
   color: var(--clr-primary);
 }
 
-nav .nav-link.active {
+.nav .nav-link.active {
   color: var(--clr-primary);
 }
 
@@ -259,7 +260,7 @@ nav .nav-link.active {
 /***********************/
 
 .hero-section {
-  padding: 8rem 3.2rem 0;
+  padding: 9.6rem 3.2rem 0;
   position: relative;
   min-height: 100vh;
 }
@@ -352,12 +353,13 @@ h1 span {
 }
 
 .scroll-down-container {
+  z-index: 5;
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 50%;
-  -webkit-transform: translate(-50%, -10%);
-  -ms-transform: translate(-50%, -10%);
-  transform: translate(-50%, -10%);
+  -webkit-transform: translate(-50%, -5%);
+  -ms-transform: translate(-50%, -5%);
+  transform: translate(-50%, -5%);
   user-select: none;
 }
 
@@ -395,6 +397,8 @@ h1 span {
 
 .skills {
   margin-top: 4.4rem;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 8.6rem 8.6rem 8.6rem 8.6rem;
   grid-template-columns: repeat(4, 8.6rem);
 }
@@ -512,6 +516,7 @@ h1 span {
 }
 
 .project-img img {
+  width: 100%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -585,12 +590,18 @@ h1 span {
   margin-top: 3rem;
 }
 
+.small-blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .blog-img {
   border-radius: 10px;
   overflow: hidden;
 }
 
 .blog-img img {
+  width: 100%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -607,27 +618,21 @@ h1 span {
 
 .blog-heading {
   color: var(--clr-primary);
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .blog-subheading {
   color: var(--clr-text);
-  font-size: 4rem;
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 3.6rem;
   text-transform: capitalize;
 }
 
-.big-blog .blog-heading {
-  font-size: 3.2rem;
-}
-
-.big-blog .blog-subheading {
-  font-size: 3rem;
-}
-
 .small-blog .blog-heading {
+  margin-top: 1.6rem;
   font-size: 2.4rem;
 }
 

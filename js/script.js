@@ -70,10 +70,17 @@ navLink.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+
+    // Close mobile naviagtion
+    if (link.classList.contains("main-nav-link")) {
+      mobileNavBtn.classList.toggle("active");
+    }
   });
 });
 
 // ------------------------------- //
+
+// Toggle mobile naviagtion
 mobileNavBtn.addEventListener("click", function () {
   mobileNavBtn.classList.toggle("active");
 });
