@@ -49,6 +49,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- JAVASCRIPT -->
+    <script defer src="js/project.js"></script>
+    <script defer src="js/script.js"></script>
 
     <!-- TITLE -->
     <title>Ankit Gupta &vert; Backend Developer</title>
@@ -56,21 +61,58 @@
 
   <body>
     <!-- HEADER -->
-    <header>
-      <a href="#" class="logo">
+    <header
+      class="header flex align-items-center justify-content-space-between"
+    >
+      <a href="#" class="nav-link logo flex align-items-center gap-1">
         <i class="fa-solid fa-terminal"></i>
         <span>Ankit</span>
       </a>
-      <nav>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#blogs">Blogs</a>
-        <a class="nav-link" href="#contact">Contact</a>
+
+      <!-- MOBILE NAV -->
+      <button
+        class="btn-mobile-nav align-items-center justify-content-center flex-direction-column"
+      >
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+      </button>
+
+      <nav class="nav flex align-items-center gap-4">
+        <a class="nav-link main-nav-link" href="#about">About</a>
+        <a class="nav-link main-nav-link" href="#projects">Projects</a>
+        <a class="nav-link main-nav-link" href="#blogs">Blogs</a>
+        <a class="nav-link main-nav-link" href="#contact">Contact</a>
+
+        <!-- THEME TOGGLE BUTTON -->
+        <button class="switch" id="themeSwitch">
+          <span class="sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g fill="#ffd43b">
+                <circle r="5" cy="12" cx="12"></circle>
+                <path
+                  d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"
+                ></path>
+              </g>
+            </svg>
+          </span>
+
+          <span class="moon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path
+                d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+              ></path>
+            </svg>
+          </span>
+          <span class="slider"></span>
+        </button>
       </nav>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="container hero-section">
+    <section
+      class="container hero-section section flex align-items-center justify-content-space-between"
+    >
       <div>
         <h1>
           Hi! I’m Ankit <br />
@@ -96,7 +138,7 @@
         </div>
       </div>
       <div class="hero-img-box">
-        <div class="hero-img-container">
+        <div class="grid hero-img-container">
           <div class="hero-img-background"></div>
           <picture>
             <source srcset="assets/images/hero.webp" type="image/webp" />
@@ -111,7 +153,11 @@
         </div>
       </div>
 
-      <a class="scroll-down-container" title="Scroll Down" href="#about">
+      <a
+        class="nav-link scroll-down-container"
+        title="Scroll Down"
+        href="#skills"
+      >
         <div class="scroll-down">
           <svg
             viewBox="0 0 52 89"
@@ -133,46 +179,46 @@
     </section>
 
     <!-- SKILL SECTION-->
-    <section class="container skills-section">
+    <section class="container skills-section" id="skills">
       <h2 class="section-heading">Skills</h2>
       <h3 class="section-subheading">
         Cutting-Edge Developer Skills - Technical Mastery 🚀
       </h3>
 
-      <div class="skills">
-        <div class="skill">
+      <div class="skills gap-3">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/html.png" alt="HTML" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/css.png" alt="CSS" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img
             class="skill-img"
             src="assets/images/javascript.png"
             alt="JavaScript"
           />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/nodejs.png" alt="NodeJS" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/react.png" alt="React" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/java.png" alt="Java" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/spring.png" alt="Spring" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/mysql.png" alt="MySQL" />
         </div>
       </div>
     </section>
 
     <!-- ABOUT SECTION-->
-    <section class="container about-section">
+    <section class="container about-section section grid gap-4" id="about">
       <div class="about-img-box">
         <img src="assets/images/about.jpg" alt="Ankit Gupta Image" />
       </div>
@@ -187,17 +233,389 @@
           responsive web applications. From sleek interfaces to seamless user
           interactions, I strive to deliver exceptional digital experiences.
         </p>
-        <div class="more-info">
+        <div class="more-info flex gap-4">
           <div class="completed-projects">
-            <h5>10 +</h5>
+            <h5>10+</h5>
             <p>Completed Projects</p>
           </div>
           <div class="coding-hours">
-            <h5>1000 +</h5>
+            <h5>1000+</h5>
             <p>Hours of Coding</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- PROJECT SECTION-->
+    <section class="container project-section section" id="projects">
+      <h2 class="section-heading">Projects</h2>
+      <h3 class="section-subheading">
+        Each project is an exclusive development endeavor 🧩
+      </h3>
+
+      <div class="carousel-container">
+        <div class="carousel-nav">
+          <button id="prevBtn" class="nav-btn" title="Previous">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+          </button>
+          <button id="nextBtn" class="nav-btn" title="Next">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="carousel flex">
+          <!-- <div class="slide grid grid-template-columns-2 gap-3">
+            <a
+              class="project-img"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="assets/images/project1.png"
+                alt="Shopic E-Commerce App Image"
+              />
+            </a>
+            <div class="project-description">
+              <h4>Shopic E-Commerce App</h4>
+              <p class="section-text">
+                The Bummer E-commerce app offers a cart system 🛒, a sleek user
+                interface ✨, and a secure payment gateway 🔒 for a seamless
+                shopping experience.
+              </p>
+
+              <ul class="tech-use">
+                <li>React</li>
+                <li>Redux</li>
+                <li>Tailwind</li>
+                <li>Typescript</li>
+              </ul>
+
+              <div class="project-links flex align-items-center gap-2">
+                <a
+                  class="project-link"
+                  title="Source Code"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github fa-lg"></i
+                ></a>
+                <a
+                  class="project-link"
+                  title="Live Demo"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide grid grid-template-columns-2 gap-3">
+            <img
+              class="project-img"
+              src="assets/images/project1.png"
+              alt="Project-2 Image"
+            />
+            <div class="project-description">
+              <h4>Project 2 Name</h4>
+              <p class="section-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                voluptate quia ea libero accusantium molestias voluptatum
+                assumenda exercitationem.
+              </p>
+
+              <ul class="tech-use">
+                <li>React</li>
+                <li>Redux</li>
+                <li>Tailwind</li>
+                <li>Typescript</li>
+              </ul>
+
+              <div class="project-links flex align-items-center gap-2">
+                <a
+                  class="project-link"
+                  title="Source Code"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github fa-lg"></i
+                ></a>
+                <a
+                  class="project-link"
+                  title="Live Demo"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide grid grid-template-columns-2 gap-3">
+            <img
+              class="project-img"
+              src="assets/images/project1.png"
+              alt="Project-3 Image"
+            />
+            <div class="project-description">
+              <h4>Project 3 Name</h4>
+              <p class="section-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                voluptate quia ea libero accusantium molestias voluptatum
+                assumenda exercitationem.
+              </p>
+
+              <ul class="tech-use">
+                <li>React</li>
+                <li>Redux</li>
+                <li>Tailwind</li>
+                <li>Typescript</li>
+              </ul>
+
+              <div class="project-links flex align-items-center gap-2">
+                <a
+                  class="project-link"
+                  title="Source Code"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github fa-lg"></i
+                ></a>
+                <a
+                  class="project-link"
+                  title="Live Demo"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="carousel-dots"></div>
+      </div>
+    </section>
+
+    <!-- BLOG SECTION-->
+    <section class="container blog-section section" id="blogs">
+      <h2 class="section-heading">Blogs</h2>
+      <h3 class="section-subheading">Explore My Blogs! 🚀</h3>
+
+      <div class="blog-container">
+        <div class="big-blog grid grid-template-columns-2 gap-3">
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <div class="blog-img">
+              <img
+                src="assets/images/blog1.png"
+                alt="Master JavaScript Blog Image"
+              />
+            </div>
+          </a>
+          <div class="blog-description">
+            <h4 class="blog-heading">4 Jan 2023</h4>
+            <p class="blog-subheading">Master JavaScript</p>
+            <p class="section-text">
+              Arrays are an essential part of any programming language, and
+              JavaScript is no exception. They allow us to store and manipulate
+              multiple values in a single structure, making it easy to work with
+              large amounts of data
+            </p>
+          </div>
+        </div>
+
+        <div class="small-blog gap-3">
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="blog"
+          >
+            <div class="blog-img">
+              <img
+                src="assets/images/blog2.png"
+                alt="Master Cybersecurity Blog Image"
+              />
+            </div>
+            <h4 class="blog-heading">13 May 2023</h4>
+            <p class="blog-subheading">Master Cybersecurity</p>
+          </a>
+
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="blog"
+          >
+            <div class="blog-img">
+              <img
+                src="assets/images/blog3.png"
+                alt="Master Web Development Blog Image"
+              />
+            </div>
+            <h4 class="blog-heading">21 Feb 2023</h4>
+            <p class="blog-subheading">Master Web Development</p>
+          </a>
+
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="blog"
+          >
+            <div class="blog-img">
+              <img
+                src="assets/images/blog4.png"
+                alt="Master Cybersecurity Blog Image"
+              />
+            </div>
+            <h4 class="blog-heading">08 May 2022</h4>
+            <p class="blog-subheading">Master Ethical Hacking</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION-->
+    <section class="container contact-section section" id="contact">
+      <h2 class="section-heading">Contact</h2>
+      <h3 class="section-subheading">
+        Feel free to reach out to me anytime, don't hesitate! 👇
+      </h3>
+
+      <div class="contact-container grid grid-template-columns-2 gap-3">
+        <div class="contact-form-container">
+          <form
+            class="contact-form flex flex-direction-column"
+            autocomplete="off"
+            action="https://formsubmit.co/ankitgupta1181@gmail.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://ankitgupta1181.netlify.app/thanks.html"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="form-group flex flex-direction-column">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                minlength="3"
+                maxlength="30"
+                required
+              />
+            </div>
+
+            <div class="form-group flex flex-direction-column">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+
+            <div class="form-group flex flex-direction-column">
+              <label for="message">Message</label>
+              <textarea
+                rows="5"
+                minlength="3"
+                maxlength="1000"
+                id="message"
+                name="message"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="form-btn">Send</button>
+          </form>
+        </div>
+
+        <div class="contact-link-container">
+          <div class="contact-links flex gap-3">
+            <a
+              class="contact-link flex align-items-center gap-2"
+              href="https://goo.gl/maps/iLbayBYNYZNVe71w5"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="icon center">
+                <i class="fa-solid fa-location-arrow"></i>
+              </div>
+              <div>
+                <h5>Location</h5>
+                <p>Gurgaon, India</p>
+              </div>
+            </a>
+            <a
+              class="contact-link flex align-items-center gap-2"
+              href="tel:+916392456564"
+            >
+              <div class="icon center">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <div>
+                <h5>Phone</h5>
+                <p>+91 6392456564</p>
+              </div>
+            </a>
+            <a
+              class="contact-link flex align-items-center gap-2"
+              href="mailto:ankitgupta1181@gmail.com"
+            >
+              <div class="icon center"><i class="fa-solid fa-at"></i></div>
+              <div>
+                <h5>Email</h5>
+                <p>ankitgupta1181@gmail.com</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Ankit Gupta</p>
+      <div class="social-links center">
+        <a
+          class="social-link"
+          title="LinkedIn"
+          href="https://www.linkedin.com/in/ankit-gupta-5bb433174/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="social-link"
+          title="Github"
+          href="https://github.com/ankitgupta1020"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          class="social-link"
+          title="Twitter"
+          href="https://twitter.com/AnkitGu93350210"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>
