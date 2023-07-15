@@ -49,6 +49,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <!-- JAVASCRIPT -->
     <script defer src="js/script.js"></script>
@@ -59,17 +60,20 @@
 
   <body>
     <!-- HEADER -->
-    <header class="header">
-      <a href="#" class="nav-link logo">
+    <header
+      class="header flex align-items-center justify-content-space-between"
+    >
+      <a href="#" class="nav-link logo flex align-items-center gap-1">
         <i class="fa-solid fa-terminal"></i>
         <span>Ankit</span>
       </a>
-      <nav>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#blogs">Blogs</a>
-        <a class="nav-link" href="#contact">Contact</a>
-
+      <div class="flex align-items-center gap-4">
+        <nav class="flex align-items-center gap-4">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#blogs">Blogs</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
         <!-- THEME TOGGLE BUTTON -->
         <button class="switch" id="themeSwitch">
           <span class="sun">
@@ -92,11 +96,22 @@
           </span>
           <span class="slider"></span>
         </button>
-      </nav>
+
+        <!-- MOBILE NAV -->
+        <button
+          class="btn-mobile-nav align-items-center justify-content-center flex-direction-column"
+        >
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </button>
+      </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="container hero-section section">
+    <section
+      class="container hero-section section flex align-items-center justify-content-space-between"
+    >
       <div>
         <h1>
           Hi! I’m Ankit <br />
@@ -122,7 +137,7 @@
         </div>
       </div>
       <div class="hero-img-box">
-        <div class="hero-img-container">
+        <div class="grid hero-img-container">
           <div class="hero-img-background"></div>
           <picture>
             <source srcset="assets/images/hero.webp" type="image/webp" />
@@ -169,40 +184,40 @@
         Cutting-Edge Developer Skills - Technical Mastery 🚀
       </h3>
 
-      <div class="skills">
-        <div class="skill">
+      <div class="skills grid gap-3">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/html.png" alt="HTML" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/css.png" alt="CSS" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img
             class="skill-img"
             src="assets/images/javascript.png"
             alt="JavaScript"
           />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/nodejs.png" alt="NodeJS" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/react.png" alt="React" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/java.png" alt="Java" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/spring.png" alt="Spring" />
         </div>
-        <div class="skill">
+        <div class="skill center">
           <img class="skill-img" src="assets/images/mysql.png" alt="MySQL" />
         </div>
       </div>
     </section>
 
     <!-- ABOUT SECTION-->
-    <section class="container about-section section" id="about">
+    <section class="container about-section section grid gap-4" id="about">
       <div class="about-img-box">
         <img src="assets/images/about.jpg" alt="Ankit Gupta Image" />
       </div>
@@ -217,13 +232,13 @@
           responsive web applications. From sleek interfaces to seamless user
           interactions, I strive to deliver exceptional digital experiences.
         </p>
-        <div class="more-info">
+        <div class="more-info flex gap-4">
           <div class="completed-projects">
-            <h5>10 +</h5>
+            <h5>10+</h5>
             <p>Completed Projects</p>
           </div>
           <div class="coding-hours">
-            <h5>1000 +</h5>
+            <h5>1000+</h5>
             <p>Hours of Coding</p>
           </div>
         </div>
@@ -247,9 +262,9 @@
           </button>
         </div>
 
-        <div class="carousel">
+        <div class="carousel flex">
           <!-- PROJECT - 1 -->
-          <div class="slide">
+          <div class="slide grid grid-template-columns-2 gap-3">
             <a
               class="project-img"
               href="http://"
@@ -276,7 +291,7 @@
                 <li>Typescript</li>
               </ul>
 
-              <div class="project-links">
+              <div class="project-links flex align-items-center gap-2">
                 <a
                   class="project-link"
                   title="Source Code"
@@ -298,7 +313,7 @@
           </div>
 
           <!-- PROJECT - 2 -->
-          <div class="slide">
+          <div class="slide grid grid-template-columns-2 gap-3">
             <img
               class="project-img"
               src="assets/images/project1.png"
@@ -319,7 +334,7 @@
                 <li>Typescript</li>
               </ul>
 
-              <div class="project-links">
+              <div class="project-links flex align-items-center gap-2">
                 <a
                   class="project-link"
                   title="Source Code"
@@ -341,7 +356,7 @@
           </div>
 
           <!-- PROJECT - 3 -->
-          <div class="slide">
+          <div class="slide grid grid-template-columns-2 gap-3">
             <img
               class="project-img"
               src="assets/images/project1.png"
@@ -362,7 +377,7 @@
                 <li>Typescript</li>
               </ul>
 
-              <div class="project-links">
+              <div class="project-links flex align-items-center gap-2">
                 <a
                   class="project-link"
                   title="Source Code"
@@ -394,7 +409,7 @@
       <h3 class="section-subheading">Explore My Blogs! 🚀</h3>
 
       <div class="blog-container">
-        <div class="big-blog">
+        <div class="big-blog grid grid-template-columns-2 gap-3">
           <a href="http://" target="_blank" rel="noopener noreferrer">
             <div class="blog-img">
               <img
@@ -415,7 +430,7 @@
           </div>
         </div>
 
-        <div class="small-blog">
+        <div class="small-blog flex gap-3">
           <a
             href="http://"
             target="_blank"
@@ -474,10 +489,10 @@
         Feel free to reach out to me anytime, don't hesitate! 👇
       </h3>
 
-      <div class="contact-container">
+      <div class="contact-container grid grid-template-columns-2 gap-3">
         <div class="contact-form-container">
           <form
-            class="contact-form"
+            class="contact-form flex flex-direction-column"
             autocomplete="off"
             action="https://formsubmit.co/ankitgupta1181@gmail.com"
             method="POST"
@@ -490,7 +505,7 @@
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
 
-            <div class="form-group">
+            <div class="form-group flex flex-direction-column">
               <label for="name">Name</label>
               <input
                 type="text"
@@ -503,7 +518,7 @@
               />
             </div>
 
-            <div class="form-group">
+            <div class="form-group flex flex-direction-column">
               <label for="email">Email</label>
               <input
                 type="email"
@@ -514,7 +529,7 @@
               />
             </div>
 
-            <div class="form-group">
+            <div class="form-group flex flex-direction-column">
               <label for="message">Message</label>
               <textarea
                 rows="5"
@@ -532,21 +547,26 @@
         </div>
 
         <div class="contact-link-container">
-          <div class="contact-links">
+          <div class="contact-links flex gap-3">
             <a
-              class="contact-link"
+              class="contact-link flex align-items-center gap-2"
               href="https://goo.gl/maps/iLbayBYNYZNVe71w5"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div class="icon"><i class="fa-solid fa-location-arrow"></i></div>
+              <div class="icon center">
+                <i class="fa-solid fa-location-arrow"></i>
+              </div>
               <div>
                 <h5>Location</h5>
                 <p>Gurgaon, India</p>
               </div>
             </a>
-            <a class="contact-link" href="tel:+916392456564">
-              <div class="icon">
+            <a
+              class="contact-link flex align-items-center gap-2"
+              href="tel:+916392456564"
+            >
+              <div class="icon center">
                 <i class="fa-solid fa-mobile-screen-button"></i>
               </div>
               <div>
@@ -554,8 +574,11 @@
                 <p>+91 6392456564</p>
               </div>
             </a>
-            <a class="contact-link" href="mailto:ankitgupta1181@gmail.com">
-              <div class="icon"><i class="fa-solid fa-at"></i></div>
+            <a
+              class="contact-link flex align-items-center gap-2"
+              href="mailto:ankitgupta1181@gmail.com"
+            >
+              <div class="icon center"><i class="fa-solid fa-at"></i></div>
               <div>
                 <h5>Email</h5>
                 <p>ankitgupta1181@gmail.com</p>
@@ -569,7 +592,7 @@
     <!-- FOOTER -->
     <footer>
       <p>Ankit Gupta</p>
-      <div class="social-links">
+      <div class="social-links center">
         <a
           class="social-link"
           title="LinkedIn"

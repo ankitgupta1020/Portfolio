@@ -2,6 +2,7 @@ const themeSwitchBtn = document.getElementById("themeSwitch");
 const header = document.querySelector(".header");
 const navLink = document.querySelectorAll(".nav-link");
 const section = document.querySelectorAll(".section");
+const mobileNavBtn = document.querySelector(".btn-mobile-nav");
 const carousel = document.querySelector(".carousel");
 const slides = Array.from(carousel.children);
 const prevBtn = document.getElementById("prevBtn");
@@ -70,6 +71,11 @@ navLink.forEach(function (link) {
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
   });
+});
+
+// ------------------------------- //
+mobileNavBtn.addEventListener("click", function () {
+  mobileNavBtn.classList.toggle("active");
 });
 
 // ------------------------------- //

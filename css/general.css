@@ -82,16 +82,99 @@ a {
 }
 
 /***********************/
-/* HELPER CLASSES */
+/* REUSEABLE CSS */
 /***********************/
 
 .container {
   max-width: 112rem;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
-.fz-74 {
-  font-size: 7.4rem;
+.section {
+  padding: 9.6rem 3.2rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid-template-columns-2 {
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.flex {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox; /* ie 10 */
+  display: -webkit-flex;
+  display: flex;
+}
+
+.align-items-center {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center; /* ie 10 */
+  align-items: center;
+}
+
+.justify-content-center {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center; /* ie 10 */
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: justify; /* ie 10 */
+  justify-content: space-between;
+}
+
+.center {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox; /* ie 10 */
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center; /* ie 10 */
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.flex-direction-column {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  -webkit-box-orient: vertical; /*ie10*/
+  flex-direction: column;
 }
 
 .section-heading {
@@ -112,6 +195,30 @@ a {
   font-size: 2.2rem;
   letter-spacing: 0.2px;
   margin-top: 1.6rem;
+}
+
+/***********************/
+/* HELPER CLASSES */
+/***********************/
+
+.fz-74 {
+  font-size: 7.4rem;
+}
+
+.gap-1 {
+  gap: 1.2rem;
+}
+
+.gap-2 {
+  gap: 2.4rem;
+}
+
+.gap-3 {
+  gap: 3.2rem;
+}
+
+.gap-4 {
+  gap: 4.8rem;
 }
 
 /* 
