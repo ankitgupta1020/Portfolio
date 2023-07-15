@@ -111,7 +111,8 @@ a {
   -ms-display: flex;
   -o-display: flex;
   display: -webkit-box;
-  display: -ms-flexbox; /* ie 10 */
+  display: -ms-flexbox;
+  /* ie 10 */
   display: -webkit-flex;
   display: flex;
 }
@@ -122,7 +123,8 @@ a {
   -ms-align-items: center;
   -o-align-items: center;
   -webkit-box-align: center;
-  -ms-flex-align: center; /* ie 10 */
+  -ms-flex-align: center;
+  /* ie 10 */
   align-items: center;
 }
 
@@ -132,7 +134,8 @@ a {
   -ms-justify-content: center;
   -o-justify-content: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center; /* ie 10 */
+  -ms-flex-pack: center;
+  /* ie 10 */
   justify-content: center;
 }
 
@@ -142,7 +145,8 @@ a {
   -ms-justify-content: space-between;
   -o-justify-content: space-between;
   -webkit-box-pack: space-between;
-  -ms-flex-pack: justify; /* ie 10 */
+  -ms-flex-pack: justify;
+  /* ie 10 */
   justify-content: space-between;
 }
 
@@ -152,7 +156,8 @@ a {
   -ms-display: flex;
   -o-display: flex;
   display: -webkit-box;
-  display: -ms-flexbox; /* ie 10 */
+  display: -ms-flexbox;
+  /* ie 10 */
   display: -webkit-flex;
   display: flex;
 
@@ -161,7 +166,8 @@ a {
   -ms-align-items: center;
   -o-align-items: center;
   -webkit-box-align: center;
-  -ms-flex-align: center; /* ie 10 */
+  -ms-flex-align: center;
+  /* ie 10 */
   align-items: center;
 
   -webkit-justify-content: center;
@@ -169,7 +175,8 @@ a {
   -ms-justify-content: center;
   -o-justify-content: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center; /* ie 10 */
+  -ms-flex-pack: center;
+  /* ie 10 */
   justify-content: center;
 }
 
@@ -178,7 +185,8 @@ a {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   -o-flex-direction: column;
-  -webkit-box-orient: vertical; /*ie10*/
+  -webkit-box-orient: vertical;
+  /*ie10*/
   flex-direction: column;
 }
 
