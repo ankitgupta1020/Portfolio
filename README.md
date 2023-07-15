@@ -3,7 +3,7 @@ Welcome to my personal portfolio website! Here, I showcase my projects and skill
 
 ## Contributors
 * **Krishandeep Singh**](https://github.com/krishandeep17-)
-[![Krishandeep Singh](https://avatars.githubusercontent.com/u/2843854?v=4)]
+[![Krishandeep Singh](https://avatars.githubusercontent.com/u/96704619?v=4)]
     * Changed the overall look and feel of the website by using a different color scheme and font.
     * Added a new section to the website that showcases your work.
     * Added a new feature that allows visitors to contact you directly from the website.
