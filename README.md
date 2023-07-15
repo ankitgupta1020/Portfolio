@@ -13,10 +13,10 @@ Welcome to my portfolio website! This website showcases my work, skills, and exp
 
 ## Features
 
-- *Project Showcase*: Explore a curated collection of my projects, each with a detailed description, live demo link, and source code repository link.
-- *Skills & Expertise*: Discover the key skills and technologies that I specialize in, providing an overview of my capabilities.
-- *About Me*: Learn more about my background, professional journey, and passion for [Your Profession].
-- *Contact*: Get in touch with me easily through the provided contact information or the contact form.
+- **Project Showcase**: Explore a curated collection of my projects, each with a detailed description, live demo link, and source code repository link.
+- **Skills & Expertise**: Discover the key skills and technologies that I specialize in, providing an overview of my capabilities.
+- **About Me**: Learn more about my background, professional journey, and passion for Backend Developer.
+- **Contact**: Get in touch with me easily through the provided contact information or the contact form.
 
 ## Technologies Used
 
@@ -40,7 +40,7 @@ Feel free to explore the website and navigate through the different sections. Yo
 
 I would like to extend my heartfelt thanks to [Krishandeep](https://github.com/krishandeep17 "Github") for their invaluable assistance and support in building this portfolio website. Their expertise, guidance, and collaboration have been instrumental in bringing this project to life. I am immensely grateful for their contributions and dedication throughout the development process.
 
-Thank you, [Krishandeep](https://www.linkedin.com/in/krishandeep17 "LinkedIn"), for your invaluable help and being an amazing collaborator on this journey!
+Thank you, [Krishandeep](https://www.linkedin.com/in/krishandeep17 "LinkedIn"), for your invaluable help and for being an amazing collaborator on this journey!
 
 ## Contributing
 
