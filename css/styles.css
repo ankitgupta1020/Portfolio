@@ -356,11 +356,11 @@ h1 span {
 .scroll-down-container {
   z-index: 5;
   position: absolute;
-  bottom: 10%;
+  bottom: 7%;
   left: 50%;
-  -webkit-transform: translate(-50%, -10%);
-  -ms-transform: translate(-50%, -10%);
-  transform: translate(-50%, -10%);
+  -webkit-transform: translate(-50%, -7%);
+  -ms-transform: translate(-50%, -7%);
+  transform: translate(-50%, -7%);
   user-select: none;
 }
 
