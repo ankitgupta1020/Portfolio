@@ -1,6 +1,7 @@
 /**************************/
 /* BELOW 1280px */
 /**************************/
+
 @media (max-width: 80em) {
   html {
     font-size: 58%;
@@ -10,6 +11,7 @@
 /**************************/
 /* BELOW 1024px */
 /**************************/
+
 @media (max-width: 64em) {
   html {
     font-size: 52%;
@@ -19,6 +21,7 @@
 /**************************/
 /* BELOW 864px */
 /**************************/
+
 @media (max-width: 54em) {
   .nav {
     display: none;
@@ -64,6 +67,10 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center; /* ie 10 */
     justify-content: center;
+  }
+
+  .hero-img-box {
+    max-width: 30rem;
   }
 
   .grid {
@@ -126,6 +133,7 @@
 /**************************/
 /* BELOW 608px */
 /**************************/
+
 @media (max-width: 38em) {
   html {
     font-size: 50%;
@@ -160,6 +168,10 @@
   }
 
   .contact-form-container {
+    padding: 3.2rem;
+  }
+
+  .thanks-container {
     padding: 3.2rem;
   }
 }

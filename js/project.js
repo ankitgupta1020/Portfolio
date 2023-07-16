@@ -1,21 +1,21 @@
 const projects = [
   {
     id: 1,
-    title: "Do you know me",
-    live: "https://replit.com/@AnkitGupta55/End-game#index.js?embed=1&output=1",
-    github: "https://github.com/ankitgupta1020/Quize-ankit.git",
-    img: "assets/images/project2.jpg",
-    techs: ["React", "Redux", "Tailwind", "Typescript"],
+    title: "PG Life",
+    live: "https://pglife-gurgaon.netlify.app",
+    github: "https://github.com/ankitgupta1020/PGLife",
+    img: "assets/projects/pg-life.jpg",
+    techs: ["HTML", "CSS", "JavaScript"],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate quia ea libero accusantium molestias voluptatum assumenda exercitationem.",
   },
   {
     id: 2,
-    title: "PGLife",
-    live: "https://pglife-gurgaon.netlify.app",
-    github: "https://github.com/ankitgupta1020/PGLife",
-    img: "assets/images/project1.jpg",
-    techs: ["React", "Redux", "Tailwind", "Typescript"],
+    title: "Do you know me",
+    live: "https://replit.com/@AnkitGupta55/End-game#index.js?embed=1&output=1",
+    github: "https://github.com/ankitgupta1020/Quize-ankit.git",
+    img: "assets/projects/do-you-know-me.jpg",
+    techs: ["HTML", "CSS", "JavaScript"],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate quia ea libero accusantium molestias voluptatum assumenda exercitationem.",
   },
@@ -24,8 +24,8 @@ const projects = [
     title: "Banana Speak",
     live: "https://ankit1020bananaspeak.netlify.app",
     github: "https://github.com/ankitgupta1020/Banana-speak.git",
-    img: "assets/images/project3.jpg",
-    techs: ["React", "Redux", "Tailwind", "Typescript"],
+    img: "assets/projects/banana-speak.jpg",
+    techs: ["HTML", "CSS", "JavaScript"],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate quia ea libero accusantium molestias voluptatum assumenda exercitationem.",
   },
@@ -35,8 +35,8 @@ const projects = [
     live: "https://palindrome-buday.netlify.app",
     github:
       "https://github.com/ankitgupta1020/Is-your-birthday-a-palindrome-.git",
-    img: "assets/images/project4.jpg",
-    techs: ["React", "Redux", "Tailwind", "Typescript"],
+    img: "assets/projects/palindrome-birthday.jpg",
+    techs: ["HTML", "CSS", "JavaScript"],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate quia ea libero accusantium molestias voluptatum assumenda exercitationem.",
   },
@@ -45,8 +45,8 @@ const projects = [
     title: "Is your birthday lucky?",
     live: "https://is-it-your-lucky-birthday.netlify.app",
     github: "https://github.com/ankitgupta1020/Is-your-birthday-lucky.git",
-    img: "assets/images/project5.jpg",
-    techs: ["React", "Redux", "Tailwind", "Typescript"],
+    img: "assets/projects/birthday-lucky.jpg",
+    techs: ["HTML", "CSS", "JavaScript"],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate quia ea libero accusantium molestias voluptatum assumenda exercitationem.",
   },
