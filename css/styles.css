@@ -453,12 +453,12 @@ h1 span {
 /***********************/
 
 .carousel-container {
-  margin-top: 3rem;
+  margin-top: 2rem;
   overflow-x: hidden;
 }
 
 .carousel-nav {
-  padding-left: 1rem;
+  padding: 1rem 0 0 1rem;
   margin-bottom: 3rem;
 }
 
