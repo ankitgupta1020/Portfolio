@@ -54,10 +54,34 @@
 }
 
 /***********************/
+/* Body*/
+/***********************/
+
+
+/* body {
+  background-color: #00bfff52;
+} */
+/* body {
+  background: linear-gradient(to bottom, #ff0000, #00ff00, #0000ff);
+} */
+
+/* body {
+  background: linear-gradient(to right, #ff0000, #00ff00, #0000ff, #ffff00);
+} */
+
+ body {
+  background: linear-gradient(to bottom, #f1c40f69, #e780267e, #3498db65, #2ecc706d);
+} 
+/* body {
+  background: linear-gradient(to bottom, #ffffff, #000000);
+  color: #ffffff; /* Set text color to white for high contrast */
+ 
+
+/***********************/
 /* THEME SWITCH */
 /***********************/
 
-.switch {
+/* .switch {
   background: none;
   border: none;
   cursor: pointer;
@@ -121,7 +145,7 @@
 }
 
 /* .switch:hover */
-.sun svg {
+/* .sun svg {
   animation: rotate 15s linear infinite;
 }
 
@@ -137,10 +161,10 @@
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
+} */
 
 /* .switch:hover */
-.moon svg {
+/* .moon svg {
   animation: tilt 5s linear infinite;
 }
 
@@ -178,7 +202,7 @@
   -webkit-transform: translateX(3rem);
   -ms-transform: translateX(3rem);
   transform: translateX(3rem);
-}
+} */
 
 /***********************/
 /* MOBILE NAV */
@@ -333,11 +357,9 @@ h1 span {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background: linear-gradient(
-    180deg,
-    rgba(78, 125, 240, 0.5) 0%,
-    rgba(106, 129, 251, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(78, 125, 240, 0.5) 0%,
+      rgba(106, 129, 251, 0) 100%);
 }
 
 .hero-img {
@@ -507,7 +529,8 @@ h1 span {
 .slide {
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
-  -webkit-flex-basis: 100%; /* Safari 6.1+ */
+  -webkit-flex-basis: 100%;
+  /* Safari 6.1+ */
   flex-basis: 100%;
 }
 
