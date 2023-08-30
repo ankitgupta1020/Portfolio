@@ -89,6 +89,63 @@
   </header>
 
   <!-- HERO SECTION -->
+  <!-- <section class="container hero-section section flex align-items-center justify-content-space-between">
+    <div>
+      <h1>
+        Hi! I’m Ankit <br />
+        <span>Backen<span class="fz-74">D</span>eveloper</span>
+      </h1>
+      <div class="social-links">
+        <a class="social-link" title="Github" href="https://github.com/ankitgupta1020" target="_blank"
+          rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        <a class="social-link" title="LinkedIn" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/"
+          target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="hero-img-box">
+      <div class="grid hero-img-container">
+        <div class="hero-img-background"></div>
+        <picture>
+          <source srcset="assets/images/hero.webp" type="image/webp" />
+          <source srcset="assets/images/hero.png" type="image/png" />
+
+          <img class="hero-img" src="assets/images/hero.png" alt="Ankit Gupta Image" />
+        </picture>
+      </div>
+    </div>
+
+    <a class="nav-link scroll-down-container" title="Scroll Down" href="#skills">
+      <div class="scroll-down">
+        <svg viewBox="0 0 52 89" fill="none" xmlns="http://www.w3.org/2000/svg" class="mouse">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M47.6056 63.1025V25.8975C47.6056 14.0121 37.9325 4.37705 26 4.37705C14.0675 4.37705 4.39437 14.0121 4.39437 25.8975V63.1025C4.39437 74.9879 14.0675 84.623 26 84.623C37.9325 84.623 47.6056 74.9879 47.6056 63.1025ZM26 0C11.6406 0 0 11.5947 0 25.8975V63.1025C0 77.4053 11.6406 89 26 89C40.3594 89 52 77.4053 52 63.1025V25.8975C52 11.5947 40.3594 0 26 0Z">
+          </path>
+          <path
+            d="M23 34.5526C23 32.5906 24.567 31 26.5 31C28.433 31 30 32.5906 30 34.5526V54.4474C30 56.4094 28.433 58 26.5 58C24.567 58 23 56.4094 23 54.4474V34.5526Z">
+          </path>
+        </svg>
+      </div>
+    </a>
+  </section> -->
+  <style>
+    .hero-section h1 {
+      font-size: 4rem;
+      animation: text-fade 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes text-fade {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
   <section class="container hero-section section flex align-items-center justify-content-space-between">
     <div>
       <h1>
@@ -127,6 +184,7 @@
       </div>
     </a>
   </section>
+
 
   <!-- SKILL SECTION-->
   <section class="container skills-section" id="skills">
@@ -194,6 +252,27 @@
   </section>
 
   <!-- PROJECT SECTION-->
+  <!-- <section class="container project-section section" id="projects">
+    <h2 class="section-heading">Projects</h2>
+    <h3 class="section-subheading">
+      Each project is an exclusive development endeavor 🧩
+    </h3>
+
+    <div class="carousel-container">
+      <div class="carousel-nav">
+        <button id="prevBtn" class="nav-btn" title="Previous">
+          <i class="fa-solid fa-circle-arrow-left"></i>
+        </button>
+        <button id="nextBtn" class="nav-btn" title="Next">
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="carousel flex"></div>
+
+      <div class="carousel-dots"></div>
+    </div>
+  </section> -->
   <section class="container project-section section" id="projects">
     <h2 class="section-heading">Projects</h2>
     <h3 class="section-subheading">
@@ -215,6 +294,40 @@
       <div class="carousel-dots"></div>
     </div>
   </section>
+
+  <script>
+    // JavaScript to create an automatic carousel
+    const carouselContainer = document.querySelector(".carousel");
+    const carouselItems = carouselContainer.children;
+    let currentIndex = 0;
+
+    function showItem(index) {
+      for (let i = 0; i < carouselItems.length; i++) {
+        carouselItems[i].style.display = "none";
+      }
+      carouselItems[index].style.display = "block";
+    }
+
+    function nextItem() {
+      currentIndex = (currentIndex + 1) % carouselItems.length;
+      showItem(currentIndex);
+    }
+
+    function prevItem() {
+      currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+      showItem(currentIndex);
+    }
+
+    // Set an interval to automatically advance the carousel every 3 seconds (adjust as needed).
+    setInterval(nextItem, 3000);
+
+    // Initially, display the first item.
+    showItem(currentIndex);
+
+    // Event listeners for previous and next buttons
+    document.getElementById("prevBtn").addEventListener("click", prevItem);
+    document.getElementById("nextBtn").addEventListener("click", nextItem);
+  </script>
 
 
   <!-- Add more note cards as needed -->
@@ -303,95 +416,96 @@
         <a href="https://drive.google.com/file/d/1oa1c3wGDIM5sH_DBTpBWSoz6sgXq16k9/view?usp=drive_link"
           target="_blank">Download PDF</a>
       </div>
+    </div>
+  </section>
 
-      <!-- CONTACT SECTION-->
-      <section class="container contact-section section" id="contact">
-        <h2 class="section-heading">Contact</h2>
-        <h3 class="section-subheading">
-          Feel free to reach out to me anytime, don't hesitate! 👇
-        </h3>
+  <!-- CONTACT SECTION-->
+  <section class="container contact-section section" id="contact">
+    <h2 class="section-heading">Contact</h2>
+    <h3 class="section-subheading">
+      Feel free to reach out to me anytime, don't hesitate! 👇
+    </h3>
 
-        <div class="contact-container grid grid-template-columns-2 gap-3">
-          <div class="contact-form-container">
-            <form class="contact-form flex flex-direction-column" autocomplete="off"
-              action="https://formsubmit.co/ankitgupta1181@gmail.com" method="POST">
-              <input type="hidden" name="_next" value="https://ankitgupta1181.netlify.app/thanks.html" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
+    <div class="contact-container grid grid-template-columns-2 gap-3">
+      <div class="contact-form-container">
+        <form class="contact-form flex flex-direction-column" autocomplete="off"
+          action="https://formsubmit.co/ankitgupta1181@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="https://ankitgupta1181.netlify.app/thanks.html" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
 
-              <div class="form-group flex flex-direction-column">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" minlength="3" maxlength="30"
-                  required />
-              </div>
-
-              <div class="form-group flex flex-direction-column">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required />
-              </div>
-
-              <div class="form-group flex flex-direction-column">
-                <label for="message">Message</label>
-                <textarea rows="5" minlength="5" maxlength="1000" id="message" name="message"
-                  placeholder="Enter your message" required></textarea>
-              </div>
-
-              <button type="submit" class="form-btn">Send</button>
-            </form>
+          <div class="form-group flex flex-direction-column">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" minlength="3" maxlength="30"
+              required />
           </div>
 
-          <div class="contact-link-container">
-            <div class="contact-links flex gap-3">
-              <a class="contact-link flex align-items-center gap-2" href="https://goo.gl/maps/iLbayBYNYZNVe71w5"
-                target="_blank" rel="noopener noreferrer">
-                <div class="icon center">
-                  <i class="fa-solid fa-location-arrow"></i>
-                </div>
-                <div>
-                  <h5>Location</h5>
-                  <p>Gurgaon, India</p>
-                </div>
-              </a>
-              <a class="contact-link flex align-items-center gap-2" href="tel:+916392456564">
-                <div class="icon center">
-                  <i class="fa-solid fa-mobile-screen-button"></i>
-                </div>
-                <div>
-                  <h5>Phone</h5>
-                  <p>+91 6392456564</p>
-                </div>
-              </a>
-              <a class="contact-link flex align-items-center gap-2" href="mailto:ankitgupta1181@gmail.com">
-                <div class="icon center"><i class="fa-solid fa-at"></i></div>
-                <div>
-                  <h5>Email</h5>
-                  <p>ankitgupta1181@gmail.com</p>
-                </div>
-              </a>
-            </div>
+          <div class="form-group flex flex-direction-column">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required />
           </div>
-        </div>
-      </section>
 
+          <div class="form-group flex flex-direction-column">
+            <label for="message">Message</label>
+            <textarea rows="5" minlength="5" maxlength="1000" id="message" name="message"
+              placeholder="Enter your message" required></textarea>
+          </div>
 
-      <!-- FOOTER -->
-      <footer>
-        <p>Ankit Gupta</p>
-        <div class="social-links center">
-          <a class="social-link" title="LinkedIn" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/"
+          <button type="submit" class="form-btn">Send</button>
+        </form>
+      </div>
+
+      <div class="contact-link-container">
+        <div class="contact-links flex gap-3">
+          <a class="contact-link flex align-items-center gap-2" href="https://goo.gl/maps/iLbayBYNYZNVe71w5"
             target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-linkedin"></i>
+            <div class="icon center">
+              <i class="fa-solid fa-location-arrow"></i>
+            </div>
+            <div>
+              <h5>Location</h5>
+              <p>Gurgaon, India</p>
+            </div>
           </a>
-          <a class="social-link" title="Github" href="https://github.com/ankitgupta1020" target="_blank"
-            rel="noopener noreferrer">
-            <i class="fa-brands fa-github"></i>
+          <a class="contact-link flex align-items-center gap-2" href="tel:+916392456564">
+            <div class="icon center">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div>
+              <h5>Phone</h5>
+              <p>+91 6392456564</p>
+            </div>
           </a>
-          <a class="social-link" title="X" href="https://x.com/AnkitGu93350210" target="_blank"
-            rel="noopener noreferrer">
-            <i class="fa-brands fa-x "></i>
+          <a class="contact-link flex align-items-center gap-2" href="mailto:ankitgupta1181@gmail.com">
+            <div class="icon center"><i class="fa-solid fa-at"></i></div>
+            <div>
+              <h5>Email</h5>
+              <p>ankitgupta1181@gmail.com</p>
+            </div>
           </a>
         </div>
-      </footer>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Ankit Gupta</p>
+    <div class="social-links center">
+      <a class="social-link" title="LinkedIn" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank"
+        rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a class="social-link" title="Github" href="https://github.com/ankitgupta1020" target="_blank"
+        rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a class="social-link" title="X" href="https://x.com/AnkitGu93350210" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-x "></i>
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>
