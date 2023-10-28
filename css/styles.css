@@ -897,7 +897,8 @@ footer .social-link:active {
   transform: translateY(-0.3rem);
 } */
 footer {
-  background-color: #FFFFFF; /* Your footer background color */
+  background-color: #FFFFFF;
+  /* Your footer background color */
   position: relative;
   overflow: hidden;
 }
@@ -905,38 +906,50 @@ footer {
 footer::after {
   content: "";
   position: absolute;
-  bottom: -50px; /* Adjust this value based on your curve size */
+  bottom: -50px;
+  /* Adjust this value based on your curve size */
   left: 0;
   width: 100%;
-  height: 50px; /* Adjust this value based on your curve size */
-  background-color: #FFFFFF; /* Your footer background color */
+  height: 50px;
+  /* Adjust this value based on your curve size */
+  background-color: #FFFFFF;
+  /* Your footer background color */
   border-top-left-radius: 50% 25px;
   border-top-right-radius: 50% 25px;
 }
 
 footer {
   padding: 20px 0;
-  background-color: #1A73E8;  /* A bright blue, but feel free to adjust */
+  background-color: #1A73E8;
+  /* A bright blue, but feel free to adjust */
   color: white;
+
+
   text-align: center;
+  background: linear-gradient(to bottom, #FFFFFF, #0000FF);
 }
 
 footer p {
-  font-size: 24px;   /* Emphasizing the name */
+  font-size: 24px;
+  /* Emphasizing the name */
   margin-bottom: 15px;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 20px;   /* Space between icons */
+  gap: 20px;
+  /* Space between icons */
 }
 
 .social-link i {
-  font-size: 20px;  /* Adjusting the size of icons */
-  transition: transform 0.3s ease;   /* Smooth transition for hover effect */
+  font-size: 20px;
+  /* Adjusting the size of icons */
+  transition: transform 0.3s ease;
+  /* Smooth transition for hover effect */
 }
 
 .social-link:hover i {
-  transform: scale(1.1);  /* Slightly enlarging icons on hover */
+  transform: scale(1.1);
+  /* Slightly enlarging icons on hover */
 }
