@@ -2,9 +2,9 @@
 /* CSS VARIABLE */
 /***********************/
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-:root {
+/* :root {
   --clr-primary: #558aff;
   --clr-primary-darker: #446ecc;
   --clr-background: #e5ebf4;
@@ -15,6 +15,18 @@
   --clr-white: #fff;
   --clr-white-darker: #ddd;
   --clr-black: #111;
+} */
+:root {
+  --clr-primary: #1A73E8;           /* Bright Blue */
+  --clr-primary-darker: #0F5DBF;    /* Darker Blue */
+  --clr-background: #F6F7F9;        /* Off White */
+  --clr-background-transparent: rgba(246, 247, 249, 0.95); /* Transparent Off White */
+  --clr-text: #111;                 /* Almost Black */
+  --clr-text-lighter: #575757;      /* Medium Gray */
+  --clr-white-transparent: rgba(255, 255, 255, 0.95); /* Transparent White */
+  --clr-white: #FFFFFF;             /* Pure White */
+  --clr-white-darker: #E2E2E2;      /* Light Gray */
+  --clr-black: #0B0B0B;             /* Deep Black */
 }
 
 .dark-mode {
