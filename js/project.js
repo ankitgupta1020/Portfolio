@@ -59,12 +59,7 @@ projects.forEach((project) => {
 
   // Create slide container
   const slideContainer = document.createElement("div");
-  slideContainer.classList.add(
-    "slide",
-    "grid",
-    "grid-template-columns-2",
-    "gap-3"
-  );
+  slideContainer.classList.add("slide", "grid", "grid-template-columns-2", "gap-3");
 
   // Create project image link
   const imageLink = document.createElement("a");
@@ -107,12 +102,7 @@ projects.forEach((project) => {
 
   // Create project links container
   const projectLinks = document.createElement("div");
-  projectLinks.classList.add(
-    "project-links",
-    "flex",
-    "align-items-center",
-    "gap-2"
-  );
+  projectLinks.classList.add("project-links", "flex", "align-items-center", "gap-2");
 
   // Create source code link
   const sourceCodeLink = document.createElement("a");

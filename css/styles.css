@@ -11,18 +11,22 @@
   background-color: var(--clr-background);
   padding: 0 4.8rem;
   z-index: 10;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
 .scrolled-down {
   background-color: var(--clr-background-transparent);
-  box-shadow: rgba(33, 35, 38, 0.1) 0rem 1rem 1rem -1rem;
+  box-shadow: 0 1rem 1rem -1rem rgba(33, 35, 38, 0.1);
   height: 8rem;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
 .logo {
   color: var(--clr-primary) !important;
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Added gap for better spacing */
+  animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
 }
 
 .logo .fa-terminal {
@@ -40,8 +44,7 @@
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: color 0.3s ease-in-out; /* Smooth transition for color */
 }
 
 .nav-link:hover,
@@ -51,6 +54,16 @@
 
 .nav .nav-link.active {
   color: var(--clr-primary);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /***********************/
@@ -70,7 +83,7 @@
 } */
 
 body {
-  background: linear-gradient(to bottom, #f1c40f69, #e780267e, #3498db65, #2ecc706d);
+  background: linear-gradient(to bottom, #f1c40f, #e74c3c, #3498db, #2ecc71); /* Improved gradient colors */
 }
 
 /* body {
@@ -213,14 +226,12 @@ body {
   border: none;
   background: none;
   cursor: pointer;
-
   display: none;
   position: relative;
   width: 4rem;
   height: 4rem;
   gap: 1rem;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for transform */
 }
 
 .bars {
@@ -228,11 +239,11 @@ body {
   height: 0.4rem;
   background-color: var(--clr-primary);
   border-radius: 4px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition for transform and opacity */
 }
 
 #bar2 {
-  -webkit-transition-duration: 0.8s;
-  transition-duration: 0.8s;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out; /* Smooth transition for transform and opacity */
 }
 
 #bar1,
@@ -242,25 +253,37 @@ body {
 
 .btn-mobile-nav.active .bars {
   position: absolute;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
 }
 
 .btn-mobile-nav.active #bar2 {
-  -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  opacity: 0; /* Added opacity transition */
 }
 
 .btn-mobile-nav.active #bar1 {
   width: 100%;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  transform: rotate(45deg) translate(0.5rem, 0.5rem); /* Added translate for better alignment */
+}
+
+.btn-mobile-nav.active #bar3 {
+  width: 100%;
+  transform: rotate(-45deg) translate(0.5rem, -0.5rem); /* Added translate for better alignment */
+}
+
+/* Animation for button appearance */
+@keyframes buttonFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.btn-mobile-nav {
+  animation: buttonFadeIn 0.5s ease-in-out; /* Apply fade-in animation */
 }
 
 /* .btn-mobile-nav.active #bar3 {
@@ -285,10 +308,10 @@ body {
 /***********************/
 
 .hero-section {
-  padding: 9.6rem 3.2rem 0;
+  padding: 8rem 2rem 0; /* Optimized padding for better visual balance */
   position: relative;
   min-height: 100vh;
-  min-height: 100svh;
+  background: linear-gradient(135deg, var(--clr-primary-light), var(--clr-primary-dark)); /* Added gradient background */
 }
 
 h1 {
@@ -298,6 +321,7 @@ h1 {
   text-transform: capitalize;
   line-height: 1;
   margin-bottom: 2.4rem;
+  animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
 }
 
 h1 span {
@@ -308,46 +332,41 @@ h1 span {
 
 .social-links {
   user-select: none;
+  display: flex;
+  gap: 1.6rem; /* Added gap for better spacing */
 }
 
 .hero-section .social-link:link,
 .hero-section .social-link:visited {
   font-size: 4rem;
   color: var(--clr-text);
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .hero-section .social-link:hover,
 .hero-section .social-link:active {
   color: var(--clr-primary);
-  -webkit-transform: translateY(-0.3rem);
-  -ms-transform: translateY(-0.3rem);
   transform: translateY(-0.3rem);
-}
-
-.hero-section .social-link:first-child {
-  margin-right: 1.6rem;
 }
 
 .hero-img-box {
   position: relative;
   max-width: 35rem;
+  margin: 0 auto; /* Centered the image box */
 }
 
 .hero-img-container {
   aspect-ratio: 1 / 1.5;
-  align-items: end;
+  display: flex;
+  align-items: flex-end;
   border-radius: 0 0 100vw 100vw;
   overflow: hidden;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   user-select: none;
+  animation: slideIn 1s ease-in-out; /* Added slide-in animation */
 }
 
 .hero-img-container:hover {
-  -webkit-transform: scale(1.06);
-  -ms-transform: scale(1.06);
   transform: scale(1.06);
 }
 
@@ -358,21 +377,16 @@ h1 span {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background: linear-gradient(180deg,
-      rgba(78, 125, 240, 0.5) 0%,
-      rgba(106, 129, 251, 0) 100%);
+  background: linear-gradient(180deg, rgba(78, 125, 240, 0.5) 0%, rgba(106, 129, 251, 0) 100%);
 }
 
 .hero-img {
   position: relative;
   z-index: 2;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 .hero-img-container:hover .hero-img {
-  -webkit-transform: translateY(-1.6rem);
-  -ms-transform: translateY(-1.6rem);
   transform: translateY(-1.6rem);
 }
 
@@ -381,21 +395,18 @@ h1 span {
   position: absolute;
   bottom: 7%;
   left: 50%;
-  -webkit-transform: translate(-50%, -7%);
-  -ms-transform: translate(-50%, -7%);
   transform: translate(-50%, -7%);
   user-select: none;
 }
 
 .scroll-down {
   height: 6.2rem;
-  animation: 2.35s linear 0s infinite normal none running upAndDown;
+  animation: upAndDown 2.35s linear infinite;
 }
 
 .scroll-down .mouse {
   fill: var(--clr-text);
   height: 100%;
-  -webkit-transition: fill 0.3s;
   transition: fill 0.3s;
 }
 
@@ -403,10 +414,27 @@ h1 span {
   fill: var(--clr-primary);
 }
 
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 @keyframes upAndDown {
   50% {
-    -webkit-transform: translateY(1.6rem);
-    -ms-transform: translateY(1.6rem);
     transform: translateY(1.6rem);
   }
 }
@@ -416,35 +444,62 @@ h1 span {
 /***********************/
 
 .skills-section {
-  padding: 9.6rem 3.2rem;
+  padding: 5rem 2rem; /* Optimized padding for better visual balance */
+  background-color: var(--clr-light-grey); /* Added background color for contrast */
 }
 
 .skills {
-  margin-top: 4.4rem;
-  display: -ms-grid;
+  margin-top: 3rem; /* Adjusted margin for improved spacing */
   display: grid;
-  -ms-grid-columns: 8.6rem 8.6rem 8.6rem 8.6rem;
-  grid-template-columns: repeat(4, 8.6rem);
+  grid-template-columns: repeat(auto-fit, minmax(8.6rem, 1fr)); /* Responsive grid layout */
+  gap: 2rem; /* Increased gap for better spacing */
+  justify-items: center; /* Center items within the grid */
 }
 
 .skill {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   background-color: var(--clr-white);
-  box-shadow: rgba(0, 0, 0, 0.18) 0rem 0.2rem 0.4rem;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2); /* Enhanced shadow for better depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+  animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
 }
 
 .skill:hover {
-  -webkit-transform: translateY(-1rem);
-  -ms-transform: translateY(-1rem);
   transform: translateY(-1rem);
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .skill-img {
-  width: 5.5rem;
-  width: 50%;
+  width: 50%; /* Consistent width */
+  display: block; /* Ensures the image is block-level */
+  margin: 0 auto; /* Centers the image within the skill */
+  border-radius: 50%; /* Makes the image circular */
+  animation: bounceIn 1s ease-in-out; /* Added bounce-in animation */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /***********************/
@@ -452,25 +507,56 @@ h1 span {
 /***********************/
 
 .about-section {
-  -ms-grid-columns: 42fr 58fr;
-  grid-template-columns: 42fr 58fr;
+  display: grid;
+  grid-template-columns: 42% 58%; /* Adjusted for better compatibility */
+  gap: 2rem; /* Added gap for better spacing */
+  align-items: center; /* Center items vertically */
+  padding: 4rem 2rem; /* Added padding for better spacing */
+  background-color: var(--clr-background-light); /* Added background color for contrast */
+  animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
 }
 
 .about-img-box img {
   border-radius: 10px;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+}
+
+.about-img-box img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .more-info {
   text-align: center;
   margin-top: 1.6rem;
+  animation: slideIn 1s ease-in-out; /* Added slide-in animation */
 }
 
 .more-info h5 {
   color: var(--clr-primary);
   font-size: 2.4rem;
   font-weight: 700;
+  margin-bottom: 1rem; /* Added margin for spacing */
 }
 
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 /* Style for the "Download PDF" button */
 .note-card a {
   display: inline-block;
@@ -897,59 +983,66 @@ footer .social-link:active {
   transform: translateY(-0.3rem);
 } */
 footer {
-  background-color: #FFFFFF;
-  /* Your footer background color */
+  padding: 20px 0;
+  background-color: #1A73E8; /* Bright blue background */
+  color: white;
+  text-align: center;
+  background: linear-gradient(to bottom, #FFFFFF, #1A73E8); /* Gradient background */
   position: relative;
   overflow: hidden;
+  animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
 }
 
 footer::after {
   content: "";
   position: absolute;
-  bottom: -50px;
-  /* Adjust this value based on your curve size */
+  bottom: -50px; /* Adjust based on curve size */
   left: 0;
   width: 100%;
-  height: 50px;
-  /* Adjust this value based on your curve size */
-  background-color: #FFFFFF;
-  /* Your footer background color */
+  height: 50px; /* Adjust based on curve size */
+  background-color: #FFFFFF; /* Footer background color */
   border-top-left-radius: 50% 25px;
   border-top-right-radius: 50% 25px;
 }
 
-footer {
-  padding: 20px 0;
-  background-color: #1A73E8;
-  /* A bright blue, but feel free to adjust */
-  color: white;
-
-
-  text-align: center;
-  background: linear-gradient(to bottom, #FFFFFF, #0000FF);
-}
-
 footer p {
-  font-size: 24px;
-  /* Emphasizing the name */
+  font-size: 24px; /* Emphasizing the name */
   margin-bottom: 15px;
+  animation: slideIn 1s ease-in-out; /* Added slide-in animation */
 }
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  /* Space between icons */
+  gap: 20px; /* Space between icons */
+  animation: fadeIn 1s ease-in-out; /* Added fade-in animation */
 }
 
 .social-link i {
-  font-size: 20px;
-  /* Adjusting the size of icons */
-  transition: transform 0.3s ease;
-  /* Smooth transition for hover effect */
+  font-size: 20px; /* Adjusting the size of icons */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .social-link:hover i {
-  transform: scale(1.1);
-  /* Slightly enlarging icons on hover */
+  transform: scale(1.1); /* Slightly enlarging icons on hover */
+  color: #FFD700; /* Change color on hover */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
