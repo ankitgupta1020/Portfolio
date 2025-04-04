@@ -217,6 +217,111 @@ body {
   -ms-transform: translateX(3rem);
   transform: translateX(3rem);
 } */
+/* CSS for Theme Toggle Button */
+.switch {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  position: relative;
+  display: inline-block;
+  width: 6.4rem;
+  height: 3.4rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #73c0fc;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 3rem;
+  width: 3rem;
+  border-radius: 20px;
+  left: 0.2rem;
+  bottom: 0.2rem;
+  z-index: 2;
+  background-color: #e8e8e8;
+  transition: 0.4s;
+}
+
+.sun svg {
+  position: absolute;
+  top: 0.6rem;
+  left: 3.6rem;
+  z-index: 1;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.moon svg {
+  fill: #73c0fc;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.dark-mode .slider {
+  background-color: #183153;
+}
+
+.dark-mode .slider:before {
+  transform: translateX(3rem);
+}
+/* CSS for Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .header {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .nav-link {
+  color: #ffffff;
+}
+
+body.dark-mode .section {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+/*hero section*/
+    .hero-section h1 {
+      font-size: 4rem;
+      animation: text-fade 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes text-fade {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
 
 /***********************/
 /* MOBILE NAV */
@@ -286,7 +391,7 @@ body {
   animation: buttonFadeIn 0.5s ease-in-out; /* Apply fade-in animation */
 }
 
-/* .btn-mobile-nav.active #bar3 {
+.btn-mobile-nav.active #bar3 {
   width: 100%;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -295,7 +400,7 @@ body {
   transition-duration: 0.5s;
 } */
 
-/* .btn-mobile-nav.active {
+.btn-mobile-nav.active {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   -webkit-transform: rotate(180deg);
