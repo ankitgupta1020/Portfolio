@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Blogs - Ankit Gupta</title>
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/queries.css" />
-  <script defer src="js/Theme.js"></script>
-  <script defer src="js/script.js"></script>
-  <script defer src="js/project.js"></script>
-  
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Blogs - Ankit Gupta</title>
+        <meta name="description" content="Explore all blogs by Ankit Gupta on web development, cybersecurity, and more. Stay updated with the latest articles and tutorials.">
+        <meta name="keywords" content="Ankit Gupta, blogs, web development, cybersecurity, JavaScript, HTML, CSS">
+        <meta name="author" content="Ankit Gupta">
+        <link rel="stylesheet" href="css/general.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/queries.css" />
+        <script defer src="js/Theme.js"></script>
+        <script defer src="js/script.js"></script>
+        <script defer src="js/project.js"></script>
+      </head>
+      <meta property="og:title" content="All Blogs - Ankit Gupta">
+      <meta property="og:description" content="Explore all blogs by Ankit Gupta on web development, cybersecurity, and more. Stay updated with the latest articles and tutorials.">
+      <meta property="og:image" content="assets/blogs/blog1.png">
+      <meta property="og:url" content="https://yourwebsite.com/blogs">
+      <meta property="og:type" content="website">
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "name": "All Blogs - Ankit Gupta",
+          "description": "Explore all blogs by Ankit Gupta on web development, cybersecurity, and more.",
+          "url": "https://yourwebsite.com/blogs",
+          "author": {
+            "@type": "Person",
+            "name": "Ankit Gupta"
+          },
+          "blogPost": [
+            {
+              "@type": "BlogPosting",
+              "headline": "Start Learning JavaScript",
+              "image": "assets/blogs/blog1.png",
+              "author": "Ankit Gupta",
+              "datePublished": "2023-07-13",
+              "description": "In this article I'm going to show you how you can incorporate JavaScript into your HTML code, what simple operations might look like using JavaScript, how to create and execute functions in JavaScript, and how you can take advantage of your browser's console."
+            },
+            {
+              "@type": "BlogPosting",
+              "headline": "Master Cybersecurity",
+              "image": "assets/blogs/blog2.png",
+              "author": "Ankit Gupta",
+              "datePublished": "2019-01-24",
+              "description": "In this article, you'll learn how to improve your cybersecurity skills with CTFs."
+            }
+            // Add more blog posts here
+          ]
+        }
+        </script>
+                    
 <body>
   <!-- HEADER -->
   <header class="header flex align-items-center justify-content-space-between">
@@ -21,19 +61,21 @@
     </a>
 
     <!-- MOBILE NAV -->
-    <button class="btn-mobile-nav align-items-center justify-content-center flex-direction-column">
-        <div class="bars" id="bar1"></div>
-        <div class="bars" id="bar2"></div>
-        <div class="bars" id="bar3"></div>
-      </button>
-  
-      <nav class="nav flex align-items-center gap-4">
-        <a class="nav-link main-nav-link" href="index.html">Home</a>
-      
+    <button class="btn-mobile-nav align-items-center justify-content-center flex-direction-column" id="mobileNavButton">
+      <div class="bars" id="bar1"></div>
+      <div class="bars" id="bar2"></div>
+      <div class="bars" id="bar3"></div>
+    </button>
 
+    <nav class="nav flex align-items-center gap-4" id="navMenu">
+      <a class="nav-link main-nav-link" href="#about">About</a>
+      <a class="nav-link main-nav-link" href="#projects">Projects</a>
+      <a class="nav-link main-nav-link" href="#blogs">Blogs</a>
+      <a class="nav-link main-nav-link" href="#handwritten-notes">Notes</a>
+      <a class="nav-link main-nav-link" href="index.html">HOME</a>
 
       <!-- THEME TOGGLE BUTTON -->
-     <button class="switch" id="themeSwitch">
+      <button class="switch" id="themeSwitch">
         <span class="sun">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <g fill="#ffd43b">
@@ -49,14 +91,13 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
             <path
               d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
-            </path>
+              </path>
           </svg>
         </span>
         <span class="slider"></span>
       </button>
     </nav>
   </header>
-
 
   <!-- BLOG SECTION -->
   <section class="container blog-section section" id="blogs">
@@ -69,7 +110,7 @@
         <a href="https://www.freecodecamp.org/news/getting-started-with-javascript/" target="_blank"
           rel="noopener noreferrer">
           <div class="blog-img">
-            <img src="assets/blogs/blog1.png" alt="Master JavaScript Blog Image" />
+            <img src="assets/blogs/blog1.png" alt="Master JavaScript Blog Image" loading="lazy">
           </div>
         </a>
         <div class="blog-description">
@@ -90,7 +131,7 @@
         <a href="https://www.freecodecamp.org/news/improve-cybersecurity-skills-with-ctfs-picoctf-walkthrough/"
           target="_blank" rel="noopener noreferrer">
           <div class="blog-img">
-            <img src="assets/blogs/blog2.png" alt="Master Cybersecurity Blog Image" />
+            <img src="assets/blogs/blog2.png" alt="Master JavaScript Blog Image" loading="lazy">
           </div>
         </a>
         <div class="blog-description">
@@ -102,71 +143,19 @@
         </div>
       </div>
 
-      <!-- Add more blog entries here -->
-      <!-- Blog Entry 3 -->
+      <!-- Blog Entry 2 -->
       <div class="blog-entry">
-        <a href="https://www.freecodecamp.org/news/learn-web-development-from-harvard-university-cs50/" target="_blank"
-          rel="noopener noreferrer">
+        <a href="https://www.freecodecamp.org/news/improve-cybersecurity-skills-with-ctfs-picoctf-walkthrough/"
+          target="_blank" rel="noopener noreferrer">
           <div class="blog-img">
-            <img src="assets/blogs/blog3.png" alt="Master Web Development Blog Image" />
+            <img src="assets/blogs/blog2.png" alt="Master JavaScript Blog Image" loading="lazy">
           </div>
         </a>
         <div class="blog-description">
-          <h4 class="blog-heading">09 Mar 2023</h4>
-          <p class="blog-subheading">Master Web Development</p>
+          <h4 class="blog-heading">24 Jan 2019</h4>
+          <p class="blog-subheading">Master Cybersecurity</p>
           <p class="section-text">
-            Learn web development from Harvard University's CS50 course.
+            In this article, you'll learn how to improve your cybersecurity skills with CTFs.
           </p>
         </div>
       </div>
-
-      <!-- Blog Entry 4 -->
-      <div class="blog-entry">
-        <a href="https://www.freecodecamp.org/news/what-is-ethical-hacking/" target="_blank" rel="noopener noreferrer">
-          <div class="blog-img">
-            <img src="assets/blogs/blog4.png" alt="Master Ethical Hacking Blog Image" />
-          </div>
-        </a>
-        <div class="blog-description">
-          <h4 class="blog-heading">09 May 2023</h4>
-          <p class="blog-subheading">Master Ethical Hacking</p>
-          <p class="section-text">
-            Understand the basics of ethical hacking and its importance.
-          </p>
-        </div>
-      </div>
-
-      <!-- New Blog Entries -->
-      <div class="blog-entry">
-        <a href="https://www.example.com/new-blog-1" target="_blank" rel="noopener noreferrer">
-          <div class="blog-img">
-            <img src="assets/blogs/blog5.png" alt="New Blog 1 Image" />
-          </div>
-        </a>
-        <div class="blog-description">
-          <h4 class="blog-heading">01 Apr 2025</h4>
-          <p class="blog-subheading">New Blog 1</p>
-          <p class="section-text">
-            Description for the new blog 1.
-          </p>
-        </div>
-      </div>
-
-      <div class="blog-entry">
-        <a href="https://www.example.com/new-blog-2" target="_blank" rel="noopener noreferrer">
-          <div class="blog-img">
-            <img src="assets/blogs/blog6.png" alt="New Blog 2 Image" />
-          </div>
-        </a>
-        <div class="blog-description">
-          <h4 class="blog-heading">02 Apr 2025</h4>
-          <p class="blog-subheading">New Blog 2</p>
-          <p class="section-text">
-            Description for the new blog 2.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
-</html>
