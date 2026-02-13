@@ -1,194 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta name="description" content="Senior Backend Developer specializing in Java, Spring Boot, and Scalable Systems. Owner of Recon Industries with 5 years of industry experience." />
-  <meta name="keywords" content="Senior Backend Developer, Java, Spring Boot, MySQL, Gurgaon, Recon Industries, Ankit Gupta" />
-  <meta name="author" content="Ankit Gupta" />
-
-  <meta property="og:title" content="Ankit Gupta | Senior Backend Developer" />
-  <meta property="og:description" content="Senior Backend Developer and entrepreneur specializing in high-performance Java applications." />
-  <meta property="og:image" content="assets/favicons/og-image.png" />
-  <meta property="og:url" content="https://ankitgupta1181.netlify.app" />
-  <meta property="og:type" content="website" />
-
-  <link rel="canonical" href="https://ankitgupta1181.netlify.app" />
-
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
-  <link rel="manifest" href="assets/favicons/site.webmanifest" />
-  <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#558aff" />
-  <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#558aff" />
-  <meta name="msapplication-config" content="assets/favicons/browserconfig.xml" />
-  <meta name="theme-color" content="#558aff" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <meta name="description" content="Senior Backend Developer specializing in Java and Spring Boot." />
+  <title>Ankit Gupta | Senior Backend Developer</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/queries.css" />
-
-  <script defer src="js/project.js"></script>
+  
   <script defer src="js/script.js"></script>
-  <script defer src="js/Theme.js"></script>
-
-  <title>Ankit Gupta | Senior Backend Developer</title>
 </head>
 
 <body>
   <header class="header flex align-items-center justify-content-space-between">
     <a href="#" class="nav-link logo flex align-items-center gap-1">
       <i class="fa-solid fa-terminal"></i>
-      <span>Ankit Gupta</span>
+      <span>Ankit</span>
     </a>
 
-    <button class="btn-mobile-nav align-items-center justify-content-center flex-direction-column">
-      <div class="bars" id="bar1"></div>
-      <div class="bars" id="bar2"></div>
-      <div class="bars" id="bar3"></div>
+    <button class="btn-mobile-nav">
+      <i class="fa-solid fa-bars icon-mobile-nav" name="menu-outline"></i>
+      <i class="fa-solid fa-xmark icon-mobile-nav" name="close-outline"></i>
     </button>
 
-    <nav class="nav flex align-items-center gap-4" id="navMenu">
-      <a class="nav-link main-nav-link" href="#about">About</a>
-      <a class="nav-link main-nav-link" href="#projects">Projects</a>
-      <a class="nav-link main-nav-link" href="#skills">Skills</a>
-      <a class="nav-link main-nav-link" href="#blogs">Blogs</a>
-      <a class="nav-link main-nav-link" href="#contact">Contact</a>
-
-      <button class="switch" id="themeSwitch">
-        <span class="sun">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <g fill="#ffd43b">
-              <circle r="5" cy="12" cx="12"></circle>
-              <path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path>
-            </g>
-          </svg>
-        </span>
-        <span class="moon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-            <path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path>
-          </svg>
-        </span>
-        <span class="slider"></span>
-      </button>
+    <nav class="nav">
+      <ul class="main-nav-list flex align-items-center gap-4">
+        <li><a class="nav-link main-nav-link" href="#about">About</a></li>
+        <li><a class="nav-link main-nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link main-nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link main-nav-link" href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="container hero-section section flex align-items-center justify-content-space-between">
-    <div class="hero-text-content">
-      <h1>
-        Hi! I’m Ankit Gupta <br />
-        <span>Senior <span class="fz-74">B</span>ackend Developer</span>
-      </h1>
-      <p class="hero-subtext">Architecting Scalable Systems & Specialized in Java Ecosystem</p>
-      <div class="social-links">
-        <a class="social-link" title="Github" href="https://github.com/ankitgupta1020" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-        <a class="social-link" title="LinkedIn" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-        <a class="social-link resume-btn" title="Download Resume" href="assets/Ankit_Gupta_Resume.pdf" download><i class="fa-solid fa-file-pdf"></i> Resume</a>
-      </div>
-    </div>
-    <div class="hero-img-box">
-      <div class="grid hero-img-container">
-        <div class="hero-img-background"></div>
-        <picture>
-          <source srcset="assets/images/hero.webp" type="image/webp" />
-          <source srcset="assets/images/hero.png" type="image/png" />
-          <img class="hero-img" src="assets/images/hero.png" alt="Ankit Gupta Professional Photo" />
-        </picture>
-      </div>
-    </div>
-  </section>
-
-  <section class="container about-section section grid gap-4" id="about">
-    <div class="about-img-box">
-      <img src="assets/images/about.jpg" alt="Ankit Gupta at Work" />
-    </div>
-    <div class="about-text-box">
-      <h2 class="section-heading">About Me</h2>
-      <h3 class="section-subheading">Backend Engineer & Founder of Recon Industries 📍</h3>
-      <p class="section-text">
-        With over 5 years of professional experience in the IT industry, I specialize in building robust backend architectures using **Java, Spring Boot, and MySQL**. Beyond corporate development, I am the founder of **Recon Industries**, where I lead innovation in battery recycling technologies. 
-      </p>
-      <p class="section-text">
-        My dual perspective as a senior developer and a business owner allows me to create solutions that are not only technically sound but also strategically aligned with business growth.
-      </p>
-      <div class="more-info flex gap-4">
-        <div class="experience-years">
-          <h5>5+ Years</h5>
-          <p>Professional Experience</p>
-        </div>
-        <div class="completed-projects">
-          <h5>15+</h5>
-          <p>Production Projects</p>
+  <main>
+    <section class="container hero-section section flex align-items-center">
+      <div class="hero-text-box">
+        <h1 class="heading-primary">Hi! I’m Ankit Gupta</h1>
+        <p class="hero-description">Senior Backend Developer & Founder of Recon Industries. I build scalable Java applications.</p>
+        <div class="social-links">
+          <a class="social-link" href="https://github.com/ankitgupta1020" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a class="social-link" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="container skills-section" id="skills">
-    <h2 class="section-heading">Technical Stack</h2>
-    <h3 class="section-subheading">Expertise in Backend Architecture & Modern Web Technologies 🚀</h3>
-    <div class="skills gap-3">
-      <div class="skill-category">
-        <h4>Core Backend</h4>
-        <div class="skill-icons flex gap-2">
-          <div class="skill center"><img class="skill-img" src="assets/skills/java.png" alt="Java" /></div>
-          <div class="skill center"><img class="skill-img" src="assets/skills/spring.png" alt="Spring Boot" /></div>
-          <div class="skill center"><img class="skill-img" src="assets/skills/mysql.png" alt="MySQL" /></div>
-        </div>
+      <div class="hero-img-box">
+        <img src="assets/images/hero.png" class="hero-img" alt="Ankit Gupta" />
       </div>
-      <div class="skill-category">
-        <h4>Web & Frontend</h4>
-        <div class="skill-icons flex gap-2">
-          <div class="skill center"><img class="skill-img" src="assets/skills/react.png" alt="React" /></div>
-          <div class="skill center"><img class="skill-img" src="assets/skills/nodejs.png" alt="NodeJS" /></div>
-          <div class="skill center"><img class="skill-img" src="assets/skills/javascript.png" alt="JavaScript" /></div>
-        </div>
+    </section>
+
+    <section class="container about-section section grid grid--2-cols" id="about">
+      <div class="about-img-box">
+        <img src="assets/images/about.jpg" class="about-img" alt="About Ankit" />
       </div>
-    </div>
-  </section>
-
-  <section class="container project-section section" id="projects">
-    <h2 class="section-heading">Featured Projects</h2>
-    <h3 class="section-subheading">Enterprise-grade solutions and personal endeavors 🧩</h3>
-    <div class="carousel-container">
-      <div class="carousel-nav">
-        <button id="prevBtn" class="nav-btn" aria-label="Previous Project"><i class="fa-solid fa-circle-arrow-left"></i></button>
-        <button id="nextBtn" class="nav-btn" aria-label="Next Project"><i class="fa-solid fa-circle-arrow-right"></i></button>
+      <div class="about-text-box">
+        <h2 class="section-heading">About Me</h2>
+        <p class="section-text">With 5 years of Java experience, I specialize in Spring Boot and high-performance backend systems.</p>
       </div>
-      <div class="carousel flex" id="project-carousel">
-        </div>
-      <div class="carousel-dots"></div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <div class="curved-svg">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#FFFFFF" d="M0,96L40,106.7C80,117,160,139,240,138.7C320,139,400,117,480,122.7C560,128,640,160,720,154.7C800,149,880,107,960,112C1040,117,1120,171,1200,192C1280,213,1360,203,1400,197.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
-    </svg>
-    <footer>
-      <p>© 2026 Ankit Gupta | Built with Java Spirit</p>
-      <div class="social-links">
-        <a class="social-link" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a class="social-link" href="https://github.com/ankitgupta1020" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a class="social-link" href="https://x.com/AnkitGu93350210" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      </div>
-    </footer>
-  </div>
-
-  <script>
-    // Improved Carousel Logic with Pause on Hover
-    const carousel = document.getElementById("project-carousel");
-    let interval = setInterval(nextItem, 4000);
-
-    carousel.addEventListener("mouseenter", () => clearInterval(interval));
-    carousel.addEventListener("mouseleave", () => interval = setInterval(nextItem, 4000));
-  </script>
+  <footer class="footer">
+    <p>&copy; 2026 Ankit Gupta</p>
+  </footer>
 </body>
 </html>
