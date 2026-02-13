@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Senior Backend Developer specializing in Java and Spring Boot." />
-  <title>Ankit Gupta | Senior Backend Developer</title>
+
+  <meta name="description" content="Experienced Backend Developer specializing in Java and MySQL. Create captivating and responsive web applications with Ankit." />
+  <meta name="keywords" content="Backend Developer, Java, MySQL, Gurgaon, Web Applications, Ankit Gupta" />
+  <meta name="author" content="Ankit Gupta" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  
+
   <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/queries.css" />
 
-  <script defer src="js/script.js"></script>
   <script defer src="js/project.js"></script>
+  <script defer src="js/script.js"></script>
   <script defer src="js/Theme.js"></script>
+
+  <title>Ankit Gupta | Backend Developer</title>
 </head>
 
 <body>
@@ -26,11 +36,12 @@
     </a>
 
     <button class="btn-mobile-nav">
-      <i class="fa-solid fa-bars icon-mobile-nav" id="menu-icon"></i>
-      <i class="fa-solid fa-xmark icon-mobile-nav" id="close-icon" style="display: none;"></i>
+      <div class="bars" id="bar1"></div>
+      <div class="bars" id="bar2"></div>
+      <div class="bars" id="bar3"></div>
     </button>
 
-    <nav class="nav">
+    <nav class="nav" id="navMenu">
       <ul class="main-nav-list flex align-items-center gap-4">
         <li><a class="nav-link main-nav-link" href="#about">About</a></li>
         <li><a class="nav-link main-nav-link" href="#projects">Projects</a></li>
@@ -41,6 +52,7 @@
           <button class="switch" id="themeSwitch">
             <span class="sun"><i class="fa-solid fa-sun"></i></span>
             <span class="moon"><i class="fa-solid fa-moon"></i></span>
+            <span class="slider"></span>
           </button>
         </li>
       </ul>
@@ -48,88 +60,134 @@
   </header>
 
   <main>
-    <section class="container hero-section section grid grid--2-cols align-items-center">
+    <section class="container hero-section section flex align-items-center justify-content-space-between">
       <div class="hero-text-box">
-        <h1 class="heading-primary">Hi! I’m Ankit Gupta</h1>
-        <p class="hero-description">Senior Backend Developer with 5 years of experience. Expert in Java, Spring Boot, and Scalable Architectures.</p>
-        <div class="social-links flex gap-2">
-          <a class="social-link" href="https://github.com/ankitgupta1020" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a class="social-link" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <h1>
+          Hi! I’m Ankit <br />
+          <span>Backen<span class="fz-74">D</span>eveloper</span>
+        </h1>
+        <div class="social-links">
+          <a class="social-link" title="Github" href="https://github.com/ankitgupta1020" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a class="social-link" title="LinkedIn" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
       </div>
       <div class="hero-img-box">
-        <img src="assets/images/hero.png" class="hero-img" alt="Ankit Gupta Professional Photo" />
+        <div class="grid hero-img-container">
+          <div class="hero-img-background"></div>
+          <picture>
+            <source srcset="assets/images/hero.webp" type="image/webp" />
+            <img class="hero-img" src="assets/images/hero.png" alt="Ankit Gupta Image" />
+          </picture>
+        </div>
       </div>
     </section>
 
-    <section class="container section" id="skills">
-      <h2 class="section-heading">Technical Stack</h2>
-      <div class="skills-grid grid">
-        <div class="skill-card"><img src="assets/skills/java.png" alt="Java"></div>
-        <div class="skill-card"><img src="assets/skills/spring.png" alt="Spring Boot"></div>
-        <div class="skill-card"><img src="assets/skills/mysql.png" alt="MySQL"></div>
-        <div class="skill-card"><img src="assets/skills/react.png" alt="React"></div>
+    <section class="container skills-section section" id="skills">
+      <h2 class="section-heading">Skills</h2>
+      <h3 class="section-subheading">Technical Mastery 🚀</h3>
+      <div class="skills gap-3">
+        <div class="skill center"><img class="skill-img" src="assets/skills/java.png" alt="Java" /></div>
+        <div class="skill center"><img class="skill-img" src="assets/skills/spring.png" alt="Spring" /></div>
+        <div class="skill center"><img class="skill-img" src="assets/skills/mysql.png" alt="MySQL" /></div>
+        <div class="skill center"><img class="skill-img" src="assets/skills/react.png" alt="React" /></div>
       </div>
     </section>
 
-    <section class="container about-section section grid grid--2-cols" id="about">
+    <section class="container about-section section grid gap-4" id="about">
       <div class="about-img-box">
-        <img src="assets/images/about.jpg" class="about-img" alt="About Ankit" />
+        <img src="assets/images/about.jpg" alt="Ankit Gupta Image" />
       </div>
       <div class="about-text-box">
         <h2 class="section-heading">About Me</h2>
-        <p class="section-text">Ardent backend developer domiciled in Gurgaon, India. I specialize in building responsive web applications using Java, Spring, and MySQL.</p>
+        <h3 class="section-subheading">Backend developer in Gurgaon, India📍</h3>
+        <p class="section-text">
+          Hi there! I'm Ankit, a backend developer proficient in Java, Spring, SpringBoot, React, NodeJS, and MySQL.
+        </p>
+        <div class="more-info flex gap-4">
+          <div class="completed-projects">
+            <h5>10+</h5>
+            <p>Completed Projects</p>
+          </div>
+          <div class="coding-hours">
+            <h5>1000+</h5>
+            <p>Hours of Coding</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="container section" id="projects">
+    <section class="container project-section section" id="projects">
       <h2 class="section-heading">Projects</h2>
       <div class="carousel-container">
-        <div class="carousel flex" id="project-carousel">
-          </div>
+        <div class="carousel-nav">
+          <button id="prevBtn" class="nav-btn"><i class="fa-solid fa-circle-arrow-left"></i></button>
+          <button id="nextBtn" class="nav-btn"><i class="fa-solid fa-circle-arrow-right"></i></button>
+        </div>
+        <div class="carousel flex" id="projectCarousel"></div>
+        <div class="carousel-dots"></div>
       </div>
     </section>
 
-    <section class="container section" id="blogs">
+    <section class="container blog-section section" id="blogs">
       <h2 class="section-heading">Blogs</h2>
-      <div class="blog-grid grid grid--3-cols">
-        <div class="blog-card">
-          <img src="assets/blogs/blog1.png" alt="JS Blog">
-          <h3>Start Learning JavaScript</h3>
-          <p>Learn how to incorporate JavaScript into HTML code.</p>
+      <div class="blog-container">
+        <div class="big-blog grid grid-template-columns-2 gap-3">
+          <a href="https://www.freecodecamp.org/news/getting-started-with-javascript/" target="_blank">
+            <div class="blog-img"><img src="assets/blogs/blog1.png" alt="JS Blog" /></div>
+          </a>
+          <div class="blog-description">
+            <h4 class="blog-heading">13 Jul 2023</h4>
+            <p class="blog-subheading">Start Learning JavaScript</p>
+            <p class="section-text">How to incorporate JavaScript into your HTML code.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="container section" id="handwritten-notes">
+    <section class="container handwritten-notes-section section" id="handwritten-notes">
       <h2 class="section-heading">Handwritten Notes</h2>
-      <div class="notes-grid grid grid--2-cols">
+      <div class="notes-container flex gap-3">
         <div class="note-card">
           <h4>SQL Notes</h4>
-          <a href="#" class="btn-download">Download PDF</a>
+          <a href="https://drive.google.com/file/d/1o0-Oo44vtRd-hQpUrfAI59He8hf47po5/view?usp=sharing" target="_blank">Download PDF</a>
         </div>
       </div>
     </section>
 
-    <section class="container section" id="contact">
+    <section class="container contact-section section" id="contact">
       <h2 class="section-heading">Contact</h2>
-      <div class="contact-grid grid grid--2-cols">
-        <form class="contact-form flex flex-direction-column">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Message" rows="5"></textarea>
-          <button type="submit" class="form-btn">Send Message</button>
-        </form>
-        <div class="contact-info">
-          <p><i class="fa-solid fa-location-dot"></i> Gurgaon, India</p>
-          <p><i class="fa-solid fa-phone"></i> +91 6392456564</p>
+      <div class="contact-container grid grid-template-columns-2 gap-3">
+        <div class="contact-form-container">
+          <form class="contact-form flex flex-direction-column" action="https://formsubmit.co/ankitgupta1181@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Enter your name" required />
+            <input type="email" name="email" placeholder="Enter your email" required />
+            <textarea name="message" rows="5" placeholder="Enter your message" required></textarea>
+            <button type="submit" class="form-btn">Send</button>
+          </form>
+        </div>
+        <div class="contact-link-container">
+          <div class="contact-links flex flex-direction-column gap-3">
+            <div class="contact-link flex align-items-center gap-2">
+              <i class="fa-solid fa-location-arrow"></i>
+              <p>Gurgaon, India</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; 2026 Ankit Gupta</p>
+    <div class="curved-svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFFFFF" d="M0,96L1440,192L1440,320L0,320Z"></path></svg>
+    </div>
+    <div class="container footer-content center">
+      <p>Ankit Gupta</p>
+      <div class="social-links center">
+        <a class="social-link" href="https://github.com/ankitgupta1020" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
   </footer>
 </body>
+
 </html>
