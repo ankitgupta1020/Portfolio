@@ -6,19 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- SEO Meta Tags -->
   <meta name="description" content="Experienced Backend Developer in Gurgaon specializing in Java and MySQL. Create captivating and responsive web applications with Ankit. Explore my portfolio now!" />
-  <meta name="keywords" content="Backend Developer, Java, MySQL, Gurgaon, Web Applications, Ankit Gupta" />
+  <meta name="keywords" content="Backend Developer, Java, MySQL, Gurgaon, Web Applications, Ankit Gupta, Full Stack Developer" />
   <meta name="author" content="Ankit Gupta" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#558aff" />
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Ankit Gupta | Backend Developer" />
+  <meta property="og:title" content="Ankit Gupta | Backend Developer Portfolio" />
   <meta property="og:description" content="Experienced Backend Developer in Gurgaon specializing in Java and MySQL. Create captivating and responsive web applications with Ankit. Explore my portfolio now!" />
   <meta property="og:image" content="assets/favicons/og-image.png" />
   <meta property="og:url" content="https://yourwebsite.com" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ankit Gupta Portfolio" />
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ankit Gupta | Backend Developer" />
+  <meta name="twitter:description" content="Backend Developer specializing in Java, Spring, and MySQL" />
+  <meta name="twitter:image" content="assets/favicons/og-image.png" />
 
   <!-- Canonical Tag -->
   <link rel="canonical" href="https://yourwebsite.com" />
+
+  <!-- Preconnect to external resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="dns-prefetch" href="https://formsubmit.co" />
 
   <!-- FAVICON -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
@@ -29,10 +44,9 @@
   <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
   <meta name="msapplication-TileColor" content="#558aff" />
   <meta name="msapplication-config" content="assets/favicons/browserconfig.xml" />
-  <meta name="theme-color" content="#558aff" />
 
   <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNB..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/general.css" />
@@ -44,464 +58,494 @@
   <script defer src="js/script.js"></script>
   <script defer src="js/Theme.js"></script>
 
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ankit Gupta",
+    "url": "https://yourwebsite.com",
+    "jobTitle": "Backend Developer",
+    "image": "assets/images/hero.png",
+    "description": "Experienced Backend Developer specializing in Java, Spring, and MySQL",
+    "location": {
+      "@type": "Place",
+      "name": "Gurgaon, India"
+    },
+    "sameAs": [
+      "https://github.com/ankitgupta1020",
+      "https://www.linkedin.com/in/ankit-gupta-5bb433174/",
+      "https://x.com/AnkitGu93350210"
+    ]
+  }
+  </script>
+
   <!-- TITLE -->
-  <title>Ankit Gupta | Backend Developer</title>
+  <title>Ankit Gupta | Backend Developer Portfolio</title>
 </head>
 
 <body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
   <!-- HEADER -->
-  <header class="header flex align-items-center justify-content-space-between">
-    <a href="#" class="nav-link logo flex align-items-center gap-1">
-      <i class="fa-solid fa-terminal"></i>
+  <header class="header flex align-items-center justify-content-space-between" role="banner">
+    <a href="#" class="nav-link logo flex align-items-center gap-1" aria-label="Ankit Gupta - Home">
+      <i class="fa-solid fa-terminal" aria-hidden="true"></i>
       <span>Ankit</span>
     </a>
 
     <!-- MOBILE NAV -->
-    <button class="btn-mobile-nav align-items-center justify-content-center flex-direction-column">
-      <div class="bars" id="bar1"></div>
-      <div class="bars" id="bar2"></div>
-      <div class="bars" id="bar3"></div>
+    <button class="btn-mobile-nav align-items-center justify-content-center flex-direction-column" 
+            aria-label="Toggle navigation menu" 
+            aria-expanded="false"
+            aria-controls="navMenu">
+      <div class="bars" id="bar1" aria-hidden="true"></div>
+      <div class="bars" id="bar2" aria-hidden="true"></div>
+      <div class="bars" id="bar3" aria-hidden="true"></div>
     </button>
 
-    <nav class="nav flex align-items-center gap-4" id="navMenu">
-      <a class="nav-link main-nav-link" href="#about">About</a>
-      <a class="nav-link main-nav-link" href="#projects">Projects</a>
-      <a class="nav-link main-nav-link" href="#blogs">Blogs</a>
-      <a class="nav-link main-nav-link" href="#handwritten-notes">Notes</a>
-      <a class="nav-link main-nav-link" href="#contact">Contact</a>
+    <nav class="nav flex align-items-center gap-4" id="navMenu" role="navigation" aria-label="Main navigation">
+      <a class="nav-link main-nav-link" href="#about" aria-label="About section">About</a>
+      <a class="nav-link main-nav-link" href="#projects" aria-label="Projects section">Projects</a>
+      <a class="nav-link main-nav-link" href="#blogs" aria-label="Blogs section">Blogs</a>
+      <a class="nav-link main-nav-link" href="#handwritten-notes" aria-label="Notes section">Notes</a>
+      <a class="nav-link main-nav-link" href="#contact" aria-label="Contact section">Contact</a>
 
       <!-- THEME TOGGLE BUTTON -->
-      <button class="switch" id="themeSwitch">
-        <span class="sun">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <button class="switch" id="themeSwitch" aria-label="Toggle dark mode" aria-pressed="false">
+        <span class="sun" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Sun icon">
             <g fill="#ffd43b">
               <circle r="5" cy="12" cx="12"></circle>
               <path
-                d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
-              </path>
+                d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29..."
+                />
             </g>
           </svg>
         </span>
 
-        <span class="moon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <span class="moon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" role="img" aria-label="Moon icon">
             <path
-              d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
-              </path>
+              d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176..."
+              />
           </svg>
         </span>
-        <span class="slider"></span>
+        <span class="slider" aria-hidden="true"></span>
       </button>
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
- <!-- <section class="container hero-section section flex align-items-center justify-content-space-between">
-    <div>
-      <h1>
-        Hi! I’m Ankit <br />
-        <span>Backen<span class="fz-74">D</span>eveloper</span>
-      </h1>
-      <div class="social-links">
-        <a class="social-link" title="Github" href="https://github.com/ankitgupta1020" target="_blank"
-          rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-        <a class="social-link" title="LinkedIn" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/"
-          target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="container hero-section section flex align-items-center justify-content-space-between" role="region" aria-label="Hero section">
+      <div>
+        <h1>
+          Hi! I'm Ankit <br />
+          <span>Backen<span class="fz-74">D</span>eveloper</span>
+        </h1>
+        <div class="social-links">
+          <a class="social-link" title="Github Profile" aria-label="Visit Github profile" href="https://github.com/ankitgupta1020" target="_blank"
+            rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a class="social-link" title="LinkedIn Profile" aria-label="Visit LinkedIn profile" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/"
+            target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+        </div>
       </div>
-    </div>
-    <div class="hero-img-box">
-      <div class="grid hero-img-container">
-        <div class="hero-img-background"></div>
-        <picture>
-          <source srcset="assets/images/hero.webp" type="image/webp" />
-          <source srcset="assets/images/hero.png" type="image/png" />
-
-          <img class="hero-img" src="assets/images/hero.png" alt="Ankit Gupta Image" />
-        </picture>
-      </div>
-    </div>-->
-
-    
-  </section> 
-  
-
-  <section class="container hero-section section flex align-items-center justify-content-space-between">
-    <div>
-      <h1>
-        Hi! I’m Ankit <br />
-        <span>Backen<span class="fz-74">D</span>eveloper</span>
-      </h1>
-      <div class="social-links">
-        <a class="social-link" title="Github" href="https://github.com/ankitgupta1020" target="_blank"
-          rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-        <a class="social-link" title="LinkedIn" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/"
-          target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
-    </div>
-    <div class="hero-img-box">
-      <div class="grid hero-img-container">
-        <div class="hero-img-background"></div>
-        <picture>
-          <source srcset="assets/images/hero.webp" type="image/webp" />
-          <source srcset="assets/images/hero.png" type="image/png" />
-
-          <img class="hero-img" src="assets/images/hero.png" alt="Ankit Gupta Image" />
-        </picture>
-      </div>
-    </div>
-
-    <a class="nav-link scroll-down-container" title="Scroll Down" href="#skills">
-      <div class="scroll-down">
-        <svg viewBox="0 0 52 89" fill="none" xmlns="http://www.w3.org/2000/svg" class="mouse">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M47.6056 63.1025V25.8975C47.6056 14.0121 37.9325 4.37705 26 4.37705C14.0675 4.37705 4.39437 14.0121 4.39437 25.8975V63.1025C4.39437 74.9879 14.0675 84.623 26 84.623C37.9325 84.623 47.6056 74.9879 47.6056 63.1025ZM26 0C11.6406 0 0 11.5947 0 25.8975V63.1025C0 77.4053 11.6406 89 26 89C40.3594 89 52 77.4053 52 63.1025V25.8975C52 11.5947 40.3594 0 26 0Z">
-          </path>
-          <path
-            d="M23 34.5526C23 32.5906 24.567 31 26.5 31C28.433 31 30 32.5906 30 34.5526V54.4474C30 56.4094 28.433 58 26.5 58C24.567 58 23 56.4094 23 54.4474V34.5526Z">
-          </path>
-        </svg>
-      </div>
-    </a>
-  </section>
-
-
-  <!-- SKILL SECTION-->
-<section class="container skills-section" id="skills">
-  <h2 class="section-heading">Skills</h2>
-  <h3 class="section-subheading">
-    Cutting-Edge Developer Skills - Technical Mastery 🚀
-  </h3>
-
-  <div class="skills gap-3">
-    <div class="skill center">
-      <img class="skill-img" src="assets/skills/html.png" alt="HTML" />
-    </div>
-    <div class="skill center">
-      <img class="skill-img" src="assets/skills/css.png" alt="CSS" />
-    </div>
-    <div class="skill center">
-      <img class="skill-img" src="assets/skills/javascript.png" alt="JavaScript" />
-    </div>
-    <div class="skill center">
-      <img class="skill-img" src="assets/skills/nodejs.png" alt="NodeJS" />
-    </div>
-    <div class="skill center">
-      <img class="skill-img" src="assets/skills/react.png" alt="React" />
-    </div>
-    <div class="skill center">
-      <img class="skill-img" src="assets/skills/java.png" alt="Java" />
-    </div>
-    <div class="skill center">
-      <img class="skill-img" src="assets/skills/spring.png" alt="Spring" />
-    </div>
-    <div class="skill center">
-      <img class="skill-img" src="assets/skills/mysql.png" alt="MySQL" />
-    </div>
-  </div>
-</section>
-
-  <!-- ABOUT SECTION -->
-<section class="container about-section section grid gap-4" id="about">
-  <div class="about-img-box">
-    <img src="assets/images/about.jpg" alt="Ankit Gupta Image" />
-  </div>
-  <div class="about-text-box">
-    <h2 class="section-heading">About Me</h2>
-    <h3 class="section-subheading">
-      An ardent backend developer domiciled in Gurgaon, India📍
-    </h3>
-    <p class="section-text">
-      Hi there! I'm Ankit, a backend developer proficient in Java, Spring, SpringBoot, React, NodeJS, and MySQL. With these powerful tools, I create captivating and responsive web applications. From sleek interfaces to seamless user interactions, I strive to deliver exceptional digital experiences.
-    </p>
-    <div class="more-info flex gap-4">
-      <div class="completed-projects">
-        <h5>10+</h5>
-        <p>Completed Projects</p>
-      </div>
-      <div class="coding-hours">
-        <h5>1000+</h5>
-        <p>Hours of Coding</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- PROJECT SECTION-->
-  <!-- <section class="container project-section section" id="projects">
-    <h2 class="section-heading">Projects</h2>
-    <h3 class="section-subheading">
-      Each project is an exclusive development endeavor 🧩
-    </h3>
-
-    <div class="carousel-container">
-      <div class="carousel-nav">
-        <button id="prevBtn" class="nav-btn" title="Previous">
-          <i class="fa-solid fa-circle-arrow-left"></i>
-        </button>
-        <button id="nextBtn" class="nav-btn" title="Next">
-          <i class="fa-solid fa-circle-arrow-right"></i>
-        </button>
+      <div class="hero-img-box">
+        <div class="grid hero-img-container">
+          <div class="hero-img-background"></div>
+          <picture>
+            <source srcset="assets/images/hero.webp" type="image/webp" />
+            <source srcset="assets/images/hero.png" type="image/png" />
+            <img class="hero-img" src="assets/images/hero.png" alt="Ankit Gupta Backend Developer" loading="lazy" />
+          </picture>
+        </div>
       </div>
 
-      <div class="carousel flex"></div>
-
-      <div class="carousel-dots"></div>
-    </div>
-  </section> -->
-  <!-- PROJECT SECTION -->
-<section class="container project-section section" id="projects">
-  <h2 class="section-heading">Projects</h2>
-  <h3 class="section-subheading">
-    Each project is an exclusive development endeavor 🧩
-  </h3>
-
-  <div class="carousel-container">
-    <div class="carousel-nav">
-      <button id="prevBtn" class="nav-btn" title="Previous">
-        <i class="fa-solid fa-circle-arrow-left"></i>
-      </button>
-      <button id="nextBtn" class="nav-btn" title="Next">
-        <i class="fa-solid fa-circle-arrow-right"></i>
-      </button>
-    </div>
-
-    <div class="carousel flex"></div>
-
-    <div class="carousel-dots"></div>
-  </div>
-</section>
-
-<script>
-  // JavaScript to create an automatic carousel
-  const carouselContainer = document.querySelector(".carousel");
-  const carouselItems = carouselContainer.children;
-  let currentIndex = 0;
-
-  function showItem(index) {
-    Array.from(carouselItems).forEach((item, i) => {
-      item.style.display = i === index ? "block" : "none";
-    });
-  }
-
-  function nextItem() {
-    currentIndex = (currentIndex + 1) % carouselItems.length;
-    showItem(currentIndex);
-  }
-
-  function prevItem() {
-    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-    showItem(currentIndex);
-  }
-
-  // Set an interval to automatically advance the carousel every 3 seconds (adjust as needed).
-  setInterval(nextItem, 3000);
-
-  // Initially, display the first item.
-  showItem(currentIndex);
-
-  // Event listeners for previous and next buttons
-  document.getElementById("prevBtn").addEventListener("click", prevItem);
-  document.getElementById("nextBtn").addEventListener("click", nextItem);
-</script>
-
-
-  <!-- BLOG SECTION-->
-<section class="container blog-section section" id="blogs">
-  <h2 class="section-heading">Blogs</h2>
-  <h3 class="section-subheading">Explore My Blogs! 🚀</h3>
-
-  <div class="blog-container">
-    <div class="big-blog grid grid-template-columns-2 gap-3">
-      <a href="https://www.freecodecamp.org/news/getting-started-with-javascript/" target="_blank"
-        rel="noopener noreferrer">
-        <div class="blog-img">
-          <img src="assets/blogs/blog1.png" alt="Master JavaScript Blog Image" />
+      <a class="nav-link scroll-down-container" title="Scroll Down" aria-label="Scroll down to next section" href="#skills">
+        <div class="scroll-down">
+          <svg viewBox="0 0 52 89" fill="none" xmlns="http://www.w3.org/2000/svg" class="mouse" role="img" aria-label="Scroll down indicator">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M47.6056 63.1025V25.8975C47.6056 14.0121 37.9325 4.37705 26 4.37705C14.0675 4.37705 4.39437 14.0121 4.39437 25.8975V63.1025C4.39437 74.9879 14.0675 84.623 26 84.623C37.9325 84.623 47.60..."
+              />
+            <path
+              d="M23 34.5526C23 32.5906 24.567 31 26.5 31C28.433 31 30 32.5906 30 34.5526V54.4474C30 56.4094 28.433 58 26.5 58C24.567 58 23 56.4094 23 54.4474V34.5526Z">
+            </path>
+          </svg>
         </div>
       </a>
-      <div class="blog-description">
-        <h4 class="blog-heading">13 Jul 2023</h4>
-        <p class="blog-subheading">Start Learning JavaScript</p>
+    </section>
+
+    <!-- SKILL SECTION -->
+    <section class="container skills-section" id="skills" role="region" aria-label="Skills section">
+      <h2 class="section-heading">Skills</h2>
+      <h3 class="section-subheading">
+        Cutting-Edge Developer Skills - Technical Mastery 🚀
+      </h3>
+
+      <div class="skills gap-3" role="list">
+        <div class="skill center" role="listitem" aria-label="HTML">
+          <img class="skill-img" src="assets/skills/html.png" alt="HTML 5 Logo" loading="lazy" />
+        </div>
+        <div class="skill center" role="listitem" aria-label="CSS">
+          <img class="skill-img" src="assets/skills/css.png" alt="CSS 3 Logo" loading="lazy" />
+        </div>
+        <div class="skill center" role="listitem" aria-label="JavaScript">
+          <img class="skill-img" src="assets/skills/javascript.png" alt="JavaScript Logo" loading="lazy" />
+        </div>
+        <div class="skill center" role="listitem" aria-label="NodeJS">
+          <img class="skill-img" src="assets/skills/nodejs.png" alt="NodeJS Logo" loading="lazy" />
+        </div>
+        <div class="skill center" role="listitem" aria-label="React">
+          <img class="skill-img" src="assets/skills/react.png" alt="React Logo" loading="lazy" />
+        </div>
+        <div class="skill center" role="listitem" aria-label="Java">
+          <img class="skill-img" src="assets/skills/java.png" alt="Java Logo" loading="lazy" />
+        </div>
+        <div class="skill center" role="listitem" aria-label="Spring">
+          <img class="skill-img" src="assets/skills/spring.png" alt="Spring Framework Logo" loading="lazy" />
+        </div>
+        <div class="skill center" role="listitem" aria-label="MySQL">
+          <img class="skill-img" src="assets/skills/mysql.png" alt="MySQL Database Logo" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="container about-section section grid gap-4" id="about" role="region" aria-label="About Me section">
+      <div class="about-img-box">
+        <img src="assets/images/about.jpg" alt="Ankit Gupta Portrait" loading="lazy" />
+      </div>
+      <div class="about-text-box">
+        <h2 class="section-heading">About Me</h2>
+        <h3 class="section-subheading">
+          An ardent backend developer domiciled in Gurgaon, India📍
+        </h3>
         <p class="section-text">
-          In this article I'm going to show you how you can incorporate
-          JavaScript into your HTML code, what simple operations might look
-          like using JavaScript, how to create and execute functions in
-          JavaScript, and how you can take advantage of your browser's
-          console.
+          Hi there! I'm Ankit, a backend developer proficient in Java, Spring, SpringBoot, React, NodeJS, and MySQL. With these powerful tools, I create captivating and responsive web applications. From s...
         </p>
-      </div>
-    </div>
-
-    <div class="small-blog gap-3">
-      <a href="https://www.freecodecamp.org/news/improve-cybersecurity-skills-with-ctfs-picoctf-walkthrough/"
-        target="_blank" rel="noopener noreferrer" class="blog">
-        <div class="blog-img">
-          <img src="assets/blogs/blog2.png" alt="Master Cybersecurity Blog Image" />
-        </div>
-        <h4 class="blog-heading">24 Jan 2019</h4>
-        <p class="blog-subheading">Master Cybersecurity</p>
-      </a>
-
-      <a href="https://www.freecodecamp.org/news/learn-web-development-from-harvard-university-cs50/" target="_blank"
-        rel="noopener noreferrer" class="blog">
-        <div class="blog-img">
-          <img src="assets/blogs/blog3.png" alt="Master Web Development Blog Image" />
-        </div>
-        <h4 class="blog-heading">09 Mar 2023</h4>
-        <p class="blog-subheading">Master Web Development</p>
-      </a>
-
-      <a href="https://www.freecodecamp.org/news/what-is-ethical-hacking/" target="_blank" rel="noopener noreferrer"
-        class="blog">
-        <div class="blog-img">
-          <img src="assets/blogs/blog4.png" alt="Master Ethical Hacking Blog Image" />
-        </div>
-        <h4 class="blog-heading">09 May 2023</h4>
-        <p class="blog-subheading">Master Ethical Hacking</p>
-      </a>
-    </div>
-  </div>
-
-  <!-- See More Button -->
-  <div class="see-more-container">
-    <a href="blogs.html" class="see-more-btn">See More</a>
-  </div>
-</section>
-
-
-  <!-- HANDWRITTEN NOTES SECTION-->
-  <section class="container handwritten-notes-section section" id="handwritten-notes">
-    <h2 class="section-heading">Handwritten Notes</h2>
-    <h3 class="section-subheading">
-      Explore our handwritten notes 📝
-    </h3>
-
-    <div class="notes-container">
-      <!-- Note Card 1 -->
-      <div class="note-card">
-        <h4>SQL handwritten-notes</h4>
-        <p>Explore our Handwritten SQL Notes. Download PDF notes for SQL concepts and queries.</p>
-        <a href="https://drive.google.com/file/d/1o0-Oo44vtRd-hQpUrfAI59He8hf47po5/view?usp=sharing"
-          target="_blank">Download PDF</a>
-      </div>
-
-      <!-- Note Card 2 -->
-      <div class="note-card">
-        <h4>Networking handwritten-notes </h4>
-        <p>Explore our comprehensive Networking handwritten notes.
-          Learn key networking concepts and protocols with our easy-to-understand handwritten materials.</p>
-        <a href="https://drive.google.com/file/d/1oa1c3wGDIM5sH_DBTpBWSoz6sgXq16k9/view?usp=drive_link"
-          target="_blank">Download PDF</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION-->
-  <section class="container contact-section section" id="contact">
-    <h2 class="section-heading">Contact</h2>
-    <h3 class="section-subheading">
-      Feel free to reach out to me anytime, don't hesitate! 👇
-    </h3>
-
-    <div class="contact-container grid grid-template-columns-2 gap-3">
-      <div class="contact-form-container">
-        <form class="contact-form flex flex-direction-column" autocomplete="off"
-          action="https://formsubmit.co/ankitgupta1181@gmail.com" method="POST">
-          <input type="hidden" name="_next" value="https://ankitgupta1181.netlify.app/thanks.html" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
-
-          <div class="form-group flex flex-direction-column">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" minlength="3" maxlength="30"
-              required />
+        <div class="more-info flex gap-4">
+          <div class="completed-projects">
+            <h5>10+</h5>
+            <p>Completed Projects</p>
           </div>
-
-          <div class="form-group flex flex-direction-column">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+          <div class="coding-hours">
+            <h5>1000+</h5>
+            <p>Hours of Coding</p>
           </div>
-
-          <div class="form-group flex flex-direction-column">
-            <label for="message">Message</label>
-            <textarea rows="5" minlength="5" maxlength="1000" id="message" name="message"
-              placeholder="Enter your message" required></textarea>
-          </div>
-
-          <button type="submit" class="form-btn">Send</button>
-        </form>
+        </div>
       </div>
+    </section>
 
-      <div class="contact-link-container">
-        <div class="contact-links flex gap-3">
-          <a class="contact-link flex align-items-center gap-2" href="https://goo.gl/maps/iLbayBYNYZNVe71w5"
-            target="_blank" rel="noopener noreferrer">
-            <div class="icon center">
-              <i class="fa-solid fa-location-arrow"></i>
-            </div>
-            <div>
-              <h5>Location</h5>
-              <p>Gurgaon, India</p>
+    <!-- PROJECT SECTION -->
+    <section class="container project-section section" id="projects" role="region" aria-label="Projects section">
+      <h2 class="section-heading">Projects</h2>
+      <h3 class="section-subheading">
+        Each project is an exclusive development endeavor 🧩
+      </h3>
+
+      <div class="carousel-container">
+        <div class="carousel-nav">
+          <button id="prevBtn" class="nav-btn" title="Previous Project" aria-label="Show previous project">
+            <i class="fa-solid fa-circle-arrow-left" aria-hidden="true"></i>
+          </button>
+          <button id="nextBtn" class="nav-btn" title="Next Project" aria-label="Show next project">
+            <i class="fa-solid fa-circle-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="carousel flex" role="region" aria-label="Project carousel"></div>
+
+        <div class="carousel-dots" role="tablist" aria-label="Project carousel pages"></div>
+      </div>
+    </section>
+
+    <!-- Script for Carousel -->
+    <script>
+      // JavaScript to create an automatic carousel
+      const carouselContainer = document.querySelector(".carousel");
+      const carouselItems = carouselContainer.children;
+      let currentIndex = 0;
+
+      function showItem(index) {
+        Array.from(carouselItems).forEach((item, i) => {
+          item.style.display = i === index ? "block" : "none";
+        });
+      }
+
+      function nextItem() {
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        showItem(currentIndex);
+      }
+
+      function prevItem() {
+        currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+        showItem(currentIndex);
+      }
+
+      // Set an interval to automatically advance the carousel every 5 seconds
+      const autoplayInterval = setInterval(nextItem, 5000);
+
+      // Initially, display the first item
+      showItem(currentIndex);
+
+      // Event listeners for previous and next buttons
+      document.getElementById("prevBtn").addEventListener("click", () => {
+        clearInterval(autoplayInterval);
+        prevItem();
+      });
+      
+      document.getElementById("nextBtn").addEventListener("click", () => {
+        clearInterval(autoplayInterval);
+        nextItem();
+      });
+
+      // Restart autoplay after 10 seconds of inactivity
+      let autoplayTimeout;
+      function restartAutoplay() {
+        clearTimeout(autoplayTimeout);
+        autoplayTimeout = setTimeout(() => {
+          const newInterval = setInterval(nextItem, 5000);
+        }, 10000);
+      }
+    </script>
+
+    <!-- BLOG SECTION -->
+    <section class="container blog-section section" id="blogs" role="region" aria-label="Blogs section">
+      <h2 class="section-heading">Blogs</h2>
+      <h3 class="section-subheading">Explore My Blogs! 🚀</h3>
+
+      <div class="blog-container">
+        <article class="big-blog grid grid-template-columns-2 gap-3">
+          <a href="https://www.freecodecamp.org/news/getting-started-with-javascript/" target="_blank"
+            rel="noopener noreferrer" aria-label="Start Learning JavaScript article">
+            <div class="blog-img">
+              <img src="assets/blogs/blog1.png" alt="Master JavaScript Blog Article Cover" loading="lazy" />
             </div>
           </a>
-          <a class="contact-link flex align-items-center gap-2" href="tel:+916392456564">
-            <div class="icon center">
-              <i class="fa-solid fa-mobile-screen-button"></i>
-            </div>
-            <div>
-              <h5>Phone</h5>
-              <p>+91 6392456564</p>
-            </div>
-          </a>
-          <a class="contact-link flex align-items-center gap-2" href="mailto:ankitgupta1181@gmail.com">
-            <div class="icon center"><i class="fa-solid fa-at"></i></div>
-            <div>
-              <h5>Email</h5>
-              <p>ankitgupta1181@gmail.com</p>
-            </div>
-          </a>
+          <div class="blog-description">
+            <h4 class="blog-heading" aria-label="Publication date">13 Jul 2023</h4>
+            <p class="blog-subheading">Start Learning JavaScript</p>
+            <p class="section-text">
+              In this article I'm going to show you how you can incorporate
+              JavaScript into your HTML code, what simple operations might look
+              like using JavaScript, how to create and execute functions in
+              JavaScript, and how you can take advantage of your browser's
+              console.
+            </p>
+          </div>
+        </article>
+
+        <div class="small-blog gap-3">
+          <article class="blog">
+            <a href="https://www.freecodecamp.org/news/improve-cybersecurity-skills-with-ctfs-picoctf-walkthrough/"
+              target="_blank" rel="noopener noreferrer" aria-label="Master Cybersecurity article">
+              <div class="blog-img">
+                <img src="assets/blogs/blog2.png" alt="Master Cybersecurity Blog Article Cover" loading="lazy" />
+              </div>
+              <h4 class="blog-heading" aria-label="Publication date">24 Jan 2019</h4>
+              <p class="blog-subheading">Master Cybersecurity</p>
+            </a>
+          </article>
+
+          <article class="blog">
+            <a href="https://www.freecodecamp.org/news/learn-web-development-from-harvard-university-cs50/" target="_blank"
+              rel="noopener noreferrer" aria-label="Master Web Development article">
+              <div class="blog-img">
+                <img src="assets/blogs/blog3.png" alt="Master Web Development Blog Article Cover" loading="lazy" />
+              </div>
+              <h4 class="blog-heading" aria-label="Publication date">09 Mar 2023</h4>
+              <p class="blog-subheading">Master Web Development</p>
+            </a>
+          </article>
+
+          <article class="blog">
+            <a href="https://www.freecodecamp.org/news/what-is-ethical-hacking/" target="_blank" rel="noopener noreferrer"
+              aria-label="Master Ethical Hacking article">
+              <div class="blog-img">
+                <img src="assets/blogs/blog4.png" alt="Master Ethical Hacking Blog Article Cover" loading="lazy" />
+              </div>
+              <h4 class="blog-heading" aria-label="Publication date">09 May 2023</h4>
+              <p class="blog-subheading">Master Ethical Hacking</p>
+            </a>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
 
+      <!-- See More Button -->
+      <div class="see-more-container">
+        <a href="blogs.html" class="see-more-btn" aria-label="View all blogs">See More</a>
+      </div>
+    </section>
+
+    <!-- HANDWRITTEN NOTES SECTION -->
+    <section class="container handwritten-notes-section section" id="handwritten-notes" role="region" aria-label="Handwritten Notes section">
+      <h2 class="section-heading">Handwritten Notes</h2>
+      <h3 class="section-subheading">
+        Explore our handwritten notes 📝
+      </h3>
+
+      <div class="notes-container">
+        <!-- Note Card 1 -->
+        <article class="note-card">
+          <h4>SQL Handwritten Notes</h4>
+          <p>Explore our Handwritten SQL Notes. Download PDF notes for SQL concepts and queries.</p>
+          <a href="https://drive.google.com/file/d/1o0-Oo44vtRd-hQpUrfAI59He8hf47po5/view?usp=sharing"
+            target="_blank" rel="noopener noreferrer" aria-label="Download SQL Notes PDF">Download PDF</a>
+        </article>
+
+        <!-- Note Card 2 -->
+        <article class="note-card">
+          <h4>Networking Handwritten Notes</h4>
+          <p>Explore our comprehensive Networking handwritten notes.
+            Learn key networking concepts and protocols with our easy-to-understand handwritten materials.</p>
+          <a href="https://drive.google.com/file/d/1oa1c3wGDIM5sH_DBTpBWSoz6sgXq16k9/view?usp=drive_link"
+            target="_blank" rel="noopener noreferrer" aria-label="Download Networking Notes PDF">Download PDF</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="container contact-section section" id="contact" role="region" aria-label="Contact section">
+      <h2 class="section-heading">Contact</h2>
+      <h3 class="section-subheading">
+        Feel free to reach out to me anytime, don't hesitate! 👇
+      </h3>
+
+      <div class="contact-container grid grid-template-columns-2 gap-3">
+        <div class="contact-form-container">
+          <form class="contact-form flex flex-direction-column" autocomplete="off"
+            action="https://formsubmit.co/ankitgupta1181@gmail.com" method="POST" novalidate>
+            <input type="hidden" name="_next" value="https://ankitgupta1181.netlify.app/thanks.html" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="form-group flex flex-direction-column">
+              <label for="name">Name <span aria-label="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" minlength="3" maxlength="30"
+                required aria-required="true" aria-describedby="name-error" />
+              <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group flex flex-direction-column">
+              <label for="email">Email <span aria-label="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required
+                aria-required="true" aria-describedby="email-error" />
+              <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group flex flex-direction-column">
+              <label for="message">Message <span aria-label="required">*</span></label>
+              <textarea rows="5" minlength="5" maxlength="1000" id="message" name="message"
+                placeholder="Enter your message" required aria-required="true" aria-describedby="message-error"></textarea>
+              <span id="message-error" class="error-message" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="form-btn" aria-label="Send contact form">Send</button>
+          </form>
+        </div>
+
+        <div class="contact-link-container">
+          <div class="contact-links flex gap-3">
+            <a class="contact-link flex align-items-center gap-2" href="https://goo.gl/maps/iLbayBYNYZNVe71w5"
+              target="_blank" rel="noopener noreferrer" aria-label="Location: Gurgaon, India">
+              <div class="icon center" aria-hidden="true">
+                <i class="fa-solid fa-location-arrow"></i>
+              </div>
+              <div>
+                <h5>Location</h5>
+                <p>Gurgaon, India</p>
+              </div>
+            </a>
+            <a class="contact-link flex align-items-center gap-2" href="tel:+916392456564" aria-label="Phone: +91 6392456564">
+              <div class="icon center" aria-hidden="true">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <div>
+                <h5>Phone</h5>
+                <p>+91 6392456564</p>
+              </div>
+            </a>
+            <a class="contact-link flex align-items-center gap-2" href="mailto:ankitgupta1181@gmail.com" aria-label="Email: ankitgupta1181@gmail.com">
+              <div class="icon center" aria-hidden="true"><i class="fa-solid fa-at"></i></div>
+              <div>
+                <h5>Email</h5>
+                <p>ankitgupta1181@gmail.com</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
-  <!-- <footer>
-    <p>Ankit Gupta</p>
-    <div class="social-links center">
-      <a class="social-link" title="LinkedIn" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank"
-        rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a class="social-link" title="Github" href="https://github.com/ankitgupta1020" target="_blank"
-        rel="noopener noreferrer">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a class="social-link" title="X" href="https://x.com/AnkitGu93350210" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-x "></i>
-      </a>
-    </div>
-  </footer> -->
-  <!-- FOOTER -->
-  <div class="curved-svg">
+  <div class="curved-svg" aria-hidden="true">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#FFFFFF" d="M0,96L40,106.7C80,117,160,139,240,138.7C320,139,400,117,480,122.7C560,128,640,160,720,154.7C800,149,880,107,960,112C1040,117,1120,171,1200,192C1280,213,1360,203,1400,197.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+      <path fill="#FFFFFF" d="M0,96L40,106.7C80,117,160,139,240,138.7C320,139,400,117,480,122.7C560,128,640,160,720,154.7C800,149,880,107,960,112C1040,117,1120,171,1200,192C1280,213,1360,203,1400,197..." />
     </svg>
-  
-    <footer>
-      <p>Ankit Gupta</p>
+
+    <footer role="contentinfo">
+      <p>&copy; 2026 Ankit Gupta. All rights reserved.</p>
       <div class="social-links">
-        <a class="social-link" title="LinkedIn" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
+        <a class="social-link" title="LinkedIn Profile" aria-label="Visit LinkedIn profile" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
         </a>
-        <a class="social-link" title="Github" href="https://github.com/ankitgupta1020" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-github"></i>
+        <a class="social-link" title="Github Profile" aria-label="Visit Github profile" href="https://github.com/ankitgupta1020" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
         </a>
-        <a class="social-link" title="X" href="https://x.com/AnkitGu93350210" target="_blank" rel="noopener noreferrer">
+        <a class="social-link" title="X (Twitter) Profile" aria-label="Visit X (Twitter) profile" href="https://x.com/AnkitGu93350210" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-x"></i>
         </a>
       </div>
     </footer>
   </div>
-  </body>
-  </html>
+
+  <!-- Form Validation Script -->
+  <script>
+    const form = document.querySelector('.contact-form');
+    
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        let isValid = true;
+        
+        // Validate name
+        const nameInput = document.getElementById('name');
+        const nameError = document.getElementById('name-error');
+        if (nameInput.value.trim().length < 3) {
+          nameError.textContent = 'Name must be at least 3 characters long';
+          isValid = false;
+        } else {
+          nameError.textContent = '';
+        }
+        
+        // Validate email
+        const emailInput = document.getElementById('email');
+        const emailError = document.getElementById('email-error');
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput.value)) {
+          emailError.textContent = 'Please enter a valid email address';
+          isValid = false;
+        } else {
+          emailError.textContent = '';
+        }
+        
+        // Validate message
+        const messageInput = document.getElementById('message');
+        const messageError = document.getElementById('message-error');
+        if (messageInput.value.trim().length < 5) {
+          messageError.textContent = 'Message must be at least 5 characters long';
+          isValid = false;
+        } else {
+          messageError.textContent = '';
+        }
+        
+        if (!isValid) {
+          e.preventDefault();
+        }
+      });
+    }
+  </script>
+</body>
+</html>
