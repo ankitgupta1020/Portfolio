@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Senior Backend Developer specializing in Java and Spring Boot." />
   <title>Ankit Gupta | Senior Backend Developer</title>
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
   <link rel="stylesheet" href="css/general.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/queries.css" />
-  
+
   <script defer src="js/script.js"></script>
+  <script defer src="js/project.js"></script>
+  <script defer src="js/Theme.js"></script>
 </head>
 
 <body>
@@ -22,32 +26,49 @@
     </a>
 
     <button class="btn-mobile-nav">
-      <i class="fa-solid fa-bars icon-mobile-nav" name="menu-outline"></i>
-      <i class="fa-solid fa-xmark icon-mobile-nav" name="close-outline"></i>
+      <i class="fa-solid fa-bars icon-mobile-nav" id="menu-icon"></i>
+      <i class="fa-solid fa-xmark icon-mobile-nav" id="close-icon" style="display: none;"></i>
     </button>
 
     <nav class="nav">
       <ul class="main-nav-list flex align-items-center gap-4">
         <li><a class="nav-link main-nav-link" href="#about">About</a></li>
         <li><a class="nav-link main-nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link main-nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link main-nav-link" href="#blogs">Blogs</a></li>
+        <li><a class="nav-link main-nav-link" href="#handwritten-notes">Notes</a></li>
         <li><a class="nav-link main-nav-link" href="#contact">Contact</a></li>
+        <li>
+          <button class="switch" id="themeSwitch">
+            <span class="sun"><i class="fa-solid fa-sun"></i></span>
+            <span class="moon"><i class="fa-solid fa-moon"></i></span>
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="container hero-section section flex align-items-center">
+    <section class="container hero-section section grid grid--2-cols align-items-center">
       <div class="hero-text-box">
         <h1 class="heading-primary">Hi! I’m Ankit Gupta</h1>
-        <p class="hero-description">Senior Backend Developer & Founder of Recon Industries. I build scalable Java applications.</p>
-        <div class="social-links">
+        <p class="hero-description">Senior Backend Developer with 5 years of experience. Expert in Java, Spring Boot, and Scalable Architectures.</p>
+        <div class="social-links flex gap-2">
           <a class="social-link" href="https://github.com/ankitgupta1020" target="_blank"><i class="fa-brands fa-github"></i></a>
           <a class="social-link" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
       </div>
       <div class="hero-img-box">
-        <img src="assets/images/hero.png" class="hero-img" alt="Ankit Gupta" />
+        <img src="assets/images/hero.png" class="hero-img" alt="Ankit Gupta Professional Photo" />
+      </div>
+    </section>
+
+    <section class="container section" id="skills">
+      <h2 class="section-heading">Technical Stack</h2>
+      <div class="skills-grid grid">
+        <div class="skill-card"><img src="assets/skills/java.png" alt="Java"></div>
+        <div class="skill-card"><img src="assets/skills/spring.png" alt="Spring Boot"></div>
+        <div class="skill-card"><img src="assets/skills/mysql.png" alt="MySQL"></div>
+        <div class="skill-card"><img src="assets/skills/react.png" alt="React"></div>
       </div>
     </section>
 
@@ -57,7 +78,52 @@
       </div>
       <div class="about-text-box">
         <h2 class="section-heading">About Me</h2>
-        <p class="section-text">With 5 years of Java experience, I specialize in Spring Boot and high-performance backend systems.</p>
+        <p class="section-text">Ardent backend developer domiciled in Gurgaon, India. I specialize in building responsive web applications using Java, Spring, and MySQL.</p>
+      </div>
+    </section>
+
+    <section class="container section" id="projects">
+      <h2 class="section-heading">Projects</h2>
+      <div class="carousel-container">
+        <div class="carousel flex" id="project-carousel">
+          </div>
+      </div>
+    </section>
+
+    <section class="container section" id="blogs">
+      <h2 class="section-heading">Blogs</h2>
+      <div class="blog-grid grid grid--3-cols">
+        <div class="blog-card">
+          <img src="assets/blogs/blog1.png" alt="JS Blog">
+          <h3>Start Learning JavaScript</h3>
+          <p>Learn how to incorporate JavaScript into HTML code.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="handwritten-notes">
+      <h2 class="section-heading">Handwritten Notes</h2>
+      <div class="notes-grid grid grid--2-cols">
+        <div class="note-card">
+          <h4>SQL Notes</h4>
+          <a href="#" class="btn-download">Download PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="contact">
+      <h2 class="section-heading">Contact</h2>
+      <div class="contact-grid grid grid--2-cols">
+        <form class="contact-form flex flex-direction-column">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Message" rows="5"></textarea>
+          <button type="submit" class="form-btn">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <p><i class="fa-solid fa-location-dot"></i> Gurgaon, India</p>
+          <p><i class="fa-solid fa-phone"></i> +91 6392456564</p>
+        </div>
       </div>
     </section>
   </main>
