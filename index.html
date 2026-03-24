@@ -1,551 +1,1528 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Experienced Backend Developer in Gurgaon specializing in Java and MySQL. Create captivating and responsive web applications with Ankit. Explore my portfolio now!" />
-  <meta name="keywords" content="Backend Developer, Java, MySQL, Gurgaon, Web Applications, Ankit Gupta, Full Stack Developer" />
-  <meta name="author" content="Ankit Gupta" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#558aff" />
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Ankit Gupta | Backend Developer Portfolio" />
-  <meta property="og:description" content="Experienced Backend Developer in Gurgaon specializing in Java and MySQL. Create captivating and responsive web applications with Ankit. Explore my portfolio now!" />
-  <meta property="og:image" content="assets/favicons/og-image.png" />
-  <meta property="og:url" content="https://yourwebsite.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Ankit Gupta Portfolio" />
-
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ankit Gupta | Backend Developer" />
-  <meta name="twitter:description" content="Backend Developer specializing in Java, Spring, and MySQL" />
-  <meta name="twitter:image" content="assets/favicons/og-image.png" />
-
-  <!-- Canonical Tag -->
-  <link rel="canonical" href="https://yourwebsite.com" />
-
-  <!-- Preconnect to external resources -->
+  <title>Ankit Gupta — Java Backend Developer</title>
+  <meta name="description" content="Senior Java Backend Developer at NTT DATA | Spring Boot | AWS SysOps Certified | GenAI Developer" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-  <link rel="dns-prefetch" href="https://formsubmit.co" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --bg2: #0f0f18;
+      --surface: #13131e;
+      --surface2: #1a1a28;
+      --border: rgba(255,255,255,0.07);
+      --border2: rgba(255,255,255,0.12);
+      --java: #f89820;
+      --java-dim: rgba(248,152,32,0.15);
+      --java-glow: rgba(248,152,32,0.35);
+      --spring: #6db33f;
+      --spring-dim: rgba(109,179,63,0.12);
+      --accent: #e8d5b0;
+      --text: #e8e8f0;
+      --text-dim: #8888a8;
+      --text-muted: #55556a;
+      --white: #ffffff;
+      --red: #e05252;
+      --gradient: linear-gradient(135deg, var(--java) 0%, #ffb347 100%);
+    }
 
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
-  <link rel="manifest" href="assets/favicons/site.webmanifest" />
-  <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#558aff" />
-  <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#558aff" />
-  <meta name="msapplication-config" content="assets/favicons/browserconfig.xml" />
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNB..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    html { font-size: 16px; scroll-behavior: smooth; }
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/queries.css" />
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-  <!-- JAVASCRIPT -->
-  <script defer src="js/project.js"></script>
-  <script defer src="js/script.js"></script>
-  <script defer src="js/Theme.js"></script>
+    /* ─── NOISE OVERLAY ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+    }
 
-  <!-- Structured Data (Schema.org) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ankit Gupta",
-    "url": "https://yourwebsite.com",
-    "jobTitle": "Backend Developer",
-    "image": "assets/images/hero.png",
-    "description": "Experienced Backend Developer specializing in Java, Spring, and MySQL",
-    "location": {
-      "@type": "Place",
-      "name": "Gurgaon, India"
-    },
-    "sameAs": [
-      "https://github.com/ankitgupta1020",
-      "https://www.linkedin.com/in/ankit-gupta-5bb433174/",
-      "https://x.com/AnkitGu93350210"
-    ]
-  }
-  </script>
+    /* ─── GRID LINES ─── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
 
-  <!-- TITLE -->
-  <title>Ankit Gupta | Backend Developer Portfolio</title>
+    /* ─── SCROLLBAR ─── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--java); border-radius: 2px; }
+
+    /* ─── SELECTION ─── */
+    ::selection { background: var(--java-dim); color: var(--java); }
+
+    /* ─── CURSOR DOT ─── */
+    .cursor {
+      position: fixed;
+      width: 8px; height: 8px;
+      background: var(--java);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s, width 0.2s, height 0.2s;
+      mix-blend-mode: difference;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 20px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(10,10,15,0.7);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      transition: padding 0.3s;
+    }
+
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo .dot { width: 8px; height: 8px; background: var(--java); border-radius: 50%; display: inline-block; }
+
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0;
+      width: 0; height: 1px;
+      background: var(--java);
+      transition: width 0.3s;
+    }
+    .nav-links a:hover { color: var(--java); }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-cta {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--java);
+      border: 1px solid var(--java);
+      padding: 8px 20px;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: all 0.2s;
+    }
+    .nav-cta:hover { background: var(--java); color: var(--bg); }
+
+    /* ─── SECTION BASE ─── */
+    section { position: relative; z-index: 1; }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 120px 60px 60px;
+      gap: 60px;
+      position: relative;
+    }
+
+    .hero-glow {
+      position: absolute;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(248,152,32,0.08) 0%, transparent 70%);
+      top: 50%; left: 0;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--java-dim);
+      border: 1px solid rgba(248,152,32,0.25);
+      padding: 6px 14px;
+      border-radius: 2px;
+      margin-bottom: 28px;
+    }
+    .hero-tag span {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--java);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .hero-tag .pulse {
+      width: 6px; height: 6px;
+      background: var(--spring);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    .hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(3rem, 5vw, 5rem);
+      font-weight: 800;
+      line-height: 1.0;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .hero h1 .java-word {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-subtitle {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      letter-spacing: 0.05em;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .hero-subtitle::before {
+      content: '';
+      width: 30px; height: 1px;
+      background: var(--text-muted);
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+      max-width: 480px;
+      margin-bottom: 40px;
+    }
+
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    .btn-primary {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      background: var(--java);
+      color: var(--bg);
+      padding: 14px 32px;
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-primary:hover { background: #ffb347; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(248,152,32,0.3); }
+
+    .btn-ghost {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--text);
+      border: 1px solid var(--border2);
+      padding: 14px 32px;
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: all 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--java); color: var(--java); }
+
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 60px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .stat-item .num {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1;
+    }
+    .stat-item .num span { color: var(--java); }
+    .stat-item .label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-top: 4px;
+    }
+
+    /* ─── HERO RIGHT ─── */
+    .hero-right { position: relative; }
+
+    .code-window {
+      background: var(--surface);
+      border: 1px solid var(--border2);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 60px rgba(248,152,32,0.05);
+    }
+
+    .code-titlebar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 20px;
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+    }
+    .code-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .code-dot.red { background: #ff5f56; }
+    .code-dot.yellow { background: #ffbd2e; }
+    .code-dot.green { background: #27c93f; }
+    .code-filename {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-left: 8px;
+      letter-spacing: 0.05em;
+    }
+
+    .code-body {
+      padding: 24px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.82rem;
+      line-height: 1.8;
+    }
+
+    .code-line { display: flex; gap: 20px; }
+    .ln { color: var(--text-muted); user-select: none; min-width: 20px; text-align: right; }
+    .kw { color: #c792ea; }
+    .cl { color: var(--java); }
+    .fn { color: #82aaff; }
+    .st { color: var(--spring); }
+    .cm { color: var(--text-muted); font-style: italic; }
+    .an { color: #ff9d00; }
+    .nu { color: #f78c6c; }
+
+    .tech-orbit {
+      position: absolute;
+      top: -30px; right: -30px;
+      width: 160px; height: 160px;
+      border: 1px dashed rgba(248,152,32,0.2);
+      border-radius: 50%;
+      animation: spin 20s linear infinite;
+    }
+
+    .tech-orbit::before {
+      content: 'JAVA';
+      position: absolute;
+      top: -10px; left: 50%;
+      transform: translateX(-50%);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--java);
+      letter-spacing: 0.1em;
+      background: var(--bg);
+      padding: 2px 8px;
+    }
+
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    /* ─── SECTION TITLES ─── */
+    .section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--java);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-label::before {
+      content: '';
+      width: 24px; height: 1px;
+      background: var(--java);
+    }
+
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2rem, 3vw, 3rem);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    /* ─── CONTAINER ─── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 60px;
+    }
+
+    /* ─── ABOUT ─── */
+    #about { padding: 120px 0; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .about-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 3px;
+      background: var(--gradient);
+    }
+
+    .about-avatar {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: var(--java-dim);
+      border: 2px solid rgba(248,152,32,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--java);
+      margin-bottom: 20px;
+    }
+
+    .about-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .about-role {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--java);
+      letter-spacing: 0.05em;
+      margin-bottom: 24px;
+    }
+
+    .about-meta { display: flex; flex-direction: column; gap: 12px; }
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.88rem;
+      color: var(--text-dim);
+    }
+    .meta-item .meta-icon {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--java);
+      background: var(--java-dim);
+      padding: 4px 8px;
+      border-radius: 2px;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: var(--text-dim);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .about-text p strong { color: var(--text); font-weight: 500; }
+
+    .exp-timeline { margin-top: 40px; }
+    .exp-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 24px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .exp-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      padding-top: 4px;
+    }
+    .exp-role {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .exp-company {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--java);
+      margin-bottom: 8px;
+    }
+    .exp-desc {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+
+    /* ─── SKILLS ─── */
+    #skills { padding: 120px 0; background: var(--bg2); }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+    }
+
+    .skill-group {
+      background: var(--surface);
+      padding: 32px;
+      border: 1px solid var(--border);
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-group:hover { background: var(--surface2); border-color: var(--border2); }
+    .skill-group:hover::before { opacity: 1; }
+
+    .skill-group::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%; height: 2px;
+      background: var(--gradient);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .skill-cat {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--java);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 20px;
+    }
+
+    .skill-list { display: flex; flex-direction: column; gap: 10px; }
+
+    .skill-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .skill-name {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      font-weight: 400;
+    }
+
+    .skill-bar {
+      flex: 1;
+      height: 2px;
+      background: var(--border);
+      border-radius: 1px;
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      height: 100%;
+      background: var(--gradient);
+      border-radius: 1px;
+      transition: width 1s ease;
+    }
+
+    /* ─── PROJECTS ─── */
+    #projects { padding: 120px 0; }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .project-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .project-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .project-card.featured {
+      grid-column: span 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .project-card.featured::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 3px;
+      background: var(--gradient);
+    }
+
+    .project-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 4px 10px;
+      border-radius: 2px;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+
+    .badge-ai { background: var(--java-dim); color: var(--java); border: 1px solid rgba(248,152,32,0.25); }
+    .badge-java { background: var(--spring-dim); color: var(--spring); border: 1px solid rgba(109,179,63,0.25); }
+    .badge-web { background: rgba(130,170,255,0.1); color: #82aaff; border: 1px solid rgba(130,170,255,0.2); }
+
+    .project-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .project-desc {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .project-tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .tech-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 2px;
+      letter-spacing: 0.05em;
+    }
+
+    .project-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .metric .val {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--java);
+      line-height: 1;
+    }
+
+    .metric .lbl {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 4px;
+    }
+
+    .project-codeblock {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      line-height: 1.7;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--java);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: gap 0.2s;
+    }
+    .project-link:hover { gap: 10px; }
+    .project-link svg { width: 12px; height: 12px; }
+
+    /* ─── CERTIFICATIONS ─── */
+    #certifications { padding: 120px 0; background: var(--bg2); }
+
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .cert-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 28px;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cert-card:hover { border-color: var(--border2); }
+    .cert-card:hover .cert-glow { opacity: 1; }
+
+    .cert-glow {
+      position: absolute;
+      top: 0; right: 0;
+      width: 100px; height: 100px;
+      background: radial-gradient(circle, var(--java-glow), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+
+    .cert-issuer {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--java);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cert-issuer::before {
+      content: '▸';
+      color: var(--java);
+    }
+
+    .cert-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .cert-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .cert-belt {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 2px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .belt-green { background: rgba(34, 197, 94, 0.1); color: #22c55e; border: 1px solid rgba(34,197,94,0.25); }
+    .belt-yellow { background: rgba(234, 179, 8, 0.1); color: #eab308; border: 1px solid rgba(234,179,8,0.25); }
+    .belt-white { background: rgba(255,255,255,0.06); color: #e2e8f0; border: 1px solid rgba(255,255,255,0.15); }
+    .belt-aws { background: rgba(255, 153, 0, 0.1); color: #ff9900; border: 1px solid rgba(255,153,0,0.25); }
+    .belt-mule { background: rgba(0, 161, 228, 0.1); color: #00a1e4; border: 1px solid rgba(0,161,228,0.25); }
+    .belt-skillsoft { background: rgba(130,170,255,0.1); color: #82aaff; border: 1px solid rgba(130,170,255,0.2); }
+
+    /* ─── CONTACT ─── */
+    #contact { padding: 120px 0; }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .contact-headline {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.5rem, 4vw, 4rem);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+
+    .contact-headline span { color: var(--java); }
+
+    .contact-desc {
+      font-size: 1rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .contact-links { display: flex; flex-direction: column; gap: 16px; }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .contact-link:hover { border-color: var(--java); transform: translateX(4px); }
+
+    .cl-icon {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--java);
+      background: var(--java-dim);
+      padding: 8px 10px;
+      border-radius: 2px;
+      min-width: 36px;
+      text-align: center;
+    }
+
+    .cl-text { display: flex; flex-direction: column; gap: 2px; }
+    .cl-label { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+    .cl-value { font-size: 0.9rem; color: var(--text); }
+
+    /* ─── FORM ─── */
+    .contact-form { display: flex; flex-direction: column; gap: 20px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-field label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .form-field input,
+    .form-field textarea {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 14px 16px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      resize: none;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus {
+      border-color: var(--java);
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder { color: var(--text-muted); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      padding: 40px 60px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-copy {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--java); }
+
+    /* ─── MOBILE NAV ─── */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    /* ─── ANIMATIONS ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 960px) {
+      nav { padding: 16px 24px; }
+      .nav-links, .nav-cta { display: none; }
+      .mobile-menu-btn { display: block; }
+
+      .hero { grid-template-columns: 1fr; padding: 100px 24px 60px; }
+      .hero-right { display: none; }
+      .hero-stats { gap: 24px; }
+
+      .container { padding: 0 24px; }
+
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .project-card.featured { grid-column: span 1; grid-template-columns: 1fr; }
+      .certs-grid { grid-template-columns: 1fr 1fr; }
+      .contact-wrapper { grid-template-columns: 1fr; gap: 40px; }
+      .form-row { grid-template-columns: 1fr; }
+      footer { flex-direction: column; gap: 16px; text-align: center; }
+    }
+
+    @media (max-width: 600px) {
+      .skills-grid { grid-template-columns: 1fr; }
+      .certs-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.8rem; }
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Skip to main content link for accessibility -->
-  <a href="#main-content" class="skip-to-main">Skip to main content</a>
 
-  <!-- HEADER -->
-  <header class="header flex align-items-center justify-content-space-between" role="banner">
-    <a href="#" class="nav-link logo flex align-items-center gap-1" aria-label="Ankit Gupta - Home">
-      <i class="fa-solid fa-terminal" aria-hidden="true"></i>
-      <span>Ankit</span>
+  <div class="cursor" id="cursor"></div>
+
+  <!-- ─── NAV ─── -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <span class="dot"></span>
+      Ankit Gupta
     </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:ankitjava455@gmail.com" class="nav-cta">Hire Me</a>
+    <button class="mobile-menu-btn">☰</button>
+  </nav>
 
-    <!-- MOBILE NAV -->
-    <button class="btn-mobile-nav align-items-center justify-content-center flex-direction-column" 
-            aria-label="Toggle navigation menu" 
-            aria-expanded="false"
-            aria-controls="navMenu">
-      <div class="bars" id="bar1" aria-hidden="true"></div>
-      <div class="bars" id="bar2" aria-hidden="true"></div>
-      <div class="bars" id="bar3" aria-hidden="true"></div>
-    </button>
-
-    <nav class="nav flex align-items-center gap-4" id="navMenu" role="navigation" aria-label="Main navigation">
-      <a class="nav-link main-nav-link" href="#about" aria-label="About section">About</a>
-      <a class="nav-link main-nav-link" href="#projects" aria-label="Projects section">Projects</a>
-      <a class="nav-link main-nav-link" href="#blogs" aria-label="Blogs section">Blogs</a>
-      <a class="nav-link main-nav-link" href="#handwritten-notes" aria-label="Notes section">Notes</a>
-      <a class="nav-link main-nav-link" href="#contact" aria-label="Contact section">Contact</a>
-
-      <!-- THEME TOGGLE BUTTON -->
-      <button class="switch" id="themeSwitch" aria-label="Toggle dark mode" aria-pressed="false">
-        <span class="sun" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Sun icon">
-            <g fill="#ffd43b">
-              <circle r="5" cy="12" cx="12"></circle>
-              <path
-                d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29..."
-                />
-            </g>
-          </svg>
-        </span>
-
-        <span class="moon" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" role="img" aria-label="Moon icon">
-            <path
-              d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176..."
-              />
-          </svg>
-        </span>
-        <span class="slider" aria-hidden="true"></span>
-      </button>
-    </nav>
-  </header>
-
-  <main id="main-content">
-    <!-- HERO SECTION -->
-    <section class="container hero-section section flex align-items-center justify-content-space-between" role="region" aria-label="Hero section">
-      <div>
-        <h1>
-          Hi! I'm Ankit <br />
-          <span>Backen<span class="fz-74">D</span>eveloper</span>
-        </h1>
-        <div class="social-links">
-          <a class="social-link" title="Github Profile" aria-label="Visit Github profile" href="https://github.com/ankitgupta1020" target="_blank"
-            rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
-          <a class="social-link" title="LinkedIn Profile" aria-label="Visit LinkedIn profile" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/"
-            target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-        </div>
-      </div>
-      <div class="hero-img-box">
-        <div class="grid hero-img-container">
-          <div class="hero-img-background"></div>
-          <picture>
-            <source srcset="assets/images/hero.webp" type="image/webp" />
-            <source srcset="assets/images/hero.png" type="image/png" />
-            <img class="hero-img" src="assets/images/hero.png" alt="Ankit Gupta Backend Developer" loading="lazy" />
-          </picture>
-        </div>
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-left">
+      <div class="hero-tag">
+        <span class="pulse"></span>
+        <span>Available for Opportunities</span>
       </div>
 
-      <a class="nav-link scroll-down-container" title="Scroll Down" aria-label="Scroll down to next section" href="#skills">
-        <div class="scroll-down">
-          <svg viewBox="0 0 52 89" fill="none" xmlns="http://www.w3.org/2000/svg" class="mouse" role="img" aria-label="Scroll down indicator">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M47.6056 63.1025V25.8975C47.6056 14.0121 37.9325 4.37705 26 4.37705C14.0675 4.37705 4.39437 14.0121 4.39437 25.8975V63.1025C4.39437 74.9879 14.0675 84.623 26 84.623C37.9325 84.623 47.60..."
-              />
-            <path
-              d="M23 34.5526C23 32.5906 24.567 31 26.5 31C28.433 31 30 32.5906 30 34.5526V54.4474C30 56.4094 28.433 58 26.5 58C24.567 58 23 56.4094 23 54.4474V34.5526Z">
-            </path>
-          </svg>
-        </div>
-      </a>
-    </section>
+      <h1>
+        Senior<br/>
+        <span class="java-word">Java</span><br/>
+        Developer.
+      </h1>
+      <div class="hero-subtitle">NTT DATA · Senior Analyst · Remote</div>
 
-    <!-- SKILL SECTION -->
-    <section class="container skills-section" id="skills" role="region" aria-label="Skills section">
-      <h2 class="section-heading">Skills</h2>
-      <h3 class="section-subheading">
-        Cutting-Edge Developer Skills - Technical Mastery 🚀
-      </h3>
+      <p class="hero-desc">
+        Building resilient, cloud-native Java backends with Spring Boot, AWS, and MuleSoft integrations.
+        Now also engineering AI-powered developer tools using GenAI APIs.
+      </p>
 
-      <div class="skills gap-3" role="list">
-        <div class="skill center" role="listitem" aria-label="HTML">
-          <img class="skill-img" src="assets/skills/html.png" alt="HTML 5 Logo" loading="lazy" />
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects <span>→</span></a>
+        <a href="https://linkedin.com/in/ankitgupta-5bb433174" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="num">2<span>+</span></div>
+          <div class="label">Years @ NTT DATA</div>
         </div>
-        <div class="skill center" role="listitem" aria-label="CSS">
-          <img class="skill-img" src="assets/skills/css.png" alt="CSS 3 Logo" loading="lazy" />
+        <div class="stat-item">
+          <div class="num">5<span>+</span></div>
+          <div class="label">Certifications</div>
         </div>
-        <div class="skill center" role="listitem" aria-label="JavaScript">
-          <img class="skill-img" src="assets/skills/javascript.png" alt="JavaScript Logo" loading="lazy" />
-        </div>
-        <div class="skill center" role="listitem" aria-label="NodeJS">
-          <img class="skill-img" src="assets/skills/nodejs.png" alt="NodeJS Logo" loading="lazy" />
-        </div>
-        <div class="skill center" role="listitem" aria-label="React">
-          <img class="skill-img" src="assets/skills/react.png" alt="React Logo" loading="lazy" />
-        </div>
-        <div class="skill center" role="listitem" aria-label="Java">
-          <img class="skill-img" src="assets/skills/java.png" alt="Java Logo" loading="lazy" />
-        </div>
-        <div class="skill center" role="listitem" aria-label="Spring">
-          <img class="skill-img" src="assets/skills/spring.png" alt="Spring Framework Logo" loading="lazy" />
-        </div>
-        <div class="skill center" role="listitem" aria-label="MySQL">
-          <img class="skill-img" src="assets/skills/mysql.png" alt="MySQL Database Logo" loading="lazy" />
+        <div class="stat-item">
+          <div class="num">10<span>+</span></div>
+          <div class="label">Projects Shipped</div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- ABOUT SECTION -->
-    <section class="container about-section section grid gap-4" id="about" role="region" aria-label="About Me section">
-      <div class="about-img-box">
-        <img src="assets/images/about.jpg" alt="Ankit Gupta Portrait" loading="lazy" />
-      </div>
-      <div class="about-text-box">
-        <h2 class="section-heading">About Me</h2>
-        <h3 class="section-subheading">
-          An ardent backend developer domiciled in Gurgaon, India📍
-        </h3>
-        <p class="section-text">
-          Hi there! I'm Ankit, a backend developer proficient in Java, Spring, SpringBoot, React, NodeJS, and MySQL. With these powerful tools, I create captivating and responsive web applications. From s...
-        </p>
-        <div class="more-info flex gap-4">
-          <div class="completed-projects">
-            <h5>10+</h5>
-            <p>Completed Projects</p>
-          </div>
-          <div class="coding-hours">
-            <h5>1000+</h5>
-            <p>Hours of Coding</p>
-          </div>
+    <div class="hero-right">
+      <div class="tech-orbit"></div>
+      <div class="code-window">
+        <div class="code-titlebar">
+          <span class="code-dot red"></span>
+          <span class="code-dot yellow"></span>
+          <span class="code-dot green"></span>
+          <span class="code-filename">DiscountService.java</span>
+        </div>
+        <div class="code-body">
+          <div class="code-line"><span class="ln">1</span><span><span class="an">@Service</span></span></div>
+          <div class="code-line"><span class="ln">2</span><span><span class="kw">public class</span> <span class="cl">DiscountService</span> {</span></div>
+          <div class="code-line"><span class="ln">3</span><span></span></div>
+          <div class="code-line"><span class="ln">4</span><span>&nbsp;&nbsp;<span class="an">@Autowired</span></span></div>
+          <div class="code-line"><span class="ln">5</span><span>&nbsp;&nbsp;<span class="kw">private</span> <span class="cl">CustomerRepo</span> repo;</span></div>
+          <div class="code-line"><span class="ln">6</span><span></span></div>
+          <div class="code-line"><span class="ln">7</span><span>&nbsp;&nbsp;<span class="cm">// AI-generated tests ✓</span></span></div>
+          <div class="code-line"><span class="ln">8</span><span>&nbsp;&nbsp;<span class="kw">public double</span> <span class="fn">calculate</span>(</span></div>
+          <div class="code-line"><span class="ln">9</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="cl">Customer</span> c, <span class="kw">int</span> qty) {</span></div>
+          <div class="code-line"><span class="ln">10</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return switch</span>(c.type()) {</span></div>
+          <div class="code-line"><span class="ln">11</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">case</span> VIP&nbsp;&nbsp;&nbsp;&nbsp;-> qty > <span class="nu">20</span> ? <span class="nu">0.30</span> : <span class="nu">0.20</span>;</span></div>
+          <div class="code-line"><span class="ln">12</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">case</span> PREM&nbsp;&nbsp;-> qty > <span class="nu">10</span> ? <span class="nu">0.15</span> : <span class="nu">0.10</span>;</span></div>
+          <div class="code-line"><span class="ln">13</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">default</span>&nbsp;&nbsp;&nbsp;-> qty > <span class="nu">10</span> ? <span class="nu">0.05</span> : <span class="nu">0.00</span>;</span></div>
+          <div class="code-line"><span class="ln">14</span><span>&nbsp;&nbsp;&nbsp;&nbsp;};</span></div>
+          <div class="code-line"><span class="ln">15</span><span>&nbsp;&nbsp;}</span></div>
+          <div class="code-line"><span class="ln">16</span><span>}</span></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PROJECT SECTION -->
-    <section class="container project-section section" id="projects" role="region" aria-label="Projects section">
-      <h2 class="section-heading">Projects</h2>
-      <h3 class="section-subheading">
-        Each project is an exclusive development endeavor 🧩
-      </h3>
-
-      <div class="carousel-container">
-        <div class="carousel-nav">
-          <button id="prevBtn" class="nav-btn" title="Previous Project" aria-label="Show previous project">
-            <i class="fa-solid fa-circle-arrow-left" aria-hidden="true"></i>
-          </button>
-          <button id="nextBtn" class="nav-btn" title="Next Project" aria-label="Show next project">
-            <i class="fa-solid fa-circle-arrow-right" aria-hidden="true"></i>
-          </button>
+  <!-- ─── ABOUT ─── -->
+  <section id="about">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Background</div>
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
         </div>
-
-        <div class="carousel flex" role="region" aria-label="Project carousel"></div>
-
-        <div class="carousel-dots" role="tablist" aria-label="Project carousel pages"></div>
       </div>
-    </section>
 
-    <!-- Script for Carousel -->
-    <script>
-      // JavaScript to create an automatic carousel
-      const carouselContainer = document.querySelector(".carousel");
-      const carouselItems = carouselContainer.children;
-      let currentIndex = 0;
-
-      function showItem(index) {
-        Array.from(carouselItems).forEach((item, i) => {
-          item.style.display = i === index ? "block" : "none";
-        });
-      }
-
-      function nextItem() {
-        currentIndex = (currentIndex + 1) % carouselItems.length;
-        showItem(currentIndex);
-      }
-
-      function prevItem() {
-        currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-        showItem(currentIndex);
-      }
-
-      // Set an interval to automatically advance the carousel every 5 seconds
-      const autoplayInterval = setInterval(nextItem, 5000);
-
-      // Initially, display the first item
-      showItem(currentIndex);
-
-      // Event listeners for previous and next buttons
-      document.getElementById("prevBtn").addEventListener("click", () => {
-        clearInterval(autoplayInterval);
-        prevItem();
-      });
-      
-      document.getElementById("nextBtn").addEventListener("click", () => {
-        clearInterval(autoplayInterval);
-        nextItem();
-      });
-
-      // Restart autoplay after 10 seconds of inactivity
-      let autoplayTimeout;
-      function restartAutoplay() {
-        clearTimeout(autoplayTimeout);
-        autoplayTimeout = setTimeout(() => {
-          const newInterval = setInterval(nextItem, 5000);
-        }, 10000);
-      }
-    </script>
-
-    <!-- BLOG SECTION -->
-    <section class="container blog-section section" id="blogs" role="region" aria-label="Blogs section">
-      <h2 class="section-heading">Blogs</h2>
-      <h3 class="section-subheading">Explore My Blogs! 🚀</h3>
-
-      <div class="blog-container">
-        <article class="big-blog grid grid-template-columns-2 gap-3">
-          <a href="https://www.freecodecamp.org/news/getting-started-with-javascript/" target="_blank"
-            rel="noopener noreferrer" aria-label="Start Learning JavaScript article">
-            <div class="blog-img">
-              <img src="assets/blogs/blog1.png" alt="Master JavaScript Blog Article Cover" loading="lazy" />
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="about-card">
+            <div class="about-avatar">AG</div>
+            <div class="about-name">Ankit Gupta</div>
+            <div class="about-role">Senior Analyst · NTT DATA</div>
+            <div class="about-meta">
+              <div class="meta-item"><span class="meta-icon">LOC</span> Gurugram, Haryana, India</div>
+              <div class="meta-item"><span class="meta-icon">EDU</span> BCA — Maharshi Dayanand University</div>
+              <div class="meta-item"><span class="meta-icon">EXP</span> May 2023 – Present (Remote)</div>
+              <div class="meta-item"><span class="meta-icon">TAG</span> AWS SysOps Certified</div>
+              <div class="meta-item"><span class="meta-icon">AI</span> GenAI Green Belt — NTT DATA</div>
             </div>
-          </a>
-          <div class="blog-description">
-            <h4 class="blog-heading" aria-label="Publication date">13 Jul 2023</h4>
-            <p class="blog-subheading">Start Learning JavaScript</p>
-            <p class="section-text">
-              In this article I'm going to show you how you can incorporate
-              JavaScript into your HTML code, what simple operations might look
-              like using JavaScript, how to create and execute functions in
-              JavaScript, and how you can take advantage of your browser's
-              console.
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="about-text">
+            <p>
+              I'm a <strong>Senior Java Backend Developer</strong> at NTT DATA with a passion for building scalable, cloud-native solutions. My core stack is <strong>Java + Spring Boot</strong>, which I use to architect microservices, REST APIs, and data pipelines deployed on AWS.
+            </p>
+            <p>
+              Beyond backend engineering, I've pursued the full <strong>NTT DATA GenAI Academy</strong> curriculum — earning White Belt, Yellow Belt Level 1, Yellow Belt Level 2, and <strong>Green Belt</strong> certifications — and I apply that knowledge by building real AI-powered developer tools using the OpenAI API.
+            </p>
+            <p>
+              I also hold a <strong>MuleSoft Integration Associate</strong> certification and an <strong>AWS SysOps Associate</strong> credential, giving me a complete picture from integration middleware to cloud operations.
             </p>
           </div>
-        </article>
 
-        <div class="small-blog gap-3">
-          <article class="blog">
-            <a href="https://www.freecodecamp.org/news/improve-cybersecurity-skills-with-ctfs-picoctf-walkthrough/"
-              target="_blank" rel="noopener noreferrer" aria-label="Master Cybersecurity article">
-              <div class="blog-img">
-                <img src="assets/blogs/blog2.png" alt="Master Cybersecurity Blog Article Cover" loading="lazy" />
+          <div class="exp-timeline">
+            <div class="exp-item">
+              <div class="exp-date">May 2023<br/>→ Present</div>
+              <div>
+                <div class="exp-role">Software Development Senior Analyst</div>
+                <div class="exp-company">NTT DATA North America — Remote</div>
+                <div class="exp-desc">Java, Spring, Struts, SQL, DB2. Building enterprise backend systems and leading AI adoption initiatives within development workflows.</div>
               </div>
-              <h4 class="blog-heading" aria-label="Publication date">24 Jan 2019</h4>
-              <p class="blog-subheading">Master Cybersecurity</p>
-            </a>
-          </article>
+            </div>
+            <div class="exp-item">
+              <div class="exp-date">2018 – 2021</div>
+              <div>
+                <div class="exp-role">Bachelor of Computer Applications</div>
+                <div class="exp-company">Maharshi Dayanand University — Computer Science</div>
+                <div class="exp-desc">Fundamentals of software engineering, data structures, algorithms, and database systems.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <article class="blog">
-            <a href="https://www.freecodecamp.org/news/learn-web-development-from-harvard-university-cs50/" target="_blank"
-              rel="noopener noreferrer" aria-label="Master Web Development article">
-              <div class="blog-img">
-                <img src="assets/blogs/blog3.png" alt="Master Web Development Blog Article Cover" loading="lazy" />
-              </div>
-              <h4 class="blog-heading" aria-label="Publication date">09 Mar 2023</h4>
-              <p class="blog-subheading">Master Web Development</p>
-            </a>
-          </article>
-
-          <article class="blog">
-            <a href="https://www.freecodecamp.org/news/what-is-ethical-hacking/" target="_blank" rel="noopener noreferrer"
-              aria-label="Master Ethical Hacking article">
-              <div class="blog-img">
-                <img src="assets/blogs/blog4.png" alt="Master Ethical Hacking Blog Article Cover" loading="lazy" />
-              </div>
-              <h4 class="blog-heading" aria-label="Publication date">09 May 2023</h4>
-              <p class="blog-subheading">Master Ethical Hacking</p>
-            </a>
-          </article>
+  <!-- ─── SKILLS ─── -->
+  <section id="skills">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Technical Stack</div>
+        <div class="section-header">
+          <h2 class="section-title">Skills & Technologies</h2>
         </div>
       </div>
 
-      <!-- See More Button -->
-      <div class="see-more-container">
-        <a href="blogs.html" class="see-more-btn" aria-label="View all blogs">See More</a>
-      </div>
-    </section>
-
-    <!-- HANDWRITTEN NOTES SECTION -->
-    <section class="container handwritten-notes-section section" id="handwritten-notes" role="region" aria-label="Handwritten Notes section">
-      <h2 class="section-heading">Handwritten Notes</h2>
-      <h3 class="section-subheading">
-        Explore our handwritten notes 📝
-      </h3>
-
-      <div class="notes-container">
-        <!-- Note Card 1 -->
-        <article class="note-card">
-          <h4>SQL Handwritten Notes</h4>
-          <p>Explore our Handwritten SQL Notes. Download PDF notes for SQL concepts and queries.</p>
-          <a href="https://drive.google.com/file/d/1o0-Oo44vtRd-hQpUrfAI59He8hf47po5/view?usp=sharing"
-            target="_blank" rel="noopener noreferrer" aria-label="Download SQL Notes PDF">Download PDF</a>
-        </article>
-
-        <!-- Note Card 2 -->
-        <article class="note-card">
-          <h4>Networking Handwritten Notes</h4>
-          <p>Explore our comprehensive Networking handwritten notes.
-            Learn key networking concepts and protocols with our easy-to-understand handwritten materials.</p>
-          <a href="https://drive.google.com/file/d/1oa1c3wGDIM5sH_DBTpBWSoz6sgXq16k9/view?usp=drive_link"
-            target="_blank" rel="noopener noreferrer" aria-label="Download Networking Notes PDF">Download PDF</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="container contact-section section" id="contact" role="region" aria-label="Contact section">
-      <h2 class="section-heading">Contact</h2>
-      <h3 class="section-subheading">
-        Feel free to reach out to me anytime, don't hesitate! 👇
-      </h3>
-
-      <div class="contact-container grid grid-template-columns-2 gap-3">
-        <div class="contact-form-container">
-          <form class="contact-form flex flex-direction-column" autocomplete="off"
-            action="https://formsubmit.co/ankitgupta1181@gmail.com" method="POST" novalidate>
-            <input type="hidden" name="_next" value="https://ankitgupta1181.netlify.app/thanks.html" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-
-            <div class="form-group flex flex-direction-column">
-              <label for="name">Name <span aria-label="required">*</span></label>
-              <input type="text" id="name" name="name" placeholder="Enter your name" minlength="3" maxlength="30"
-                required aria-required="true" aria-describedby="name-error" />
-              <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
-            </div>
-
-            <div class="form-group flex flex-direction-column">
-              <label for="email">Email <span aria-label="required">*</span></label>
-              <input type="email" id="email" name="email" placeholder="Enter your email address" required
-                aria-required="true" aria-describedby="email-error" />
-              <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
-            </div>
-
-            <div class="form-group flex flex-direction-column">
-              <label for="message">Message <span aria-label="required">*</span></label>
-              <textarea rows="5" minlength="5" maxlength="1000" id="message" name="message"
-                placeholder="Enter your message" required aria-required="true" aria-describedby="message-error"></textarea>
-              <span id="message-error" class="error-message" role="alert" aria-live="polite"></span>
-            </div>
-
-            <button type="submit" class="form-btn" aria-label="Send contact form">Send</button>
-          </form>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <div class="skill-cat">☕ Core Java</div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Java 17+</span><div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Spring Boot</span><div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Spring MVC</span><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Struts</span><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">REST APIs</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+          </div>
         </div>
 
-        <div class="contact-link-container">
-          <div class="contact-links flex gap-3">
-            <a class="contact-link flex align-items-center gap-2" href="https://goo.gl/maps/iLbayBYNYZNVe71w5"
-              target="_blank" rel="noopener noreferrer" aria-label="Location: Gurgaon, India">
-              <div class="icon center" aria-hidden="true">
-                <i class="fa-solid fa-location-arrow"></i>
-              </div>
-              <div>
-                <h5>Location</h5>
-                <p>Gurgaon, India</p>
+        <div class="skill-group">
+          <div class="skill-cat">🗄️ Data & Cloud</div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">SQL / MySQL</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">DB2</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Amazon S3</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">AWS SysOps</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">ServiceNow</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-cat">🤖 AI & Integration</div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">OpenAI API</span><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Prompt Engineering</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">MuleSoft</span><div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Flask REST API</span><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">GenAI Dev</span><div class="skill-bar"><div class="skill-fill" style="width:87%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-cat">🌐 Frontend & Tools</div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">React</span><div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Git / GitHub</span><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">pytest / JUnit</span><div class="skill-bar"><div class="skill-fill" style="width:83%"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Work</div>
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- AI Unit Test Generator — FEATURED -->
+        <div class="project-card featured reveal">
+          <div>
+            <div class="project-badge badge-ai">🤖 AI · GenAI Green Belt Project</div>
+            <h3 class="project-title">AI Unit Test Generator</h3>
+            <p class="project-desc">
+              Solves the problem of developers spending 20–30% of their time writing unit tests. Sends source code to <strong style="color:var(--text)">OpenAI GPT-4o</strong>, which returns comprehensive pytest/JUnit tests covering happy paths, edge cases, boundary values, and exception scenarios — in under 10 seconds.
+            </p>
+            <div class="project-tech-list">
+              <span class="tech-tag">Python 3.11</span>
+              <span class="tech-tag">OpenAI GPT-4o</span>
+              <span class="tech-tag">Flask REST API</span>
+              <span class="tech-tag">pytest</span>
+              <span class="tech-tag">JUnit</span>
+              <span class="tech-tag">JSON Mode</span>
+              <span class="tech-tag">Prompt Engineering</span>
+            </div>
+            <a href="https://github.com/ankitgupta1020" target="_blank" class="project-link">
+              View on GitHub
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>
+            <div class="project-metrics">
+              <div class="metric"><div class="val">10s</div><div class="lbl">Test generation time</div></div>
+              <div class="metric"><div class="val">90%+</div><div class="lbl">Coverage achieved</div></div>
+              <div class="metric"><div class="val">14</div><div class="lbl">Tests per function avg</div></div>
+            </div>
+          </div>
+
+          <div class="project-codeblock">
+            <div style="color:var(--text-muted);margin-bottom:12px;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;">POST /generate → Response</div>
+            <div><span style="color:#82aaff">"success"</span>: <span style="color:#c792ea">true</span>,</div>
+            <div><span style="color:#82aaff">"data"</span>: {</div>
+            <div>&nbsp;&nbsp;<span style="color:#82aaff">"total_tests"</span>: <span style="color:var(--java)">14</span>,</div>
+            <div>&nbsp;&nbsp;<span style="color:#82aaff">"model"</span>: <span style="color:var(--spring)">"gpt-4o"</span>,</div>
+            <div>&nbsp;&nbsp;<span style="color:#82aaff">"coverage_areas"</span>: [</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:var(--spring)">"happy_path"</span>,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:var(--spring)">"edge_cases"</span>,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:var(--spring)">"boundary_values"</span>,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:var(--spring)">"exceptions"</span></div>
+            <div>&nbsp;&nbsp;],</div>
+            <div>&nbsp;&nbsp;<span style="color:#82aaff">"tokens_used"</span>: <span style="color:var(--java)">423</span></div>
+            <div>}</div>
+          </div>
+        </div>
+
+        <!-- PG Life -->
+        <div class="project-card reveal">
+          <div class="project-badge badge-java">☕ Java · Full Stack</div>
+          <h3 class="project-title">PG Life — Property Listing Platform</h3>
+          <p class="project-desc">A full-stack PG accommodation listing app for Gurgaon. Features property search, filtering, booking flows, and responsive UI. Deployed on Netlify.</p>
+          <div class="project-tech-list">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+          <a href="https://pglife-gurgaon.netlify.app" target="_blank" class="project-link">Live Demo →</a>
+        </div>
+
+        <!-- Developer Portfolio -->
+        <div class="project-card reveal">
+          <div class="project-badge badge-web">🌐 Web · Personal</div>
+          <h3 class="project-title">Developer Portfolio Website</h3>
+          <p class="project-desc">A fully responsive personal portfolio featuring project showcases, blog aggregation, animated navigation, dark mode toggle, and structured Schema.org SEO metadata.</p>
+          <div class="project-tech-list">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript ES6</span>
+            <span class="tech-tag">FormSubmit API</span>
+          </div>
+          <a href="https://github.com/ankitgupta1020" target="_blank" class="project-link">Source Code →</a>
+        </div>
+
+        <!-- Banana Speak / JS Projects -->
+        <div class="project-card reveal">
+          <div class="project-badge badge-web">🎮 JS · Interactive</div>
+          <h3 class="project-title">Interactive JS Projects Collection</h3>
+          <p class="project-desc">A collection of interactive browser-based games and tools: Banana Speak (language game), Palindrome Birthday checker, Lucky Birthday calculator, and quiz apps. All deployed on Netlify.</p>
+          <div class="project-tech-list">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML/CSS</span>
+            <span class="tech-tag">Netlify</span>
+          </div>
+          <a href="https://github.com/ankitgupta1020" target="_blank" class="project-link">View All →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATIONS ─── -->
+  <section id="certifications">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Credentials</div>
+        <div class="section-header">
+          <h2 class="section-title">Certifications</h2>
+        </div>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-issuer">NTT DATA — NLCI</div>
+          <div class="cert-name">GenAI Academy: Green Belt</div>
+          <div class="cert-date">Issued by Abhijit Dubey, Chief GenAI Officer</div>
+          <span class="cert-belt belt-green">🟢 Green Belt</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-issuer">NTT DATA — NLCI</div>
+          <div class="cert-name">GenAI Academy: Yellow Belt Level 2 for Developers</div>
+          <div class="cert-date">Issued Jul 2025 · Credential #154561771</div>
+          <span class="cert-belt belt-yellow">🟡 Yellow Belt L2</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-issuer">NTT DATA — NLCI</div>
+          <div class="cert-name">GenAI: Yellow Belt Level 1</div>
+          <div class="cert-date">Issued December 9, 2024</div>
+          <span class="cert-belt belt-yellow">🟡 Yellow Belt L1</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-issuer">NTT DATA — NLCI</div>
+          <div class="cert-name">GenAI: White Belt</div>
+          <div class="cert-date">Issued February 3, 2025</div>
+          <span class="cert-belt belt-white">⬜ White Belt</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-issuer">NTT DATA — NLCI</div>
+          <div class="cert-name">MuleSoft Integration Associate — Beginner's Course</div>
+          <div class="cert-date">Issued December 18, 2025</div>
+          <span class="cert-belt belt-mule">🔵 MuleSoft</span>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-glow"></div>
+          <div class="cert-issuer">Skillsoft</div>
+          <div class="cert-name">AWS SysOps Associate 2022: Architecting AWS to Meet Business Needs</div>
+          <div class="cert-date">Issued Dec 2025 · Credential #170496716</div>
+          <span class="cert-belt belt-aws">☁️ AWS SysOps</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Let's Talk</div>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="reveal">
+          <h2 class="contact-headline">
+            Open to<br/><span>new roles</span><br/>& projects.
+          </h2>
+          <p class="contact-desc">
+            Whether you're looking for a Java backend engineer, a Spring Boot architect, or someone who can blend AI with enterprise software — let's connect.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:ankitjava455@gmail.com" class="contact-link">
+              <span class="cl-icon">@</span>
+              <div class="cl-text">
+                <span class="cl-label">Email</span>
+                <span class="cl-value">ankitjava455@gmail.com</span>
               </div>
             </a>
-            <a class="contact-link flex align-items-center gap-2" href="tel:+916392456564" aria-label="Phone: +91 6392456564">
-              <div class="icon center" aria-hidden="true">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-              </div>
-              <div>
-                <h5>Phone</h5>
-                <p>+91 6392456564</p>
+            <a href="https://linkedin.com/in/ankitgupta-5bb433174" target="_blank" class="contact-link">
+              <span class="cl-icon">in</span>
+              <div class="cl-text">
+                <span class="cl-label">LinkedIn</span>
+                <span class="cl-value">ankitgupta-5bb433174</span>
               </div>
             </a>
-            <a class="contact-link flex align-items-center gap-2" href="mailto:ankitgupta1181@gmail.com" aria-label="Email: ankitgupta1181@gmail.com">
-              <div class="icon center" aria-hidden="true"><i class="fa-solid fa-at"></i></div>
-              <div>
-                <h5>Email</h5>
-                <p>ankitgupta1181@gmail.com</p>
+            <a href="https://github.com/ankitgupta1020" target="_blank" class="contact-link">
+              <span class="cl-icon">gh</span>
+              <div class="cl-text">
+                <span class="cl-label">GitHub</span>
+                <span class="cl-value">ankitgupta1020</span>
+              </div>
+            </a>
+            <a href="tel:+916392456564" class="contact-link">
+              <span class="cl-icon">☎</span>
+              <div class="cl-text">
+                <span class="cl-label">Phone</span>
+                <span class="cl-value">+91 63924 56564</span>
               </div>
             </a>
           </div>
         </div>
+
+        <div class="reveal">
+          <form class="contact-form" action="https://formsubmit.co/ankitjava455@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false"/>
+            <input type="hidden" name="_template" value="table"/>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required/>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required/>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?"/>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message →</button>
+          </form>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- FOOTER -->
-  <div class="curved-svg" aria-hidden="true">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#FFFFFF" d="M0,96L40,106.7C80,117,160,139,240,138.7C320,139,400,117,480,122.7C560,128,640,160,720,154.7C800,149,880,107,960,112C1040,117,1120,171,1200,192C1280,213,1360,203,1400,197..." />
-    </svg>
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-copy">© 2026 Ankit Gupta — Built with ☕ Java spirit</div>
+    <div class="footer-links">
+      <a href="https://github.com/ankitgupta1020" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/ankitgupta-5bb433174" target="_blank">LinkedIn</a>
+      <a href="https://x.com/AnkitGu93350210" target="_blank">X (Twitter)</a>
+    </div>
+  </footer>
 
-    <footer role="contentinfo">
-      <p>&copy; 2026 Ankit Gupta. All rights reserved.</p>
-      <div class="social-links">
-        <a class="social-link" title="LinkedIn Profile" aria-label="Visit LinkedIn profile" href="https://www.linkedin.com/in/ankit-gupta-5bb433174/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a class="social-link" title="Github Profile" aria-label="Visit Github profile" href="https://github.com/ankitgupta1020" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-github" aria-hidden="true"></i>
-        </a>
-        <a class="social-link" title="X (Twitter) Profile" aria-label="Visit X (Twitter) profile" href="https://x.com/AnkitGu93350210" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-x"></i>
-        </a>
-      </div>
-    </footer>
-  </div>
-
-  <!-- Form Validation Script -->
   <script>
-    const form = document.querySelector('.contact-form');
-    
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        let isValid = true;
-        
-        // Validate name
-        const nameInput = document.getElementById('name');
-        const nameError = document.getElementById('name-error');
-        if (nameInput.value.trim().length < 3) {
-          nameError.textContent = 'Name must be at least 3 characters long';
-          isValid = false;
-        } else {
-          nameError.textContent = '';
-        }
-        
-        // Validate email
-        const emailInput = document.getElementById('email');
-        const emailError = document.getElementById('email-error');
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(emailInput.value)) {
-          emailError.textContent = 'Please enter a valid email address';
-          isValid = false;
-        } else {
-          emailError.textContent = '';
-        }
-        
-        // Validate message
-        const messageInput = document.getElementById('message');
-        const messageError = document.getElementById('message-error');
-        if (messageInput.value.trim().length < 5) {
-          messageError.textContent = 'Message must be at least 5 characters long';
-          isValid = false;
-        } else {
-          messageError.textContent = '';
-        }
-        
-        if (!isValid) {
-          e.preventDefault();
+    // Cursor
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
         }
       });
-    }
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Skill bar animation on scroll
+    const skillObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.skill-fill').forEach(fill => {
+            const w = fill.style.width;
+            fill.style.width = '0%';
+            setTimeout(() => fill.style.width = w, 200);
+          });
+          skillObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.skills-grid').forEach(el => skillObserver.observe(el));
+
+    // Nav scroll effect
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.style.padding = window.scrollY > 50 ? '12px 60px' : '20px 60px';
+    });
+
+    // Mobile menu
+    document.querySelector('.mobile-menu-btn')?.addEventListener('click', () => {
+      const links = document.querySelector('.nav-links');
+      if (!links) return;
+      if (links.style.display === 'flex') {
+        links.style.display = 'none';
+      } else {
+        links.style.cssText = 'display:flex;flex-direction:column;position:absolute;top:70px;left:0;right:0;background:rgba(10,10,15,0.98);padding:24px;gap:20px;border-bottom:1px solid rgba(255,255,255,0.07);z-index:99;';
+      }
+    });
   </script>
 </body>
 </html>
